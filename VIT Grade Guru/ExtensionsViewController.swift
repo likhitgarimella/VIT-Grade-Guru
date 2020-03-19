@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ExtensionsViewController.swift
 //  VIT Grade Guru
 //
 //  Created by Likhit Garimella on 19/03/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ExtensionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
