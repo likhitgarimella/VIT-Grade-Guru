@@ -1,5 +1,5 @@
 //
-//  ThirdViewController.swift
+//  NinePointerViewController.swift
 //  VIT Grade Guru
 //
 //  Created by Likhit Garimella on 19/03/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class NinePointerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

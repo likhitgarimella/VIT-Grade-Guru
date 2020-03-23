@@ -12,10 +12,14 @@
 		0253876024237BC900DA0AA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0253875E24237BC900DA0AA7 /* Main.storyboard */; };
 		0253876224237BCB00DA0AA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0253876124237BCB00DA0AA7 /* Assets.xcassets */; };
 		0253876524237BCB00DA0AA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0253876324237BCB00DA0AA7 /* LaunchScreen.storyboard */; };
-		0253877124237F2D00DA0AA7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253877024237F2D00DA0AA7 /* FirstViewController.swift */; };
-		0253877324237F3800DA0AA7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253877224237F3800DA0AA7 /* SecondViewController.swift */; };
-		0253877524237F4100DA0AA7 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253877424237F4100DA0AA7 /* ThirdViewController.swift */; };
-		0253877724237F4C00DA0AA7 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253877624237F4C00DA0AA7 /* FourthViewController.swift */; };
+		0253877124237F2D00DA0AA7 /* GPAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253877024237F2D00DA0AA7 /* GPAViewController.swift */; };
+		0253877324237F3800DA0AA7 /* CGPAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253877224237F3800DA0AA7 /* CGPAViewController.swift */; };
+		0253877524237F4100DA0AA7 /* NinePointerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253877424237F4100DA0AA7 /* NinePointerViewController.swift */; };
+		0253877724237F4C00DA0AA7 /* RetainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253877624237F4C00DA0AA7 /* RetainViewController.swift */; };
+		025387792423B33500DA0AA7 /* iOSDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025387782423B33500DA0AA7 /* iOSDropDown.swift */; };
+		0253877E2423C61F00DA0AA7 /* ExtensionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253877D2423C61F00DA0AA7 /* ExtensionsViewController.swift */; };
+		02A335142428022700266EA8 /* CourseTotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A335132428022700266EA8 /* CourseTotalViewController.swift */; };
+		02AC37C624296317005EEEE0 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AC37C524296317005EEEE0 /* FloatLabelTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +30,14 @@
 		0253876124237BCB00DA0AA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0253876424237BCB00DA0AA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0253876624237BCB00DA0AA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0253877024237F2D00DA0AA7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		0253877224237F3800DA0AA7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		0253877424237F4100DA0AA7 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		0253877624237F4C00DA0AA7 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		0253877024237F2D00DA0AA7 /* GPAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPAViewController.swift; sourceTree = "<group>"; };
+		0253877224237F3800DA0AA7 /* CGPAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPAViewController.swift; sourceTree = "<group>"; };
+		0253877424237F4100DA0AA7 /* NinePointerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinePointerViewController.swift; sourceTree = "<group>"; };
+		0253877624237F4C00DA0AA7 /* RetainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetainViewController.swift; sourceTree = "<group>"; };
+		025387782423B33500DA0AA7 /* iOSDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSDropDown.swift; sourceTree = "<group>"; };
+		0253877D2423C61F00DA0AA7 /* ExtensionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsViewController.swift; sourceTree = "<group>"; };
+		02A335132428022700266EA8 /* CourseTotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTotalViewController.swift; sourceTree = "<group>"; };
+		02AC37C524296317005EEEE0 /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +72,18 @@
 			children = (
 				0253875624237BC900DA0AA7 /* AppDelegate.swift */,
 				0253875824237BC900DA0AA7 /* SceneDelegate.swift */,
+				0253876324237BCB00DA0AA7 /* LaunchScreen.storyboard */,
 				0253875E24237BC900DA0AA7 /* Main.storyboard */,
 				0253876124237BCB00DA0AA7 /* Assets.xcassets */,
-				0253876324237BCB00DA0AA7 /* LaunchScreen.storyboard */,
+				02A335132428022700266EA8 /* CourseTotalViewController.swift */,
+				0253877024237F2D00DA0AA7 /* GPAViewController.swift */,
+				025387782423B33500DA0AA7 /* iOSDropDown.swift */,
+				0253877224237F3800DA0AA7 /* CGPAViewController.swift */,
+				02AC37C524296317005EEEE0 /* FloatLabelTextField.swift */,
+				0253877424237F4100DA0AA7 /* NinePointerViewController.swift */,
+				0253877624237F4C00DA0AA7 /* RetainViewController.swift */,
+				0253877D2423C61F00DA0AA7 /* ExtensionsViewController.swift */,
 				0253876624237BCB00DA0AA7 /* Info.plist */,
-				0253877024237F2D00DA0AA7 /* FirstViewController.swift */,
-				0253877224237F3800DA0AA7 /* SecondViewController.swift */,
-				0253877424237F4100DA0AA7 /* ThirdViewController.swift */,
-				0253877624237F4C00DA0AA7 /* FourthViewController.swift */,
 			);
 			path = "VIT Grade Guru";
 			sourceTree = "<group>";
@@ -147,11 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0253877724237F4C00DA0AA7 /* FourthViewController.swift in Sources */,
-				0253877324237F3800DA0AA7 /* SecondViewController.swift in Sources */,
-				0253877124237F2D00DA0AA7 /* FirstViewController.swift in Sources */,
-				0253877524237F4100DA0AA7 /* ThirdViewController.swift in Sources */,
+				0253877E2423C61F00DA0AA7 /* ExtensionsViewController.swift in Sources */,
+				0253877724237F4C00DA0AA7 /* RetainViewController.swift in Sources */,
+				025387792423B33500DA0AA7 /* iOSDropDown.swift in Sources */,
+				02AC37C624296317005EEEE0 /* FloatLabelTextField.swift in Sources */,
+				0253877324237F3800DA0AA7 /* CGPAViewController.swift in Sources */,
+				0253877124237F2D00DA0AA7 /* GPAViewController.swift in Sources */,
+				0253877524237F4100DA0AA7 /* NinePointerViewController.swift in Sources */,
 				0253875724237BC900DA0AA7 /* AppDelegate.swift in Sources */,
+				02A335142428022700266EA8 /* CourseTotalViewController.swift in Sources */,
 				0253875924237BC900DA0AA7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K8KZG6LNQ;
 				INFOPLIST_FILE = "VIT Grade Guru/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.likhitgarimella.VIT-Grade-Guru";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,6 +334,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K8KZG6LNQ;
 				INFOPLIST_FILE = "VIT Grade Guru/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,7 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.likhitgarimella.VIT-Grade-Guru";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

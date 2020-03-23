@@ -1,5 +1,5 @@
 //
-//  FourthViewController.swift
+//  RetainViewController.swift
 //  VIT Grade Guru
 //
 //  Created by Likhit Garimella on 19/03/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FourthViewController: UIViewController {
+class RetainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

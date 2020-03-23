@@ -2,13 +2,10 @@
 //
 //  iOSDropDown.swift
 //
-//
-//  Created by Jishnu Raj T on 26/04/18.
-//  Copyright © 2018 JRiOSdev. All rights reserved.
-//
+
 import UIKit
 
-open class DropDown : UITextField{
+open class DropDown : UITextField {
     
     var arrow : Arrow!
     var table : UITableView!
@@ -35,7 +32,7 @@ open class DropDown : UITextField{
             layer.borderColor = borderColor.cgColor
         }
     }
-    @IBInspectable public var listHeight: CGFloat = 150{
+    @IBInspectable public var listHeight: CGFloat = 150 {
         didSet {
             
         }
@@ -60,12 +57,13 @@ open class DropDown : UITextField{
             self.dataArray = self.optionArray
         }
     }
+    
     public var optionIds : [Int]?
     var searchText = String() {
         didSet{
             if searchText == "" {
                 self.dataArray = self.optionArray
-            }else{
+            } else {
                 self.dataArray = optionArray.filter {
                     return $0.range(of: searchText, options: .caseInsensitive) != nil
                 }
@@ -75,8 +73,9 @@ open class DropDown : UITextField{
             self.table.reloadData()
         }
     }
+    
     @IBInspectable public var arrowSize: CGFloat = 15 {
-        didSet{
+        didSet {
             let center =  arrow.superview!.center
             arrow.frame = CGRect(x: center.x - arrowSize/2, y: center.y - arrowSize/2, width: arrowSize, height: arrowSize)
         }
@@ -94,7 +93,6 @@ open class DropDown : UITextField{
         setupUI()
         self.delegate = self
     }
-    
     
     //MARK: Closures
     fileprivate var didSelectCompletion: (String, Int ,Int) -> () = {selectedText, index , id  in }
@@ -115,11 +113,12 @@ open class DropDown : UITextField{
         arrowContainerView.addSubview(arrow)
         addGesture()
     }
-    fileprivate func addGesture (){
+    
+    fileprivate func addGesture() {
         let gesture =  UITapGestureRecognizer(target: self, action:  #selector(touchAction))
         if isSearchEnable{
             self.rightView?.addGestureRecognizer(gesture)
-        }else{
+        } else {
             self.addGestureRecognizer(gesture)
         }
         
@@ -130,7 +129,7 @@ open class DropDown : UITextField{
         TableWillAppearCompletion()
         if listHeight > rowHeight * CGFloat( dataArray.count) {
             self.tableheightX = rowHeight * CGFloat(dataArray.count)
-        }else{
+        } else {
             self.tableheightX = listHeight
         }
         table = UITableView(frame: CGRect(x: self.frame.minX,
@@ -178,7 +177,6 @@ open class DropDown : UITextField{
         
     }
     
-    
     public func hideList() {
         
         TableWillDisappearCompletion()
@@ -212,7 +210,7 @@ open class DropDown : UITextField{
     func reSizeTable() {
         if listHeight > rowHeight * CGFloat( dataArray.count) {
             self.tableheightX = rowHeight * CGFloat(dataArray.count)
-        }else{
+        } else {
             self.tableheightX = listHeight
         }
         UIView.animate(withDuration: 0.2,
@@ -287,6 +285,7 @@ extension DropDown : UITextFieldDelegate {
     }
     
 }
+
 ///MARK: UITableViewDataSource
 extension DropDown: UITableViewDataSource {
     
@@ -319,6 +318,7 @@ extension DropDown: UITableViewDataSource {
         return cell!
     }
 }
+
 //MARK: UITableViewDelegate
 extension DropDown: UITableViewDelegate {
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -350,11 +350,6 @@ extension DropDown: UITableViewDelegate {
         
     }
 }
-
-
-
-
-
 
 //MARK: Arrow
 enum Position {
@@ -436,6 +431,5 @@ extension UIView {
         layer.shouldRasterize = true
         layer.rasterizationScale = scale ? UIScreen.main.scale : 1
     }
-    
     
 }
