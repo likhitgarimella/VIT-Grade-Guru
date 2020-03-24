@@ -23,7 +23,20 @@ class GPAViewController: UIViewController {
     @IBOutlet var credits09: DropDown!
     @IBOutlet var credits10: DropDown!
     @IBOutlet var credits11: DropDown!
-    @IBOutlet var credits12: DropDown!
+    
+    @IBOutlet var grade01: DropDown!
+    @IBOutlet var grade02: DropDown!
+    @IBOutlet var grade03: DropDown!
+    @IBOutlet var grade04: DropDown!
+    @IBOutlet var grade05: DropDown!
+    @IBOutlet var grade06: DropDown!
+    @IBOutlet var grade07: DropDown!
+    @IBOutlet var grade08: DropDown!
+    @IBOutlet var grade09: DropDown!
+    @IBOutlet var grade10: DropDown!
+    @IBOutlet var grade11: DropDown!
+    
+    @IBOutlet var cgpaButtonOutlet: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +57,9 @@ class GPAViewController: UIViewController {
         
         // Create a padding view for padding on LEFT
         LeftPadding()
+        
+        // Button Properties
+        ButtonProp()
         
     }
     
@@ -72,7 +88,18 @@ class GPAViewController: UIViewController {
         credits09.setUnderLine()
         credits10.setUnderLine()
         credits11.setUnderLine()
-        credits12.setUnderLine()
+        
+        grade01.setUnderLine()
+        grade02.setUnderLine()
+        grade03.setUnderLine()
+        grade04.setUnderLine()
+        grade05.setUnderLine()
+        grade06.setUnderLine()
+        grade07.setUnderLine()
+        grade08.setUnderLine()
+        grade09.setUnderLine()
+        grade10.setUnderLine()
+        grade11.setUnderLine()
         
     }
     
@@ -90,48 +117,81 @@ class GPAViewController: UIViewController {
         credits09.layer.cornerRadius = 20
         credits10.layer.cornerRadius = 20
         credits11.layer.cornerRadius = 20
-        credits12.layer.cornerRadius = 20
+        
+        grade01.layer.cornerRadius = 20
+        grade02.layer.cornerRadius = 20
+        grade03.layer.cornerRadius = 20
+        grade04.layer.cornerRadius = 20
+        grade05.layer.cornerRadius = 20
+        grade06.layer.cornerRadius = 20
+        grade07.layer.cornerRadius = 20
+        grade08.layer.cornerRadius = 20
+        grade09.layer.cornerRadius = 20
+        grade10.layer.cornerRadius = 20
+        grade11.layer.cornerRadius = 20
         
     }
     
     func DropDownOptions() {
         
-        // DropDown Options For TextFields
-        credits01.optionArray = ["1 credit", "2 credits", "3 credits", "4 credits", "5 credits", "6 credits", "7 credit", "8 credits", "9 credits", "10 credits"]
+        // DropDown Options For Credits TextFields
+        credits01.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
         credits01.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
         
-        credits02.optionArray = ["1 credit", "2 credits", "3 credits", "4 credits", "5 credits", "6 credits", "7 credit", "8 credits", "9 credits", "10 credits"]
+        credits02.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
         credits02.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
         
-        credits03.optionArray = ["1 credit", "2 credits", "3 credits", "4 credits", "5 credits", "6 credits", "7 credit", "8 credits", "9 credits", "10 credits"]
+        credits03.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
         credits03.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
         
-        credits04.optionArray = ["1 credit", "2 credits", "3 credits", "4 credits", "5 credits", "6 credits", "7 credit", "8 credits", "9 credits", "10 credits"]
+        credits04.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
         credits04.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
         
-        credits05.optionArray = ["1 credit", "2 credits", "3 credits", "4 credits", "5 credits", "6 credits", "7 credit", "8 credits", "9 credits", "10 credits"]
+        credits05.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
         credits05.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
         
-        credits06.optionArray = ["1 credit", "2 credits", "3 credits", "4 credits", "5 credits", "6 credits", "7 credit", "8 credits", "9 credits", "10 credits"]
+        credits06.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
         credits06.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
         
-        credits07.optionArray = ["1 credit", "2 credits", "3 credits", "4 credits", "5 credits", "6 credits", "7 credit", "8 credits", "9 credits", "10 credits"]
+        credits07.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
         credits07.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
         
-        credits08.optionArray = ["1 credit", "2 credits", "3 credits", "4 credits", "5 credits", "6 credits", "7 credit", "8 credits", "9 credits", "10 credits"]
+        credits08.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
         credits08.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
         
-        credits09.optionArray = ["1 credit", "2 credits", "3 credits", "4 credits", "5 credits", "6 credits", "7 credit", "8 credits", "9 credits", "10 credits"]
+        credits09.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
         credits09.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
         
-        credits10.optionArray = ["1 credit", "2 credits", "3 credits", "4 credits", "5 credits", "6 credits", "7 credit", "8 credits", "9 credits", "10 credits"]
+        credits10.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
         credits10.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
         
-        credits11.optionArray = ["1 credit", "2 credits", "3 credits", "4 credits", "5 credits", "6 credits", "7 credit", "8 credits", "9 credits", "10 credits"]
+        credits11.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
         credits11.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
         
-        credits12.optionArray = ["1 credit", "2 credits", "3 credits", "4 credits", "5 credits", "6 credits", "7 credit", "8 credits", "9 credits", "10 credits"]
-        credits12.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        
+        // DropDown Options For Grades TextFields
+        grade01.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade01.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade02.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade02.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade03.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade03.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade04.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade04.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade05.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade05.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade06.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade06.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade07.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade07.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade08.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade08.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade09.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade09.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade10.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade10.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade11.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade11.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
 
     }
     
@@ -160,8 +220,40 @@ class GPAViewController: UIViewController {
         credits10.leftViewMode = .always
         credits11.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: credits11.frame.height))
         credits11.leftViewMode = .always
-        credits12.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: credits12.frame.height))
-        credits12.leftViewMode = .always
+        
+        
+        grade01.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: grade01.frame.height))
+        grade01.leftViewMode = .always
+        grade02.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: grade02.frame.height))
+        grade02.leftViewMode = .always
+        grade03.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: grade03.frame.height))
+        grade03.leftViewMode = .always
+        grade04.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: grade04.frame.height))
+        grade04.leftViewMode = .always
+        grade05.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: grade05.frame.height))
+        grade05.leftViewMode = .always
+        grade06.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: grade06.frame.height))
+        grade06.leftViewMode = .always
+        grade07.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: grade07.frame.height))
+        grade07.leftViewMode = .always
+        grade08.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: grade08.frame.height))
+        grade08.leftViewMode = .always
+        grade09.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: grade09.frame.height))
+        grade09.leftViewMode = .always
+        grade10.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: grade10.frame.height))
+        grade10.leftViewMode = .always
+        grade11.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: grade11.frame.height))
+        grade11.leftViewMode = .always
+        
+    }
+    
+    func ButtonProp() {
+        
+        // Button Properties
+        cgpaButtonOutlet.backgroundColor = .systemBlue
+        cgpaButtonOutlet.layer.cornerRadius = 6
+        //buttonOutlet.layer.borderWidth = 1
+        //buttonOutlet.layer.borderColor = UIColor.darkGray.cgColor
         
     }
 

@@ -36,6 +36,9 @@ class CourseTotalViewController: UIViewController {
         
         // Textfield Properties
         CornerRadius()
+        
+        // Button Properties
+        ButtonProp()
 
     }
     
@@ -47,6 +50,30 @@ class CourseTotalViewController: UIViewController {
         topBar.layer.shadowOpacity = 0.5
         topBar.layer.shadowColor = UIColor.gray.cgColor
         topBar.layer.shadowOffset = CGSize(width: 0, height: 2)
+        
+    }
+    
+    func CornerRadius() {
+        
+        // Textfield Properties
+        cat1.layer.cornerRadius = 6
+        cat2.layer.cornerRadius = 6
+        da1.layer.cornerRadius = 6
+        da2.layer.cornerRadius = 6
+        da3.layer.cornerRadius = 6
+        fat.layer.cornerRadius = 6
+        lab.layer.cornerRadius = 6
+        project.layer.cornerRadius = 6
+
+    }
+    
+    func ButtonProp() {
+        
+        // Button Properties
+        buttonOutlet.backgroundColor = .systemBlue
+        buttonOutlet.layer.cornerRadius = 6
+        //buttonOutlet.layer.borderWidth = 1
+        //buttonOutlet.layer.borderColor = UIColor.darkGray.cgColor
         
     }
     
@@ -80,20 +107,6 @@ class CourseTotalViewController: UIViewController {
         
         
         
-    }
-    
-    func CornerRadius() {
-        
-        // Textfield Properties
-        cat1.layer.cornerRadius = 6
-        cat2.layer.cornerRadius = 6
-        da1.layer.cornerRadius = 6
-        da2.layer.cornerRadius = 6
-        da3.layer.cornerRadius = 6
-        fat.layer.cornerRadius = 6
-        lab.layer.cornerRadius = 6
-        project.layer.cornerRadius = 6
-
     }
     
 }

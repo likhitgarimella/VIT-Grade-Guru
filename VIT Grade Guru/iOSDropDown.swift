@@ -11,8 +11,7 @@ open class DropDown : UITextField {
     var table : UITableView!
     var shadow : UIView!
     
-    public  var selectedIndex: Int?
-    
+    public var selectedIndex: Int?
     
     //MARK: IBInspectable
     
@@ -21,22 +20,23 @@ open class DropDown : UITextField {
    @IBInspectable public var selectedRowColor: UIColor = .cyan
    @IBInspectable public var hideOptionsWhenSelect = true
    @IBInspectable  public var isSearchEnable: Bool = true {
-        didSet{
+        didSet {
             addGesture()
         }
     }
-    
     
     @IBInspectable public var borderColor: UIColor =  UIColor.lightGray {
         didSet {
             layer.borderColor = borderColor.cgColor
         }
     }
+    
     @IBInspectable public var listHeight: CGFloat = 150 {
         didSet {
             
         }
     }
+    
     @IBInspectable public var borderWidth: CGFloat = 0.0 {
         didSet {
             layer.borderWidth = borderWidth
@@ -207,6 +207,7 @@ open class DropDown : UITextField {
         
         isSelected ?  hideList() : showList()
     }
+    
     func reSizeTable() {
         if listHeight > rowHeight * CGFloat( dataArray.count) {
             self.tableheightX = rowHeight * CGFloat(dataArray.count)
@@ -223,7 +224,6 @@ open class DropDown : UITextField {
                                                   y: self.frame.maxY+5,
                                                   width: self.frame.width,
                                                   height: self.tableheightX)
-                        
                         
         },
                        completion: { (didFinish) -> Void in
@@ -286,7 +286,7 @@ extension DropDown : UITextFieldDelegate {
     
 }
 
-///MARK: UITableViewDataSource
+//MARK: UITableViewDataSource
 extension DropDown: UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

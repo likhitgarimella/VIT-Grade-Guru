@@ -17,6 +17,8 @@ class CGPAViewController: UIViewController {
     @IBOutlet var cgpaBeforeThisSem: UITextField!
     @IBOutlet var creditsFinished: UITextField!
     
+    @IBOutlet var cgpaButtonOutlet: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,6 +29,9 @@ class CGPAViewController: UIViewController {
         
         // Underline for TextField
         UnderlineTextField()
+        
+        // Button Properties
+        ButtonProp()
 
     }
     
@@ -48,6 +53,16 @@ class CGPAViewController: UIViewController {
         currentSemCredits.setUnderLine()
         cgpaBeforeThisSem.setUnderLine()
         creditsFinished.setUnderLine()
+        
+    }
+    
+    func ButtonProp() {
+        
+        // Button Properties
+        cgpaButtonOutlet.backgroundColor = .systemBlue
+        cgpaButtonOutlet.layer.cornerRadius = 6
+        //buttonOutlet.layer.borderWidth = 1
+        //buttonOutlet.layer.borderColor = UIColor.darkGray.cgColor
         
     }
     
