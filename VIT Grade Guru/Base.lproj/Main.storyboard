@@ -928,6 +928,16 @@
                                                     <action selector="button:" destination="afN-NI-Fxq" eventType="touchUpInside" id="l16-iu-7cX"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAW-PP-OJg">
+                                                <rect key="frame" x="186" y="435" width="42" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="vR5-LG-2eP"/>
+                                                    <constraint firstAttribute="width" constant="42" id="zkg-4f-7Ry"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -960,7 +970,9 @@
                                             <constraint firstItem="Lx6-7j-NGf" firstAttribute="centerX" secondItem="oDP-Jv-GTX" secondAttribute="centerX" id="Qlb-bW-66z"/>
                                             <constraint firstItem="oDP-Jv-GTX" firstAttribute="top" secondItem="bcs-9v-oPD" secondAttribute="top" constant="24" id="SIx-m1-MSX"/>
                                             <constraint firstItem="022-X4-hLa" firstAttribute="centerX" secondItem="KU5-77-OxW" secondAttribute="centerX" id="SqU-ta-jVn"/>
+                                            <constraint firstItem="tlJ-5I-chn" firstAttribute="top" secondItem="GAW-PP-OJg" secondAttribute="bottom" constant="92" id="Tty-JF-Ddi"/>
                                             <constraint firstItem="XEp-B7-UJg" firstAttribute="centerX" secondItem="oDP-Jv-GTX" secondAttribute="centerX" id="VHZ-WB-KBz"/>
+                                            <constraint firstItem="GAW-PP-OJg" firstAttribute="centerX" secondItem="bcs-9v-oPD" secondAttribute="centerX" id="Vbv-9s-lhQ"/>
                                             <constraint firstItem="Lx6-7j-NGf" firstAttribute="top" secondItem="U97-HN-H3H" secondAttribute="bottom" constant="24" id="Wdv-tM-2fw"/>
                                             <constraint firstItem="VIa-JL-ssr" firstAttribute="top" secondItem="KU5-77-OxW" secondAttribute="bottom" constant="8" id="Y1f-q8-fsc"/>
                                             <constraint firstItem="1Of-NH-Ahe" firstAttribute="centerX" secondItem="oDP-Jv-GTX" secondAttribute="centerX" id="azm-ey-Ubr"/>
@@ -1016,6 +1028,7 @@
                     <tabBarItem key="tabBarItem" title="Course Total" image="course" id="BA7-Ui-UMp"/>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
+                        <outlet property="answer" destination="GAW-PP-OJg" id="WNf-ms-MCc"/>
                         <outlet property="buttonOutlet" destination="tlJ-5I-chn" id="pc2-wJ-Gpy"/>
                         <outlet property="cat1" destination="Vho-hu-hYz" id="c8B-Lu-sC6"/>
                         <outlet property="cat2" destination="U97-HN-H3H" id="csY-aF-BjZ"/>
@@ -1034,7 +1047,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rsV-HS-Crk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="219" y="-1168"/>
+            <point key="canvasLocation" x="218.84057971014494" y="-1168.2065217391305"/>
         </scene>
         <!--CGPA-->
         <scene sceneID="bQy-S0-td6">
@@ -1074,7 +1087,7 @@
                                                     <constraint firstAttribute="height" constant="36" id="0sF-M7-2i9"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -1088,7 +1101,7 @@
                                                     <constraint firstAttribute="height" constant="36" id="Org-Cr-UF6"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -1102,7 +1115,7 @@
                                                     <constraint firstAttribute="height" constant="36" id="zaV-XH-yls"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -1116,7 +1129,7 @@
                                                     <constraint firstAttribute="height" constant="36" id="CVp-yY-Z9r"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -1218,18 +1231,162 @@
                     <view key="view" contentMode="scaleToFill" id="L3e-d9-VRE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6f-ob-uQ6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="0HB-F5-5mX">
+                                        <rect key="frame" x="16" y="9" width="42" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="Y0w-ci-MMS"/>
+                                            <constraint firstAttribute="width" constant="42" id="iNc-MH-x4C"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="0HB-F5-5mX" firstAttribute="leading" secondItem="g6f-ob-uQ6" secondAttribute="leading" constant="16" id="6q6-Oh-g1U"/>
+                                    <constraint firstAttribute="height" constant="60" id="9Cf-16-kKv"/>
+                                    <constraint firstItem="0HB-F5-5mX" firstAttribute="centerY" secondItem="g6f-ob-uQ6" secondAttribute="centerY" id="QP9-kD-C9N"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DL6-Ve-J4Y">
+                                <rect key="frame" x="0.0" y="80" width="414" height="607"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANl-kX-0wW">
+                                        <rect key="frame" x="0.0" y="20" width="414" height="588"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Sem Credits" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="age-JW-T0m" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="236" width="374" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="DB1-rA-H7I"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Credits Finished Before This Sem" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b57-Nx-Aym" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="164" width="374" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="E8R-xC-u9m"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current CGPA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JpA-Z9-spW" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="92" width="374" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="7jb-Ij-uda"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Pointer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NfI-Oa-AOv" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="20" width="374" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="Cmd-dP-qCA"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbf-EV-bEP">
+                                                <rect key="frame" x="32" y="312" width="350" height="36"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="WxC-oe-2j4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                <state key="normal" title="Calculate">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="b57-Nx-Aym" secondAttribute="trailing" constant="20" id="6IU-rW-t7i"/>
+                                            <constraint firstItem="Cbf-EV-bEP" firstAttribute="leading" secondItem="ANl-kX-0wW" secondAttribute="leading" constant="32" id="6Kn-fs-ZM7"/>
+                                            <constraint firstItem="b57-Nx-Aym" firstAttribute="top" secondItem="JpA-Z9-spW" secondAttribute="bottom" constant="36" id="B42-k5-fPs"/>
+                                            <constraint firstAttribute="bottom" secondItem="Cbf-EV-bEP" secondAttribute="bottom" constant="240" id="Hs0-97-Cew"/>
+                                            <constraint firstItem="NfI-Oa-AOv" firstAttribute="top" secondItem="ANl-kX-0wW" secondAttribute="top" constant="20" id="LDA-EK-tEs"/>
+                                            <constraint firstItem="JpA-Z9-spW" firstAttribute="top" secondItem="NfI-Oa-AOv" secondAttribute="bottom" constant="36" id="P7Y-K9-zhp"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cbf-EV-bEP" secondAttribute="trailing" constant="32" id="UlQ-NT-lfb"/>
+                                            <constraint firstItem="age-JW-T0m" firstAttribute="leading" secondItem="ANl-kX-0wW" secondAttribute="leading" constant="20" id="W8Q-VE-c1d"/>
+                                            <constraint firstItem="age-JW-T0m" firstAttribute="top" secondItem="b57-Nx-Aym" secondAttribute="bottom" constant="36" id="bDn-Ko-FWV"/>
+                                            <constraint firstAttribute="trailing" secondItem="JpA-Z9-spW" secondAttribute="trailing" constant="20" id="dNz-nU-Jbx"/>
+                                            <constraint firstAttribute="trailing" secondItem="NfI-Oa-AOv" secondAttribute="trailing" constant="20" id="fu0-vd-0Ar"/>
+                                            <constraint firstItem="b57-Nx-Aym" firstAttribute="leading" secondItem="ANl-kX-0wW" secondAttribute="leading" constant="20" id="gPi-AJ-mjF"/>
+                                            <constraint firstItem="Cbf-EV-bEP" firstAttribute="top" secondItem="age-JW-T0m" secondAttribute="bottom" constant="40" id="ilO-XE-sL1"/>
+                                            <constraint firstItem="Cbf-EV-bEP" firstAttribute="centerX" secondItem="ANl-kX-0wW" secondAttribute="centerX" id="kfT-F0-79A"/>
+                                            <constraint firstItem="JpA-Z9-spW" firstAttribute="leading" secondItem="ANl-kX-0wW" secondAttribute="leading" constant="20" id="kz3-mf-tYL"/>
+                                            <constraint firstItem="NfI-Oa-AOv" firstAttribute="leading" secondItem="ANl-kX-0wW" secondAttribute="leading" constant="20" id="lwc-he-aIi"/>
+                                            <constraint firstAttribute="trailing" secondItem="age-JW-T0m" secondAttribute="trailing" constant="20" id="zso-QQ-IN8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ANl-kX-0wW" firstAttribute="height" secondItem="DL6-Ve-J4Y" secondAttribute="height" priority="250" id="EwW-fI-dPk"/>
+                                    <constraint firstAttribute="bottom" secondItem="ANl-kX-0wW" secondAttribute="bottom" id="HjS-qS-R9J"/>
+                                    <constraint firstAttribute="trailing" secondItem="ANl-kX-0wW" secondAttribute="trailing" id="Los-6w-1kJ"/>
+                                    <constraint firstItem="ANl-kX-0wW" firstAttribute="width" secondItem="DL6-Ve-J4Y" secondAttribute="width" priority="750" id="RMa-FB-NBB"/>
+                                    <constraint firstItem="ANl-kX-0wW" firstAttribute="leading" secondItem="DL6-Ve-J4Y" secondAttribute="leading" id="fHf-9b-1p0"/>
+                                    <constraint firstItem="ANl-kX-0wW" firstAttribute="top" secondItem="DL6-Ve-J4Y" secondAttribute="top" constant="20" symbolic="YES" id="uFd-z6-M5C"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DL6-Ve-J4Y" firstAttribute="trailing" secondItem="Twg-eI-2yE" secondAttribute="trailing" id="A7X-CG-3sl"/>
+                            <constraint firstItem="g6f-ob-uQ6" firstAttribute="leading" secondItem="Twg-eI-2yE" secondAttribute="leading" id="Byi-xW-i4u"/>
+                            <constraint firstItem="DL6-Ve-J4Y" firstAttribute="top" secondItem="g6f-ob-uQ6" secondAttribute="bottom" constant="20" id="M0q-jB-DLW"/>
+                            <constraint firstItem="DL6-Ve-J4Y" firstAttribute="leading" secondItem="Twg-eI-2yE" secondAttribute="leading" id="WAw-ZV-MRK"/>
+                            <constraint firstItem="g6f-ob-uQ6" firstAttribute="top" secondItem="Twg-eI-2yE" secondAttribute="top" id="dYX-d1-SGg"/>
+                            <constraint firstItem="DL6-Ve-J4Y" firstAttribute="bottom" secondItem="Twg-eI-2yE" secondAttribute="bottom" id="ilz-yG-pyi"/>
+                            <constraint firstItem="g6f-ob-uQ6" firstAttribute="trailing" secondItem="Twg-eI-2yE" secondAttribute="trailing" id="ktL-YB-kLk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Twg-eI-2yE"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="9 Pointer" image="9pointer" id="Qch-a3-4Az"/>
+                    <tabBarItem key="tabBarItem" title="9 Pointer" image="9P" id="Qch-a3-4Az"/>
+                    <connections>
+                        <outlet property="calculateButtonOutlet" destination="Cbf-EV-bEP" id="IWp-eR-UfE"/>
+                        <outlet property="creditsFinished" destination="b57-Nx-Aym" id="b4H-4r-yzL"/>
+                        <outlet property="currentCredits" destination="age-JW-T0m" id="T22-vx-2YX"/>
+                        <outlet property="currentSemCgpa" destination="JpA-Z9-spW" id="73i-wZ-2b7"/>
+                        <outlet property="selectPointer" destination="NfI-Oa-AOv" id="YOH-j1-F2L"/>
+                        <outlet property="topBar" destination="g6f-ob-uQ6" id="Csm-4c-uJT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gsV-Kv-rYh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055" y="398"/>
+            <point key="canvasLocation" x="1053.6231884057972" y="397.82608695652175"/>
         </scene>
     </scenes>
     <resources>
-        <image name="9pointer" width="30" height="30"/>
+        <image name="9P" width="30" height="30"/>
         <image name="Avatar" width="95" height="95"/>
         <image name="cgpa" width="30" height="30"/>
         <image name="course" width="30" height="30"/>

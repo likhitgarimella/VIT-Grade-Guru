@@ -12,10 +12,10 @@ class CGPAViewController: UIViewController {
     
     @IBOutlet var topBar: UIView!
     
-    @IBOutlet var currentGPA: UITextField!
-    @IBOutlet var currentSemCredits: UITextField!
-    @IBOutlet var cgpaBeforeThisSem: UITextField!
-    @IBOutlet var creditsFinished: UITextField!
+    @IBOutlet var currentGPA: FloatLabelTextField!
+    @IBOutlet var currentSemCredits: FloatLabelTextField!
+    @IBOutlet var cgpaBeforeThisSem: FloatLabelTextField!
+    @IBOutlet var creditsFinished: FloatLabelTextField!
     
     @IBOutlet var cgpaButtonOutlet: UIButton!
     

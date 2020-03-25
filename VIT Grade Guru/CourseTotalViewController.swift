@@ -26,6 +26,74 @@ class CourseTotalViewController: UIViewController {
     @IBOutlet var projectLabel: UILabel!
     @IBOutlet var buttonOutlet: UIButton!
     
+    @IBOutlet var answer: UILabel!
+    
+    func calculation() {
+        
+        if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty) {
+            // Alert
+            let myAlert = UIAlertController(title: "Alert", message: "Empty Fields", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert, animated: true, completion: nil)
+            return
+        }   // If 1st 6 fields are empty
+            
+        else {
+            
+        if labSwitch.isOn==true && projectSwitch.isOn==true {
+            if (lab.text!.isEmpty || project.text!.isEmpty)
+            {
+                // Alert
+                let myAlert = UIAlertController(title: "Alert", message: "Empty Fields", preferredStyle: UIAlertController.Style.alert)
+                let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+                myAlert.addAction(okAction)
+                self.present(myAlert, animated: true, completion: nil)
+                return
+            }   // If Lab and Project Fields are empty
+            else {
+            answer.text = String( Double( (( ((3*(Double(cat1.text!)! + Double(cat2.text!)!))/10) + Double(da1.text!)! + Double(da2.text!)! + Double(da3.text!)! + (2*(Double(fat.text!)!))/5 )/2) ) + Double( (Double(lab.text!)!)/4 ) + Double( (Double(project.text!)!)/4 ) )
+            }   // If Lab and Project Fields aren't empty
+        }   // If both Lab and Project Switches are On
+        
+        if labSwitch.isOn==true && projectSwitch.isOn==false {
+            if (lab.text!.isEmpty)
+            {
+                // Alert
+                let myAlert = UIAlertController(title: "Alert", message: "Empty Lab Field", preferredStyle: UIAlertController.Style.alert)
+                let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+                myAlert.addAction(okAction)
+                self.present(myAlert, animated: true, completion: nil)
+                return
+            }   // If Lab Field is empty
+            else {
+                answer.text = String( Double( (3*( ((3*(Double(cat1.text!)! + Double(cat2.text!)!))/10) + Double(da1.text!)! + Double(da2.text!)! + Double(da3.text!)! + (2*(Double(fat.text!)!))/5 )/4 ) ) + Double( (Double(lab.text!)!)/4 ) )
+            }   // If Lab Field isn't empty
+        }   // If Lab Switch is On and Project Switche is Off
+            
+        if labSwitch.isOn==false && projectSwitch.isOn==true {
+            if (project.text!.isEmpty)
+            {
+                // Alert
+                let myAlert = UIAlertController(title: "Alert", message: "Empty Project Field", preferredStyle: UIAlertController.Style.alert)
+                let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+                myAlert.addAction(okAction)
+                self.present(myAlert, animated: true, completion: nil)
+                return
+            }   // If Project Field is empty
+            else {
+                answer.text = String( Double( (3*( ((3*(Double(cat1.text!)! + Double(cat2.text!)!))/10) + Double(da1.text!)! + Double(da2.text!)! + Double(da3.text!)! + (2*(Double(fat.text!)!))/5 )/4 ) ) + Double( (Double(project.text!)!)/4 ) )
+            }   // If Project Field isn't empty
+        }   // If Lab Switch is Off and Project Switche is On
+            
+        if labSwitch.isOn==false && projectSwitch.isOn==false {
+            answer.text = String( Double( ( ((3*(Double(cat1.text!)! + Double(cat2.text!)!))/10) + Double(da1.text!)! + Double(da2.text!)! + Double(da3.text!)! + (2*(Double(fat.text!)!))/5 ) ) )
+        }   // If both Lab and Project Switches are Off
+            
+        }   // If 1st 6 fields aren't empty
+        
+    }   // Entire Calculation Function
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -105,7 +173,7 @@ class CourseTotalViewController: UIViewController {
     
     @IBAction func button(_ sender: UIButton) {
         
-        
+        calculation()
         
     }
     
