@@ -541,6 +541,16 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNe-oD-qrc">
+                                                <rect key="frame" x="170" y="483" width="74" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="74" id="2TG-sh-4Ip"/>
+                                                    <constraint firstAttribute="height" constant="24" id="yWZ-f6-XDu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -566,7 +576,9 @@
                                             <constraint firstItem="hRc-3n-ipB" firstAttribute="leading" relation="lessThanOrEqual" secondItem="nao-9w-c9H" secondAttribute="trailing" constant="86" id="BWn-Z9-md2"/>
                                             <constraint firstItem="vKA-YW-5gS" firstAttribute="top" secondItem="8Bq-NS-hEk" secondAttribute="bottom" constant="30" id="BcM-rb-mbP"/>
                                             <constraint firstAttribute="trailing" secondItem="QJk-LV-FSk" secondAttribute="trailing" constant="8" id="Dfm-jp-AP4"/>
+                                            <constraint firstItem="yNe-oD-qrc" firstAttribute="centerX" secondItem="Dft-N2-gFJ" secondAttribute="centerX" id="FR1-eR-WJa"/>
                                             <constraint firstItem="qje-hW-Ccc" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="8" id="GHT-IB-aJu"/>
+                                            <constraint firstItem="yNe-oD-qrc" firstAttribute="centerY" secondItem="Dft-N2-gFJ" secondAttribute="centerY" id="GNV-cd-F52"/>
                                             <constraint firstAttribute="trailing" secondItem="U4c-Le-YUB" secondAttribute="trailing" constant="8" id="HEE-1U-5ha"/>
                                             <constraint firstItem="7Wt-tV-ckp" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="8" id="HaF-bP-lay"/>
                                             <constraint firstAttribute="trailing" secondItem="ZTb-9q-HT0" secondAttribute="trailing" constant="8" id="JPW-Hr-N5w"/>
@@ -632,6 +644,9 @@
                                         <state key="normal" title="Calculate CGPA">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="calculateCgpa:" destination="RAY-mN-huw" eventType="touchUpInside" id="rUF-d6-n5a"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -662,6 +677,7 @@
                     <tabBarItem key="tabBarItem" title="GPA" image="gpa" id="IaU-nN-vRz"/>
                     <size key="freeformSize" width="414" height="1200"/>
                     <connections>
+                        <outlet property="Answer" destination="yNe-oD-qrc" id="Yb5-Mc-1uk"/>
                         <outlet property="cgpaButtonOutlet" destination="qf7-e8-Pyy" id="a6X-Ct-X7J"/>
                         <outlet property="credits01" destination="vKA-YW-5gS" id="vmC-hc-bCj"/>
                         <outlet property="credits02" destination="jzh-4c-j3m" id="3Ye-02-olN"/>
@@ -929,10 +945,10 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAW-PP-OJg">
-                                                <rect key="frame" x="186" y="435" width="42" height="24"/>
+                                                <rect key="frame" x="170" y="435" width="74" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="vR5-LG-2eP"/>
-                                                    <constraint firstAttribute="width" constant="42" id="zkg-4f-7Ry"/>
+                                                    <constraint firstAttribute="width" constant="74" id="zkg-4f-7Ry"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

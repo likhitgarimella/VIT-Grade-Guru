@@ -38,6 +38,136 @@ class GPAViewController: UIViewController {
     
     @IBOutlet var cgpaButtonOutlet: UIButton!
     
+    @IBOutlet var Answer: UILabel!
+    
+    func Calculations() {
+        
+        let string1 = credits01.text!
+        let number1 = Double(string1.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let string2 = credits02.text!
+        let number2 = Double(string2.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let string3 = credits03.text!
+        let number3 = Double(string3.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let string4 = credits04.text!
+        let number4 = Double(string4.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let string5 = credits05.text!
+        let number5 = Double(string5.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let string6 = credits06.text!
+        let number6 = Double(string6.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let string7 = credits07.text!
+        let number7 = Double(string7.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let string8 = credits08.text!
+        let number8 = Double(string8.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let string9 = credits09.text!
+        let number9 = Double(string9.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let string10 = credits10.text!
+        let number10 = Double(string10.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let string11 = credits11.text!
+        let number11 = Double(string11.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        
+        let stringA = grade01.text!
+        let numberA = Double(stringA.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let stringB = grade02.text!
+        let numberB = Double(stringB.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let stringC = grade03.text!
+        let numberC = Double(stringC.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let stringD = grade04.text!
+        let numberD = Double(stringD.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let stringE = grade05.text!
+        let numberE = Double(stringE.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let stringF = grade06.text!
+        let numberF = Double(stringF.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let stringG = grade07.text!
+        let numberG = Double(stringG.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let stringH = grade08.text!
+        let numberH = Double(stringH.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let stringI = grade09.text!
+        let numberI = Double(stringI.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let stringJ = grade10.text!
+        let numberJ = Double(stringJ.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let stringK = grade11.text!
+        let numberK = Double(stringK.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        
+        // Credits Textfield Validation
+            if (credits01.text!.isEmpty) {
+               credits01.text = ""
+            }
+            if (credits02.text!.isEmpty) {
+               credits02.text = ""
+            }
+            if (credits03.text!.isEmpty) {
+               credits03.text = ""
+            }
+            if (credits04.text!.isEmpty) {
+               credits04.text = ""
+            }
+            if (credits05.text!.isEmpty) {
+               credits05.text = ""
+            }
+            if (credits06.text!.isEmpty) {
+               credits06.text = ""
+            }
+            if (credits07.text!.isEmpty) {
+               credits07.text = ""
+            }
+            if (credits08.text!.isEmpty) {
+               credits08.text = ""
+            }
+            if (credits09.text!.isEmpty) {
+               credits09.text = ""
+            }
+            if (credits10.text!.isEmpty) {
+               credits10.text = ""
+            }
+            if (credits11.text!.isEmpty) {
+               credits11.text = ""
+            }
+            
+            // Grades Textfield Validation
+            if (grade01.text!.isEmpty) {
+               grade01.text = ""
+            }
+            if (grade02.text!.isEmpty) {
+               grade02.text = ""
+            }
+            if (grade03.text!.isEmpty) {
+               grade03.text = ""
+            }
+            if (grade04.text!.isEmpty) {
+               grade04.text = ""
+            }
+            if (grade05.text!.isEmpty) {
+               grade05.text = ""
+            }
+            if (grade06.text!.isEmpty) {
+               grade06.text = ""
+            }
+            if (grade07.text!.isEmpty) {
+               grade07.text = ""
+            }
+            if (grade08.text!.isEmpty) {
+               grade08.text = ""
+            }
+            if (grade09.text!.isEmpty) {
+               grade09.text = ""
+            }
+            if (grade10.text!.isEmpty) {
+               grade10.text = ""
+            }
+            if (grade11.text!.isEmpty) {
+               grade11.text = ""
+            }
+            
+            // Denominator Validation
+            if (credits01.text!.isEmpty && credits02.text!.isEmpty && credits03.text!.isEmpty && credits04.text!.isEmpty && credits05.text!.isEmpty && credits06.text!.isEmpty && credits07.text!.isEmpty && credits08.text!.isEmpty && credits09.text!.isEmpty && credits10.text!.isEmpty && credits11.text!.isEmpty)
+            {
+                Answer.text = "0"
+            } else {
+            Answer.text = String( ((number1!*numberA!)+(number2!*numberB!)+(number3!*numberC!)+(number4!*numberD!)+(number5!*numberE!)+(number6!*numberF!)+(number7!*numberG!)+(number8!*numberH!)+(number9!*numberI!)+(number10!*numberJ!)+(number11!*numberK!))/(number1!+number2!+number3!+number4!+number5!+number6!+number7!+number8!+number9!+number10!+number11!) )
+            }
+            
+        }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
                 
@@ -105,7 +235,7 @@ class GPAViewController: UIViewController {
     
     func CornerRadius() {
         
-        // Textfield Properties
+        // Credits Textfield Properties
         credits01.layer.cornerRadius = 20
         credits02.layer.cornerRadius = 20
         credits03.layer.cornerRadius = 20
@@ -118,6 +248,7 @@ class GPAViewController: UIViewController {
         credits10.layer.cornerRadius = 20
         credits11.layer.cornerRadius = 20
         
+        // Grades Textfield Properties
         grade01.layer.cornerRadius = 20
         grade02.layer.cornerRadius = 20
         grade03.layer.cornerRadius = 20
@@ -170,34 +301,34 @@ class GPAViewController: UIViewController {
         
         
         // DropDown Options For Grades TextFields
-        grade01.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade01.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
         grade01.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
-        grade02.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade02.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
         grade02.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
-        grade03.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade03.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
         grade03.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
-        grade04.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade04.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
         grade04.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
-        grade05.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade05.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
         grade05.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
-        grade06.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade06.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
         grade06.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
-        grade07.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade07.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
         grade07.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
-        grade08.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade08.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
         grade08.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
-        grade09.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade09.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
         grade09.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
-        grade10.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade10.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
         grade10.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
-        grade11.optionArray = [" S grade", " A grade", " B grade", " C grade", " D grade", " E grade", " F grade"]
+        grade11.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
         grade11.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
 
     }
     
     func LeftPadding() {
         
-        // Create a padding view for padding on LEFT
+        // Create a padding view for Credits TextFields on LEFT
         credits01.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: credits01.frame.height))
         credits01.leftViewMode = .always
         credits02.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: credits02.frame.height))
@@ -221,7 +352,7 @@ class GPAViewController: UIViewController {
         credits11.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: credits11.frame.height))
         credits11.leftViewMode = .always
         
-        
+        // Create a padding view for Grades TextFields on LEFT
         grade01.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: grade01.frame.height))
         grade01.leftViewMode = .always
         grade02.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: grade02.frame.height))
@@ -256,5 +387,11 @@ class GPAViewController: UIViewController {
         //buttonOutlet.layer.borderColor = UIColor.darkGray.cgColor
         
     }
-
+    
+    @IBAction func calculateCgpa(_ sender: UIButton) {
+        
+        Calculations()
+        
+    }
+    
 }

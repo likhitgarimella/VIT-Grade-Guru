@@ -28,7 +28,7 @@ class CourseTotalViewController: UIViewController {
     
     @IBOutlet var answer: UILabel!
     
-    func calculation() {
+    func Calculation() {
         
         if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty) {
             // Alert
@@ -94,10 +94,148 @@ class CourseTotalViewController: UIViewController {
         
     }   // Entire Calculation Function
     
+    /* //////////////////////////////////////////////////////////////////////////////// */
+    
+    // Function For Autoset Validation For TextFields
+    func Autoset() {
+        
+        cat1.keyboardType = .numberPad
+        cat1.text = "\(self.cat1number)"
+        cat1.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
+        
+        cat2.keyboardType = .numberPad
+        cat2.text = "\(self.cat2number)"
+        cat2.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
+        
+        da1.keyboardType = .numberPad
+        da1.text = "\(self.da1number)"
+        da1.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
+        
+        da2.keyboardType = .numberPad
+        da2.text = "\(self.da2number)"
+        da2.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
+        
+        da3.keyboardType = .numberPad
+        da3.text = "\(self.da3number)"
+        da3.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
+        
+        fat.keyboardType = .numberPad
+        fat.text = "\(self.fatnumber)"
+        fat.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
+        
+        lab.keyboardType = .numberPad
+        lab.text = "\(self.labnumber)"
+        lab.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
+        
+        project.keyboardType = .numberPad
+        project.text = "\(self.projectnumber)"
+        project.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
+        
+    }
+    
+    // Autoset Validation For TextFields
+    var cat1number: Double = 0 {
+        didSet {
+            if cat1number > 50.0 {
+                cat1number = 50.0
+                self.cat1.text = "\(cat1number)"
+            }
+        }
+    }
+    var cat2number: Double = 0 {
+        didSet {
+            if cat2number > 50.0 {
+                cat2number = 50.0
+                self.cat2.text = "\(cat2number)"
+            }
+        }
+    }
+    var da1number: Double = 0 {
+        didSet {
+            if da1number > 10.0 {
+                da1number = 10.0
+                self.da1.text = "\(da1number)"
+            }
+        }
+    }
+    var da2number: Double = 0 {
+        didSet {
+            if da2number > 10.0 {
+                da2number = 10.0
+                self.da2.text = "\(da2number)"
+            }
+        }
+    }
+    var da3number: Double = 0 {
+        didSet {
+            if da3number > 10.0 {
+                da3number = 10.0
+                self.da3.text = "\(da3number)"
+            }
+        }
+    }
+    var fatnumber: Double = 0 {
+        didSet {
+            if fatnumber > 100.0 {
+                fatnumber = 100.0
+                self.fat.text = "\(fatnumber)"
+            }
+        }
+    }
+    var labnumber: Double = 0 {
+        didSet {
+            if labnumber > 100.0 {
+                labnumber = 100.0
+                self.lab.text = "\(labnumber)"
+            }
+        }
+    }
+    var projectnumber: Double = 0 {
+        didSet {
+            if projectnumber > 100.0 {
+                projectnumber = 100.0
+                self.project.text = "\(projectnumber)"
+            }
+        }
+    }
+    
+    // ObjC Function For Autoset Validation For TextFields
+    @objc func didChangeText() {
+        if let num1 = Double(self.cat1.text!) {
+            self.cat1number = num1
+        }
+        if let num2 = Double(self.cat2.text!) {
+            self.cat2number = num2
+        }
+        if let num3 = Double(self.da1.text!) {
+            self.da1number = num3
+        }
+        if let num4 = Double(self.da2.text!) {
+            self.da2number = num4
+        }
+        if let num5 = Double(self.da3.text!) {
+            self.da3number = num5
+        }
+        if let num6 = Double(self.fat.text!) {
+            self.fatnumber = num6
+        }
+        if let num7 = Double(self.lab.text!) {
+            self.labnumber = num7
+        }
+        if let num8 = Double(self.project.text!) {
+            self.projectnumber = num8
+        }
+    }
+    
+    /* //////////////////////////////////////////////////////////////////////////////// */
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.hideKeyboardWhenTappedAround()
+        
+        // Autoset Validation For TextFields
+        Autoset()
         
         // TopBar UIView Properties
         TopBar()
@@ -173,7 +311,7 @@ class CourseTotalViewController: UIViewController {
     
     @IBAction func button(_ sender: UIButton) {
         
-        calculation()
+        Calculation()
         
     }
     
