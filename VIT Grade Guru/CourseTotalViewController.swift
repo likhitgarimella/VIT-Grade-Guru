@@ -26,8 +26,7 @@ class CourseTotalViewController: UIViewController {
     @IBOutlet var projectLabel: UILabel!
     @IBOutlet var buttonOutlet: UIButton!
     
-    @IBOutlet var answer: UILabel!
-    
+    // Function for calculations
     func Calculation() {
         
         let string1 = cat1.text!
@@ -326,7 +325,7 @@ class CourseTotalViewController: UIViewController {
     func PopUpAnimation() {
         
         blurView.bounds = self.view.bounds
-        popUpView.bounds = CGRect(x: 0, y: 0, width: self.view.bounds.width*0.68, height: self.view.bounds.height*0.2)
+        popUpView.bounds = CGRect(x: 0, y: 0, width: self.view.bounds.width*0.68, height: self.view.bounds.height*0.4)
         
     }
     
@@ -380,6 +379,12 @@ class CourseTotalViewController: UIViewController {
     @IBOutlet var blurView: UIVisualEffectView!
     
     @IBOutlet var popUpView: UIView!
+    
+    @IBOutlet var answer: UILabel!
+    
+    @IBOutlet var imagePop: UIImageView!
+    
+    @IBOutlet var labelDescription: UILabel!
     
     @IBOutlet var okOutlet: UIButton!
     
