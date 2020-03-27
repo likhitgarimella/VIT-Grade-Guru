@@ -43,119 +43,119 @@ class GPAViewController: UIViewController {
     func Calculations() {
         
         let string1 = credits01.text!
-        let number1 = Double(string1.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number1 = Double(string1.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string2 = credits02.text!
-        let number2 = Double(string2.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number2 = Double(string2.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string3 = credits03.text!
-        let number3 = Double(string3.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number3 = Double(string3.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string4 = credits04.text!
-        let number4 = Double(string4.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number4 = Double(string4.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string5 = credits05.text!
-        let number5 = Double(string5.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number5 = Double(string5.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string6 = credits06.text!
-        let number6 = Double(string6.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number6 = Double(string6.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string7 = credits07.text!
-        let number7 = Double(string7.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number7 = Double(string7.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string8 = credits08.text!
-        let number8 = Double(string8.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number8 = Double(string8.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string9 = credits09.text!
-        let number9 = Double(string9.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number9 = Double(string9.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string10 = credits10.text!
-        let number10 = Double(string10.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number10 = Double(string10.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string11 = credits11.text!
-        let number11 = Double(string11.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number11 = Double(string11.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         
         let stringA = grade01.text!
-        let numberA = Double(stringA.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberA = Double(stringA.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringB = grade02.text!
-        let numberB = Double(stringB.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberB = Double(stringB.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringC = grade03.text!
-        let numberC = Double(stringC.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberC = Double(stringC.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringD = grade04.text!
-        let numberD = Double(stringD.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberD = Double(stringD.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringE = grade05.text!
-        let numberE = Double(stringE.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberE = Double(stringE.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringF = grade06.text!
-        let numberF = Double(stringF.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberF = Double(stringF.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringG = grade07.text!
-        let numberG = Double(stringG.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberG = Double(stringG.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringH = grade08.text!
-        let numberH = Double(stringH.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberH = Double(stringH.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringI = grade09.text!
-        let numberI = Double(stringI.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberI = Double(stringI.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringJ = grade10.text!
-        let numberJ = Double(stringJ.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberJ = Double(stringJ.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringK = grade11.text!
-        let numberK = Double(stringK.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberK = Double(stringK.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         
         // Credits Textfield Validation
             if (credits01.text!.isEmpty) {
-               credits01.text = ""
+               number1 = 0
             }
             if (credits02.text!.isEmpty) {
-               credits02.text = ""
+               number2 = 0
             }
             if (credits03.text!.isEmpty) {
-               credits03.text = ""
+               number3 = 0
             }
             if (credits04.text!.isEmpty) {
-               credits04.text = ""
+               number4 = 0
             }
             if (credits05.text!.isEmpty) {
-               credits05.text = ""
+               number5 = 0
             }
             if (credits06.text!.isEmpty) {
-               credits06.text = ""
+               number6 = 0
             }
             if (credits07.text!.isEmpty) {
-               credits07.text = ""
+               number7 = 0
             }
             if (credits08.text!.isEmpty) {
-               credits08.text = ""
+               number8 = 0
             }
             if (credits09.text!.isEmpty) {
-               credits09.text = ""
+               number9 = 0
             }
             if (credits10.text!.isEmpty) {
-               credits10.text = ""
+               number10 = 0
             }
             if (credits11.text!.isEmpty) {
-               credits11.text = ""
+               number11 = 0
             }
             
             // Grades Textfield Validation
             if (grade01.text!.isEmpty) {
-               grade01.text = ""
+               numberA = 0
             }
             if (grade02.text!.isEmpty) {
-               grade02.text = ""
+               numberB = 0
             }
             if (grade03.text!.isEmpty) {
-               grade03.text = ""
+               numberC = 0
             }
             if (grade04.text!.isEmpty) {
-               grade04.text = ""
+               numberD = 0
             }
             if (grade05.text!.isEmpty) {
-               grade05.text = ""
+               numberE = 0
             }
             if (grade06.text!.isEmpty) {
-               grade06.text = ""
+               numberF = 0
             }
             if (grade07.text!.isEmpty) {
-               grade07.text = ""
+               numberG = 0
             }
             if (grade08.text!.isEmpty) {
-               grade08.text = ""
+               numberH = 0
             }
             if (grade09.text!.isEmpty) {
-               grade09.text = ""
+               numberI = 0
             }
             if (grade10.text!.isEmpty) {
-               grade10.text = ""
+               numberJ = 0
             }
             if (grade11.text!.isEmpty) {
-               grade11.text = ""
+               numberK = 0
             }
             
             // Denominator Validation
