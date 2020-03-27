@@ -1044,6 +1044,7 @@
                         <outlet property="lab" destination="VEF-x2-ov0" id="6aw-KM-ogi"/>
                         <outlet property="labLabel" destination="vOF-w6-G4N" id="gXi-35-QEY"/>
                         <outlet property="labSwitch" destination="VIa-JL-ssr" id="SoO-dm-nxU"/>
+                        <outlet property="okOutlet" destination="FJC-zD-ncn" id="bcW-S2-iEX"/>
                         <outlet property="popUpView" destination="wBB-BL-gGT" id="uJT-fw-UdR"/>
                         <outlet property="project" destination="XEp-B7-UJg" id="K6N-go-pdC"/>
                         <outlet property="projectLabel" destination="mvh-vp-nwE" id="MAF-Yb-zku"/>
@@ -1065,7 +1066,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="280" height="240"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgx-wg-359">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgx-wg-359">
                             <rect key="frame" x="20" y="20" width="240" height="24"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="24" id="Ku9-qk-oFQ"/>
