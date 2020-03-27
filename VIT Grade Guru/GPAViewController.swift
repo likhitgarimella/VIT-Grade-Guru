@@ -88,7 +88,7 @@ class GPAViewController: UIViewController {
         let stringK = grade11.text!
         var numberK = Double(stringK.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         
-        // Credits Textfield Validation
+            // Credits Textfield Validation
             if (credits01.text!.isEmpty) {
                number1 = 0
             }
@@ -163,6 +163,7 @@ class GPAViewController: UIViewController {
             {
                 Answer.text = "0"
             } else {
+            // Actual Formula
             Answer.text = String( ((number1!*numberA!)+(number2!*numberB!)+(number3!*numberC!)+(number4!*numberD!)+(number5!*numberE!)+(number6!*numberF!)+(number7!*numberG!)+(number8!*numberH!)+(number9!*numberI!)+(number10!*numberJ!)+(number11!*numberK!))/(number1!+number2!+number3!+number4!+number5!+number6!+number7!+number8!+number9!+number10!+number11!) )
             }
             

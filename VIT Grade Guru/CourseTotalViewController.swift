@@ -31,25 +31,30 @@ class CourseTotalViewController: UIViewController {
     func Calculation() {
         
         if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty) {
+            print("Empty Fields 1st Six")
+            /*
             // Alert
             let myAlert = UIAlertController(title: "Alert", message: "Empty Fields", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
             myAlert.addAction(okAction)
             self.present(myAlert, animated: true, completion: nil)
             return
+            */      // Getting clashed with Popup
         }   // If 1st 6 fields are empty
             
         else {
             
         if labSwitch.isOn==true && projectSwitch.isOn==true {
-            if (lab.text!.isEmpty || project.text!.isEmpty)
-            {
+            if (lab.text!.isEmpty || project.text!.isEmpty) {
+                print("Empty Fields Last Two")
+                /*
                 // Alert
                 let myAlert = UIAlertController(title: "Alert", message: "Empty Fields", preferredStyle: UIAlertController.Style.alert)
                 let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
                 myAlert.addAction(okAction)
                 self.present(myAlert, animated: true, completion: nil)
                 return
+                */      // Getting clashed with Popup
             }   // If Lab and Project Fields are empty
             else {
             answer.text = String( Double( (( ((3*(Double(cat1.text!)! + Double(cat2.text!)!))/10) + Double(da1.text!)! + Double(da2.text!)! + Double(da3.text!)! + (2*(Double(fat.text!)!))/5 )/2) ) + Double( (Double(lab.text!)!)/4 ) + Double( (Double(project.text!)!)/4 ) )
@@ -57,14 +62,16 @@ class CourseTotalViewController: UIViewController {
         }   // If both Lab and Project Switches are On
         
         if labSwitch.isOn==true && projectSwitch.isOn==false {
-            if (lab.text!.isEmpty)
-            {
+            if (lab.text!.isEmpty) {
+                print("Empty Lab Field")
+                /*
                 // Alert
                 let myAlert = UIAlertController(title: "Alert", message: "Empty Lab Field", preferredStyle: UIAlertController.Style.alert)
                 let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
                 myAlert.addAction(okAction)
                 self.present(myAlert, animated: true, completion: nil)
                 return
+                */      // Getting clashed with Popup
             }   // If Lab Field is empty
             else {
                 answer.text = String( Double( (3*( ((3*(Double(cat1.text!)! + Double(cat2.text!)!))/10) + Double(da1.text!)! + Double(da2.text!)! + Double(da3.text!)! + (2*(Double(fat.text!)!))/5 )/4 ) ) + Double( (Double(lab.text!)!)/4 ) )
@@ -72,14 +79,16 @@ class CourseTotalViewController: UIViewController {
         }   // If Lab Switch is On and Project Switche is Off
             
         if labSwitch.isOn==false && projectSwitch.isOn==true {
-            if (project.text!.isEmpty)
-            {
+            if (project.text!.isEmpty) {
+                print("Empty Project Field")
+                /*
                 // Alert
                 let myAlert = UIAlertController(title: "Alert", message: "Empty Project Field", preferredStyle: UIAlertController.Style.alert)
                 let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
                 myAlert.addAction(okAction)
                 self.present(myAlert, animated: true, completion: nil)
                 return
+                */      // Getting clashed with Popup
             }   // If Project Field is empty
             else {
                 answer.text = String( Double( (3*( ((3*(Double(cat1.text!)! + Double(cat2.text!)!))/10) + Double(da1.text!)! + Double(da2.text!)! + Double(da3.text!)! + (2*(Double(fat.text!)!))/5 )/4 ) ) + Double( (Double(project.text!)!)/4 ) )
@@ -99,35 +108,35 @@ class CourseTotalViewController: UIViewController {
     // Function For Autoset Validation For TextFields
     func Autoset() {
         
-        cat1.keyboardType = .numberPad
+        cat1.keyboardType = .decimalPad
         cat1.text = "\(self.cat1number)"
         cat1.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
-        cat2.keyboardType = .numberPad
+        cat2.keyboardType = .decimalPad
         cat2.text = "\(self.cat2number)"
         cat2.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
-        da1.keyboardType = .numberPad
+        da1.keyboardType = .decimalPad
         da1.text = "\(self.da1number)"
         da1.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
-        da2.keyboardType = .numberPad
+        da2.keyboardType = .decimalPad
         da2.text = "\(self.da2number)"
         da2.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
-        da3.keyboardType = .numberPad
+        da3.keyboardType = .decimalPad
         da3.text = "\(self.da3number)"
         da3.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
-        fat.keyboardType = .numberPad
+        fat.keyboardType = .decimalPad
         fat.text = "\(self.fatnumber)"
         fat.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
-        lab.keyboardType = .numberPad
+        lab.keyboardType = .decimalPad
         lab.text = "\(self.labnumber)"
         lab.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
-        project.keyboardType = .numberPad
+        project.keyboardType = .decimalPad
         project.text = "\(self.projectnumber)"
         project.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
@@ -309,9 +318,68 @@ class CourseTotalViewController: UIViewController {
         
     }
     
+    func PopUpAnimation() {
+        
+        blurView.bounds = self.view.bounds
+        popUpView.bounds = CGRect(x: 0, y: 0, width: self.view.bounds.width*0.8, height: self.view.bounds.height*0.2)
+        
+    }
+    
     @IBAction func button(_ sender: UIButton) {
         
         Calculation()
+        // PopUp Animation
+        PopUpAnimation()
+        
+        AnimateIn(desiredView: blurView)    // This First
+        AnimateIn(desiredView: popUpView)   // This Next
+        
+    }
+    
+    // Animate in a specified view
+    func AnimateIn(desiredView: UIView) {
+        
+        let backgroundView = self.view!
+        
+        // Attach our desired view to the screen
+        backgroundView.addSubview(desiredView)
+        
+        // Sets the view's scaling to be 120%
+        desiredView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        desiredView.alpha = 0
+        desiredView.center = backgroundView.center
+        // Animate from here ⬆️
+        
+        // To here ⬇️
+        // Animate the effect
+        UIView.animate(withDuration: 0.2, animations: {
+            desiredView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            desiredView.alpha = 1
+        })
+        
+    }
+    
+    // Animate out a specified view
+    func AnimateOut(desiredView: UIView) {
+        
+       UIView.animate(withDuration: 0.2, animations: {
+            desiredView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            desiredView.alpha = 1
+       }, completion: { _ in
+        // This code runs when when above AnimateOut animation is done
+        desiredView.removeFromSuperview()
+       })
+        
+    }
+    
+    @IBOutlet var blurView: UIVisualEffectView!
+    
+    @IBOutlet var popUpView: UIView!
+    
+    @IBAction func Ok(_ sender: UIButton) {
+        
+        AnimateOut(desiredView: popUpView)  // This First
+        AnimateOut(desiredView: blurView)   // This Next
         
     }
     

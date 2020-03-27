@@ -27,7 +27,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="219" y="-120"/>
+            <point key="canvasLocation" x="219" y="-202"/>
         </scene>
         <!--GPA-->
         <scene sceneID="39Z-s5-0vo">
@@ -944,16 +944,6 @@
                                                     <action selector="button:" destination="afN-NI-Fxq" eventType="touchUpInside" id="l16-iu-7cX"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAW-PP-OJg">
-                                                <rect key="frame" x="170" y="435" width="74" height="24"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="24" id="vR5-LG-2eP"/>
-                                                    <constraint firstAttribute="width" constant="74" id="zkg-4f-7Ry"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
-                                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -986,9 +976,7 @@
                                             <constraint firstItem="Lx6-7j-NGf" firstAttribute="centerX" secondItem="oDP-Jv-GTX" secondAttribute="centerX" id="Qlb-bW-66z"/>
                                             <constraint firstItem="oDP-Jv-GTX" firstAttribute="top" secondItem="bcs-9v-oPD" secondAttribute="top" constant="24" id="SIx-m1-MSX"/>
                                             <constraint firstItem="022-X4-hLa" firstAttribute="centerX" secondItem="KU5-77-OxW" secondAttribute="centerX" id="SqU-ta-jVn"/>
-                                            <constraint firstItem="tlJ-5I-chn" firstAttribute="top" secondItem="GAW-PP-OJg" secondAttribute="bottom" constant="92" id="Tty-JF-Ddi"/>
                                             <constraint firstItem="XEp-B7-UJg" firstAttribute="centerX" secondItem="oDP-Jv-GTX" secondAttribute="centerX" id="VHZ-WB-KBz"/>
-                                            <constraint firstItem="GAW-PP-OJg" firstAttribute="centerX" secondItem="bcs-9v-oPD" secondAttribute="centerX" id="Vbv-9s-lhQ"/>
                                             <constraint firstItem="Lx6-7j-NGf" firstAttribute="top" secondItem="U97-HN-H3H" secondAttribute="bottom" constant="24" id="Wdv-tM-2fw"/>
                                             <constraint firstItem="VIa-JL-ssr" firstAttribute="top" secondItem="KU5-77-OxW" secondAttribute="bottom" constant="8" id="Y1f-q8-fsc"/>
                                             <constraint firstItem="1Of-NH-Ahe" firstAttribute="centerX" secondItem="oDP-Jv-GTX" secondAttribute="centerX" id="azm-ey-Ubr"/>
@@ -1044,7 +1032,8 @@
                     <tabBarItem key="tabBarItem" title="Course Total" image="course" id="BA7-Ui-UMp"/>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
-                        <outlet property="answer" destination="GAW-PP-OJg" id="WNf-ms-MCc"/>
+                        <outlet property="answer" destination="Xgx-wg-359" id="rPj-Jg-cyW"/>
+                        <outlet property="blurView" destination="amX-Dc-SSf" id="wUl-jg-nEi"/>
                         <outlet property="buttonOutlet" destination="tlJ-5I-chn" id="pc2-wJ-Gpy"/>
                         <outlet property="cat1" destination="Vho-hu-hYz" id="c8B-Lu-sC6"/>
                         <outlet property="cat2" destination="U97-HN-H3H" id="csY-aF-BjZ"/>
@@ -1055,6 +1044,7 @@
                         <outlet property="lab" destination="VEF-x2-ov0" id="6aw-KM-ogi"/>
                         <outlet property="labLabel" destination="vOF-w6-G4N" id="gXi-35-QEY"/>
                         <outlet property="labSwitch" destination="VIa-JL-ssr" id="SoO-dm-nxU"/>
+                        <outlet property="popUpView" destination="wBB-BL-gGT" id="uJT-fw-UdR"/>
                         <outlet property="project" destination="XEp-B7-UJg" id="K6N-go-pdC"/>
                         <outlet property="projectLabel" destination="mvh-vp-nwE" id="MAF-Yb-zku"/>
                         <outlet property="projectSwitch" destination="Y4B-Kk-huu" id="SWa-4a-LPA"/>
@@ -1062,6 +1052,54 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rsV-HS-Crk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" id="amX-Dc-SSf">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="240"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="IQ3-yh-9HO">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="240"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+                <view contentMode="scaleToFill" id="wBB-BL-gGT">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="240"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgx-wg-359">
+                            <rect key="frame" x="20" y="20" width="240" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="Ku9-qk-oFQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                            <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJC-zD-ncn">
+                            <rect key="frame" x="0.0" y="200" width="280" height="40"/>
+                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="t9V-t7-KGn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                            <state key="normal" title="Ok">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="Ok:" destination="afN-NI-Fxq" eventType="touchUpInside" id="Wsu-NJ-cNI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="FJC-zD-ncn" firstAttribute="bottom" secondItem="cDD-Fn-hjs" secondAttribute="bottom" id="JEw-Qm-flX"/>
+                        <constraint firstItem="cDD-Fn-hjs" firstAttribute="trailing" secondItem="Xgx-wg-359" secondAttribute="trailing" constant="20" id="ZV0-jp-I8v"/>
+                        <constraint firstItem="cDD-Fn-hjs" firstAttribute="trailing" secondItem="FJC-zD-ncn" secondAttribute="trailing" id="apm-zF-dV3"/>
+                        <constraint firstItem="Xgx-wg-359" firstAttribute="leading" secondItem="cDD-Fn-hjs" secondAttribute="leading" constant="20" id="cL2-Gv-TsH"/>
+                        <constraint firstItem="Xgx-wg-359" firstAttribute="top" secondItem="cDD-Fn-hjs" secondAttribute="top" constant="20" id="kWE-NH-qIP"/>
+                        <constraint firstItem="FJC-zD-ncn" firstAttribute="leading" secondItem="cDD-Fn-hjs" secondAttribute="leading" id="mTA-RH-uI1"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="cDD-Fn-hjs"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="218.84057971014494" y="-1168.2065217391305"/>
         </scene>
@@ -1386,7 +1424,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Twg-eI-2yE"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="9 Pointer" image="9P" id="Qch-a3-4Az"/>
+                    <tabBarItem key="tabBarItem" title="9 Pointer" image="9Poi" id="Qch-a3-4Az"/>
                     <connections>
                         <outlet property="calculateButtonOutlet" destination="Cbf-EV-bEP" id="IWp-eR-UfE"/>
                         <outlet property="creditsFinished" destination="b57-Nx-Aym" id="b4H-4r-yzL"/>
@@ -1402,7 +1440,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="9P" width="30" height="30"/>
+        <image name="9Poi" width="30" height="30"/>
         <image name="Avatar" width="95" height="95"/>
         <image name="cgpa" width="30" height="30"/>
         <image name="course" width="30" height="30"/>
