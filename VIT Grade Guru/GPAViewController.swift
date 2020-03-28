@@ -38,8 +38,7 @@ class GPAViewController: UIViewController {
     
     @IBOutlet var cgpaButtonOutlet: UIButton!
     
-    @IBOutlet var Answer: UILabel!
-    
+    // Function for calculations
     func Calculations() {
         
         let string1 = credits01.text!
@@ -161,10 +160,10 @@ class GPAViewController: UIViewController {
             // Denominator Validation
             if (credits01.text!.isEmpty && credits02.text!.isEmpty && credits03.text!.isEmpty && credits04.text!.isEmpty && credits05.text!.isEmpty && credits06.text!.isEmpty && credits07.text!.isEmpty && credits08.text!.isEmpty && credits09.text!.isEmpty && credits10.text!.isEmpty && credits11.text!.isEmpty)
             {
-                Answer.text = "0"
+                answer.text = "0"
             } else {
             // Actual Formula
-            Answer.text = String( ((number1!*numberA!)+(number2!*numberB!)+(number3!*numberC!)+(number4!*numberD!)+(number5!*numberE!)+(number6!*numberF!)+(number7!*numberG!)+(number8!*numberH!)+(number9!*numberI!)+(number10!*numberJ!)+(number11!*numberK!))/(number1!+number2!+number3!+number4!+number5!+number6!+number7!+number8!+number9!+number10!+number11!) )
+            answer.text = String( ((number1!*numberA!)+(number2!*numberB!)+(number3!*numberC!)+(number4!*numberD!)+(number5!*numberE!)+(number6!*numberF!)+(number7!*numberG!)+(number8!*numberH!)+(number9!*numberI!)+(number10!*numberJ!)+(number11!*numberK!))/(number1!+number2!+number3!+number4!+number5!+number6!+number7!+number8!+number9!+number10!+number11!) )
             }
             
         }
@@ -191,6 +190,9 @@ class GPAViewController: UIViewController {
         
         // Button Properties
         ButtonProp()
+        
+        // PopUp UIView Properties
+        PopUpProp()
         
     }
     
@@ -392,6 +394,82 @@ class GPAViewController: UIViewController {
     @IBAction func calculateCgpa(_ sender: UIButton) {
         
         Calculations()
+        
+        // PopUp Animation
+        PopUpAnimation()
+        
+        AnimateIn(desiredView: blurView)    // This First
+        AnimateIn(desiredView: popUpView)   // This Next
+        
+    }
+    
+    func PopUpAnimation() {
+        
+        blurView.bounds = self.view.bounds
+        popUpView.bounds = CGRect(x: 0, y: 0, width: self.view.bounds.width*0.68, height: self.view.bounds.height*0.4)
+        
+    }
+    
+    // Animate in a specified view
+    func AnimateIn(desiredView: UIView) {
+        
+        let backgroundView = self.view!
+        
+        // Attach our desired view to the screen
+        backgroundView.addSubview(desiredView)
+        
+        // Sets the view's scaling to be 120%
+        desiredView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        desiredView.alpha = 0
+        desiredView.center = backgroundView.center
+        // Animate from here ⬆️
+        
+        // To here ⬇️
+        // Animate the effect
+        UIView.animate(withDuration: 0.2, animations: {
+            desiredView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            desiredView.alpha = 1
+        })
+        
+    }
+    
+    // Animate out a specified view
+    func AnimateOut(desiredView: UIView) {
+        
+       UIView.animate(withDuration: 0.2, animations: {
+            desiredView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            desiredView.alpha = 1
+       }, completion: { _ in
+        // This code runs when when above AnimateOut animation is done
+        desiredView.removeFromSuperview()
+       })
+        
+    }
+    
+    @IBOutlet var blurView: UIVisualEffectView!
+    
+    @IBOutlet var popUpView: UIView!
+    
+    @IBOutlet var answer: UILabel!
+    
+    @IBOutlet var imagePop: UIImageView!
+    
+    @IBOutlet var labelDescription: UILabel!
+    
+    @IBOutlet var okOutlet: UIButton!
+    
+    func PopUpProp() {
+        
+        popUpView.layer.cornerRadius = 16
+        okOutlet.layer.cornerRadius = 16
+        okOutlet.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        
+    }
+    
+    @IBAction func Ok(_ sender: UIButton) {
+        
+        AnimateOut(desiredView: popUpView)  // This First
+        AnimateOut(desiredView: blurView)   // This Next
         
     }
     

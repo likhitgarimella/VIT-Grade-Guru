@@ -244,11 +244,11 @@ class CourseTotalViewController: UIViewController {
         
         self.hideKeyboardWhenTappedAround()
         
-        // Autoset Validation For TextFields
-        Autoset()
-        
         // TopBar UIView Properties
         TopBar()
+        
+        // Autoset Validation For TextFields
+        Autoset()
         
         // Textfield Properties
         CornerRadius()
@@ -258,6 +258,9 @@ class CourseTotalViewController: UIViewController {
         
         // PopUp UIView Properties
         PopUpProp()
+        
+        // popUpView.layer.masksToBounds = true
+        // popUpView.setGradientBackground(colorOne: Colors.white, colorTwo: Colors.blue)
 
     }
     
@@ -319,6 +322,19 @@ class CourseTotalViewController: UIViewController {
             projectLabel.isHidden=true
             project.isHidden=true
         }
+
+    }
+
+    
+    @IBAction func button(_ sender: UIButton) {
+        
+        Calculation()
+        
+        // PopUp Animation
+        PopUpAnimation()
+        
+        AnimateIn(desiredView: blurView)    // This First
+        AnimateIn(desiredView: popUpView)   // This Next
         
     }
     
@@ -326,17 +342,6 @@ class CourseTotalViewController: UIViewController {
         
         blurView.bounds = self.view.bounds
         popUpView.bounds = CGRect(x: 0, y: 0, width: self.view.bounds.width*0.68, height: self.view.bounds.height*0.4)
-        
-    }
-    
-    @IBAction func button(_ sender: UIButton) {
-        
-        Calculation()
-        // PopUp Animation
-        PopUpAnimation()
-        
-        AnimateIn(desiredView: blurView)    // This First
-        AnimateIn(desiredView: popUpView)   // This Next
         
     }
     
