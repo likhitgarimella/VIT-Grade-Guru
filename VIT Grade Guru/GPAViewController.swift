@@ -35,7 +35,6 @@ class GPAViewController: UIViewController {
     @IBOutlet var grade09: DropDown!
     @IBOutlet var grade10: DropDown!
     @IBOutlet var grade11: DropDown!
-    
     @IBOutlet var gpaButtonOutlet: UIButton!
     
     // Function for calculations

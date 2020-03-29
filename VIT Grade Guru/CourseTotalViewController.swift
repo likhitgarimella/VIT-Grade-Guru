@@ -259,9 +259,6 @@ class CourseTotalViewController: UIViewController {
         // PopUp UIView Properties
         PopUpProp()
         
-        // popUpView.layer.masksToBounds = true
-        // popUpView.setGradientBackground(colorOne: Colors.white, colorTwo: Colors.blue)
-
     }
     
     func TopBar() {
@@ -325,7 +322,6 @@ class CourseTotalViewController: UIViewController {
 
     }
 
-    
     @IBAction func button(_ sender: UIButton) {
         
         Calculations()

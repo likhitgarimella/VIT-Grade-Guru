@@ -45,12 +45,19 @@ class CGPAViewController: UIViewController {
            number4 = 0
         }
         
+        if (currentSemCredits.text!.isEmpty && creditsFinished.text!.isEmpty) {
             
-        let lenghtOfChar = (number2!+number4!)
-        guard lenghtOfChar != 0 else { return }
+            answer.text = "0"
+            
+        } else {
+        
+        // let lenghtOfChar = (number2!+number4!)
+        // guard lenghtOfChar != 0 else { return }
         
         // Actual Formula
-        answer.text = String(((number3!*number4!)+(number1!*number2!))/lenghtOfChar)
+        answer.text = String(((number3!*number4!)+(number1!*number2!))/(number2!+number4!))
+            
+        }
         
     }       // Entire Calculations Function
     
@@ -145,6 +152,9 @@ class CGPAViewController: UIViewController {
         
         // Button Properties
         ButtonProp()
+        
+        // PopUp UIView Properties
+        PopUpProp()
 
     }
     
@@ -181,7 +191,7 @@ class CGPAViewController: UIViewController {
     
     @IBAction func calculateCgpa(_ sender: UIButton) {
         
-        if ((currentGPA.text!.isEmpty && currentSemCredits.text!.isEmpty && cgpaBeforeThisSem.text!.isEmpty && creditsFinished.text!.isEmpty))
+        /* if ((currentGPA.text!.isEmpty && currentSemCredits.text!.isEmpty && cgpaBeforeThisSem.text!.isEmpty && creditsFinished.text!.isEmpty))
         {
             // Alert
             let myAlert = UIAlertController(title: "Alert", message: "Check Validation", preferredStyle: UIAlertController.Style.alert)
@@ -189,20 +199,15 @@ class CGPAViewController: UIViewController {
             myAlert.addAction(okAction)
             self.present(myAlert, animated: true, completion: nil)
             return
-        } else {
+        } */
             
             Calculations()
             
             // PopUp Animation
             PopUpAnimation()
-                
-            // PopUp UIView Properties
-            PopUpProp()
             
             AnimateIn(desiredView: blurView)    // This First
             AnimateIn(desiredView: popUpView)   // This Next
-            
-        }
         
     }
     
