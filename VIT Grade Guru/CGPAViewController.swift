@@ -23,16 +23,19 @@ class CGPAViewController: UIViewController {
     func Calculations() {
         
         let string1 = currentGPA.text!
-        let number1 = Double(string1)
+        let number1 = Int(string1)
         let string2 = currentSemCredits.text!
-        let number2 = Double(string2)
+        let number2 = Int(string2)
         let string3 = cgpaBeforeThisSem.text!
-        let number3 = Double(string3)
+        let number3 = Int(string3)
         let string4 = creditsFinished.text!
-        let number4 = Double(string4)
+        let number4 = Int(string4)
+        
+        let lenghtOfChar = (number2!+number4!)
+        guard lenghtOfChar != 0 else { return }
         
         // Actual Formula
-        answer.text = String(((number3!*number4!)+(number1!*number2!))/(number2!+number4!))
+        answer.text = String(((number3!*number4!)+(number1!*number2!))/lenghtOfChar)
         
     }       // Entire Calculations Function
     
@@ -95,16 +98,16 @@ class CGPAViewController: UIViewController {
     
     // ObjC Function For Autoset Validation For TextFields
     @objc func didChangeText() {
-        if let num1 = Double(self.currentGPA.text!) {
+        if let num1 = Int(self.currentGPA.text!) {
             self.currentgpanumber = Int(num1)
         }
-        if let num2 = Double(self.currentSemCredits.text!) {
+        if let num2 = Int(self.currentSemCredits.text!) {
             self.currentsemcreditsnumber = Int(num2)
         }
-        if let num3 = Double(self.cgpaBeforeThisSem.text!) {
+        if let num3 = Int(self.cgpaBeforeThisSem.text!) {
             self.cgpabeforethissemnumber = Int(num3)
         }
-        if let num4 = Double(self.creditsFinished.text!) {
+        if let num4 = Int(self.creditsFinished.text!) {
             self.creditsfinishednumber = Int(num4)
         }
     }
@@ -127,9 +130,6 @@ class CGPAViewController: UIViewController {
         
         // Button Properties
         ButtonProp()
-        
-        // PopUp UIView Properties
-        PopUpProp()
 
     }
     
@@ -166,25 +166,16 @@ class CGPAViewController: UIViewController {
     
     @IBAction func calculateCgpa(_ sender: UIButton) {
         
-        if (currentGPA.text!.isEmpty || currentSemCredits.text!.isEmpty || cgpaBeforeThisSem.text!.isEmpty || creditsFinished.text!.isEmpty)
-        {
-            // Alert
-            let myAlert = UIAlertController(title: "Alert", message: "Empty Fields", preferredStyle: UIAlertController.Style.alert)
-            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
-            myAlert.addAction(okAction)
-            self.present(myAlert, animated: true, completion: nil)
-            return
-        } else {
+        Calculations()
+        
+        // PopUp Animation
+        PopUpAnimation()
             
-            AnimateIn(desiredView: blurView)    // This First
-            AnimateIn(desiredView: popUpView)   // This Next
-            
-            // PopUp Animation
-            PopUpAnimation()
-            
-            Calculations()
-            
-        }
+        // PopUp UIView Properties
+        PopUpProp()
+        
+        AnimateIn(desiredView: blurView)    // This First
+        AnimateIn(desiredView: popUpView)   // This Next
         
     }
     

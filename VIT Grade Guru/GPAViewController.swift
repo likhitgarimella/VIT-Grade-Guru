@@ -42,50 +42,50 @@ class GPAViewController: UIViewController {
     func Calculations() {
         
         let string1 = credits01.text!
-        var number1 = Double(string1)
+        var number1 = Double(string1.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string2 = credits02.text!
-        var number2 = Double(string2)
+        var number2 = Double(string2.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string3 = credits03.text!
-        var number3 = Double(string3)
+        var number3 = Double(string3.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string4 = credits04.text!
-        var number4 = Double(string4)
+        var number4 = Double(string4.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string5 = credits05.text!
-        var number5 = Double(string5)
+        var number5 = Double(string5.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string6 = credits06.text!
-        var number6 = Double(string6)
+        var number6 = Double(string6.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string7 = credits07.text!
-        var number7 = Double(string7)
+        var number7 = Double(string7.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string8 = credits08.text!
-        var number8 = Double(string8)
+        var number8 = Double(string8.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string9 = credits09.text!
-        var number9 = Double(string9)
+        var number9 = Double(string9.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string10 = credits10.text!
-        var number10 = Double(string10)
+        var number10 = Double(string10.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string11 = credits11.text!
-        var number11 = Double(string11)
+        var number11 = Double(string11.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         
         let stringA = grade01.text!
-        var numberA = Double(stringA)
+        var numberA = Double(stringA.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringB = grade02.text!
-        var numberB = Double(stringB)
+        var numberB = Double(stringB.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringC = grade03.text!
-        var numberC = Double(stringC)
+        var numberC = Double(stringC.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringD = grade04.text!
-        var numberD = Double(stringD)
+        var numberD = Double(stringD.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringE = grade05.text!
-        var numberE = Double(stringE)
+        var numberE = Double(stringE.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringF = grade06.text!
-        var numberF = Double(stringF)
+        var numberF = Double(stringF.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringG = grade07.text!
-        var numberG = Double(stringG)
+        var numberG = Double(stringG.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringH = grade08.text!
-        var numberH = Double(stringH)
+        var numberH = Double(stringH.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringI = grade09.text!
-        var numberI = Double(stringI)
+        var numberI = Double(stringI.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringJ = grade10.text!
-        var numberJ = Double(stringJ)
+        var numberJ = Double(stringJ.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringK = grade11.text!
-        var numberK = Double(stringK)
+        var numberK = Double(stringK.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         
             // Credits Textfield Validation
             if (credits01.text!.isEmpty) {
