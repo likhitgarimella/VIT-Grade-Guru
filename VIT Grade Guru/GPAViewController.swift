@@ -36,56 +36,56 @@ class GPAViewController: UIViewController {
     @IBOutlet var grade10: DropDown!
     @IBOutlet var grade11: DropDown!
     
-    @IBOutlet var cgpaButtonOutlet: UIButton!
+    @IBOutlet var gpaButtonOutlet: UIButton!
     
     // Function for calculations
     func Calculations() {
         
         let string1 = credits01.text!
-        var number1 = Double(string1.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number1 = Double(string1)
         let string2 = credits02.text!
-        var number2 = Double(string2.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number2 = Double(string2)
         let string3 = credits03.text!
-        var number3 = Double(string3.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number3 = Double(string3)
         let string4 = credits04.text!
-        var number4 = Double(string4.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number4 = Double(string4)
         let string5 = credits05.text!
-        var number5 = Double(string5.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number5 = Double(string5)
         let string6 = credits06.text!
-        var number6 = Double(string6.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number6 = Double(string6)
         let string7 = credits07.text!
-        var number7 = Double(string7.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number7 = Double(string7)
         let string8 = credits08.text!
-        var number8 = Double(string8.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number8 = Double(string8)
         let string9 = credits09.text!
-        var number9 = Double(string9.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number9 = Double(string9)
         let string10 = credits10.text!
-        var number10 = Double(string10.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number10 = Double(string10)
         let string11 = credits11.text!
-        var number11 = Double(string11.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number11 = Double(string11)
         
         let stringA = grade01.text!
-        var numberA = Double(stringA.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberA = Double(stringA)
         let stringB = grade02.text!
-        var numberB = Double(stringB.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberB = Double(stringB)
         let stringC = grade03.text!
-        var numberC = Double(stringC.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberC = Double(stringC)
         let stringD = grade04.text!
-        var numberD = Double(stringD.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberD = Double(stringD)
         let stringE = grade05.text!
-        var numberE = Double(stringE.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberE = Double(stringE)
         let stringF = grade06.text!
-        var numberF = Double(stringF.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberF = Double(stringF)
         let stringG = grade07.text!
-        var numberG = Double(stringG.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberG = Double(stringG)
         let stringH = grade08.text!
-        var numberH = Double(stringH.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberH = Double(stringH)
         let stringI = grade09.text!
-        var numberI = Double(stringI.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberI = Double(stringI)
         let stringJ = grade10.text!
-        var numberJ = Double(stringJ.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberJ = Double(stringJ)
         let stringK = grade11.text!
-        var numberK = Double(stringK.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var numberK = Double(stringK)
         
             // Credits Textfield Validation
             if (credits01.text!.isEmpty) {
@@ -166,7 +166,7 @@ class GPAViewController: UIViewController {
             answer.text = String( ((number1!*numberA!)+(number2!*numberB!)+(number3!*numberC!)+(number4!*numberD!)+(number5!*numberE!)+(number6!*numberF!)+(number7!*numberG!)+(number8!*numberH!)+(number9!*numberI!)+(number10!*numberJ!)+(number11!*numberK!))/(number1!+number2!+number3!+number4!+number5!+number6!+number7!+number8!+number9!+number10!+number11!) )
             }
             
-        }
+        }       // Entire Calculations Function
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -384,14 +384,14 @@ class GPAViewController: UIViewController {
     func ButtonProp() {
         
         // Button Properties
-        cgpaButtonOutlet.backgroundColor = .systemBlue
-        cgpaButtonOutlet.layer.cornerRadius = 6
+        gpaButtonOutlet.backgroundColor = .systemBlue
+        gpaButtonOutlet.layer.cornerRadius = 6
         //buttonOutlet.layer.borderWidth = 1
         //buttonOutlet.layer.borderColor = UIColor.darkGray.cgColor
         
     }
     
-    @IBAction func calculateCgpa(_ sender: UIButton) {
+    @IBAction func calculateGpa(_ sender: UIButton) {
         
         Calculations()
         

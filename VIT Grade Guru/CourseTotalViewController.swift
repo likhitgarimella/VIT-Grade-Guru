@@ -27,24 +27,24 @@ class CourseTotalViewController: UIViewController {
     @IBOutlet var buttonOutlet: UIButton!
     
     // Function for calculations
-    func Calculation() {
+    func Calculations() {
         
         let string1 = cat1.text!
-        var number1 = Double(string1.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number1 = Double(string1)
         let string2 = cat2.text!
-        var number2 = Double(string2.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number2 = Double(string2)
         let string3 = da1.text!
-        var number3 = Double(string3.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number3 = Double(string3)
         let string4 = da2.text!
-        var number4 = Double(string4.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number4 = Double(string4)
         let string5 = da3.text!
-        var number5 = Double(string5.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number5 = Double(string5)
         let string6 = fat.text!
-        var number6 = Double(string6.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number6 = Double(string6)
         let string7 = lab.text!
-        var number7 = Double(string7.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number7 = Double(string7)
         let string8 = project.text!
-        var number8 = Double(string8.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        var number8 = Double(string8)
         
         // Textfield Validation
         if (cat1.text!.isEmpty) {
@@ -102,42 +102,42 @@ class CourseTotalViewController: UIViewController {
         if labSwitch.isOn==false && projectSwitch.isOn==false {
             answer.text = String( ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )
         }       // If both Lab and Project Switches are Off
-    }           // Entire Calculation Function
+    }           // Entire Calculations Function
     
     /* //////////////////////////////////////////////////////////////////////////////// */
     
     // Function For Autoset Validation For TextFields
     func Autoset() {
         
-        cat1.keyboardType = .numberPad
+        cat1.keyboardType = .decimalPad
         cat1.text = "\(self.cat1number)"
         cat1.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
-        cat2.keyboardType = .numberPad
+        cat2.keyboardType = .decimalPad
         cat2.text = "\(self.cat2number)"
         cat2.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
-        da1.keyboardType = .numberPad
+        da1.keyboardType = .decimalPad
         da1.text = "\(self.da1number)"
         da1.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
-        da2.keyboardType = .numberPad
+        da2.keyboardType = .decimalPad
         da2.text = "\(self.da2number)"
         da2.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
-        da3.keyboardType = .numberPad
+        da3.keyboardType = .decimalPad
         da3.text = "\(self.da3number)"
         da3.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
-        fat.keyboardType = .numberPad
+        fat.keyboardType = .decimalPad
         fat.text = "\(self.fatnumber)"
         fat.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
-        lab.keyboardType = .numberPad
+        lab.keyboardType = .decimalPad
         lab.text = "\(self.labnumber)"
         lab.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
-        project.keyboardType = .numberPad
+        project.keyboardType = .decimalPad
         project.text = "\(self.projectnumber)"
         project.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
@@ -328,7 +328,7 @@ class CourseTotalViewController: UIViewController {
     
     @IBAction func button(_ sender: UIButton) {
         
-        Calculation()
+        Calculations()
         
         // PopUp Animation
         PopUpAnimation()
