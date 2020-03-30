@@ -110,100 +110,100 @@ class CourseTotalViewController: UIViewController {
     func Autoset() {
         
         cat1.keyboardType = .decimalPad
-        cat1.text = "\(self.cat1number)"
+        cat1.text = ""
         cat1.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         cat2.keyboardType = .decimalPad
-        cat2.text = "\(self.cat2number)"
+        cat2.text = ""
         cat2.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         da1.keyboardType = .decimalPad
-        da1.text = "\(self.da1number)"
+        da1.text = ""
         da1.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         da2.keyboardType = .decimalPad
-        da2.text = "\(self.da2number)"
+        da2.text = ""
         da2.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         da3.keyboardType = .decimalPad
-        da3.text = "\(self.da3number)"
+        da3.text = ""
         da3.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         fat.keyboardType = .decimalPad
-        fat.text = "\(self.fatnumber)"
+        fat.text = ""
         fat.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         lab.keyboardType = .decimalPad
-        lab.text = "\(self.labnumber)"
+        lab.text = ""
         lab.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         project.keyboardType = .decimalPad
-        project.text = "\(self.projectnumber)"
+        project.text = ""
         project.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
     }
     
     // Autoset Validation For TextFields
-    var cat1number: Int = 0 {
+    var cat1number: Double = 0.0 {
         didSet {
-            if cat1number > 50 {
-                cat1number = 50
+            if cat1number > 50.0 {
+                cat1number = 50.0
                 self.cat1.text = "\(cat1number)"
             }
         }
     }
-    var cat2number: Int = 0 {
+    var cat2number: Double = 0.0 {
         didSet {
-            if cat2number > 50 {
-                cat2number = 50
+            if cat2number > 50.0 {
+                cat2number = 50.0
                 self.cat2.text = "\(cat2number)"
             }
         }
     }
-    var da1number: Int = 0 {
+    var da1number: Double = 0.0 {
         didSet {
-            if da1number > 10 {
-                da1number = 10
+            if da1number > 10.0 {
+                da1number = 10.0
                 self.da1.text = "\(da1number)"
             }
         }
     }
-    var da2number: Int = 0 {
+    var da2number: Double = 0.0 {
         didSet {
-            if da2number > 10 {
-                da2number = 10
+            if da2number > 10.0 {
+                da2number = 10.0
                 self.da2.text = "\(da2number)"
             }
         }
     }
-    var da3number: Int = 0 {
+    var da3number: Double = 0.0 {
         didSet {
-            if da3number > 10 {
-                da3number = 10
+            if da3number > 10.0 {
+                da3number = 10.0
                 self.da3.text = "\(da3number)"
             }
         }
     }
-    var fatnumber: Int = 0 {
+    var fatnumber: Double = 0.0 {
         didSet {
-            if fatnumber > 100 {
-                fatnumber = 100
+            if fatnumber > 100.0 {
+                fatnumber = 100.0
                 self.fat.text = "\(fatnumber)"
             }
         }
     }
-    var labnumber: Int = 0 {
+    var labnumber: Double = 0.0 {
         didSet {
-            if labnumber > 100 {
-                labnumber = 100
+            if labnumber > 100.0 {
+                labnumber = 100.0
                 self.lab.text = "\(labnumber)"
             }
         }
     }
-    var projectnumber: Int = 0 {
+    var projectnumber: Double = 0.0 {
         didSet {
-            if projectnumber > 100 {
-                projectnumber = 100
+            if projectnumber > 100.0 {
+                projectnumber = 100.0
                 self.project.text = "\(projectnumber)"
             }
         }
@@ -212,28 +212,28 @@ class CourseTotalViewController: UIViewController {
     // ObjC Function For Autoset Validation For TextFields
     @objc func didChangeText() {
         if let num1 = Double(self.cat1.text!) {
-            self.cat1number = Int(num1)
+            self.cat1number = Double(num1)
         }
         if let num2 = Double(self.cat2.text!) {
-            self.cat2number = Int(num2)
+            self.cat2number = Double(num2)
         }
         if let num3 = Double(self.da1.text!) {
-            self.da1number = Int(num3)
+            self.da1number = Double(num3)
         }
         if let num4 = Double(self.da2.text!) {
-            self.da2number = Int(num4)
+            self.da2number = Double(num4)
         }
         if let num5 = Double(self.da3.text!) {
-            self.da3number = Int(num5)
+            self.da3number = Double(num5)
         }
         if let num6 = Double(self.fat.text!) {
-            self.fatnumber = Int(num6)
+            self.fatnumber = Double(num6)
         }
         if let num7 = Double(self.lab.text!) {
-            self.labnumber = Int(num7)
+            self.labnumber = Double(num7)
         }
         if let num8 = Double(self.project.text!) {
-            self.projectnumber = Int(num8)
+            self.projectnumber = Double(num8)
         }
     }
     

@@ -67,52 +67,52 @@ class CGPAViewController: UIViewController {
     func Autoset() {
         
         currentGPA.keyboardType = .decimalPad
-        currentGPA.text = "\(self.currentgpanumber)"
+        currentGPA.text = ""
         currentGPA.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         currentSemCredits.keyboardType = .decimalPad
-        currentSemCredits.text = "\(self.currentsemcreditsnumber)"
+        currentSemCredits.text = ""
         currentSemCredits.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         cgpaBeforeThisSem.keyboardType = .decimalPad
-        cgpaBeforeThisSem.text = "\(self.cgpabeforethissemnumber)"
+        cgpaBeforeThisSem.text = ""
         cgpaBeforeThisSem.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         creditsFinished.keyboardType = .decimalPad
-        creditsFinished.text = "\(self.creditsfinishednumber)"
+        creditsFinished.text = ""
         creditsFinished.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
     }
     
     // Autoset Validation For TextFields
-    var currentgpanumber: Int = 0 {
+    var currentgpanumber: Double = 0.0 {
         didSet {
-            if currentgpanumber > 10 {
-                currentgpanumber = 10
+            if currentgpanumber > 10.0 {
+                currentgpanumber = 10.0
                 self.currentGPA.text = "\(currentgpanumber)"
             }
         }
     }
-    var currentsemcreditsnumber: Int = 0 {
+    var currentsemcreditsnumber: Double = 0.0 {
         didSet {
-            if currentsemcreditsnumber > 27 {
-                currentsemcreditsnumber = 27
+            if currentsemcreditsnumber > 27.0 {
+                currentsemcreditsnumber = 27.0
                 self.currentSemCredits.text = "\(currentsemcreditsnumber)"
             }
         }
     }
-    var cgpabeforethissemnumber: Int = 0 {
+    var cgpabeforethissemnumber: Double = 0.0 {
         didSet {
-            if cgpabeforethissemnumber > 10 {
-                cgpabeforethissemnumber = 10
+            if cgpabeforethissemnumber > 10.0 {
+                cgpabeforethissemnumber = 10.0
                 self.cgpaBeforeThisSem.text = "\(cgpabeforethissemnumber)"
             }
         }
     }
-    var creditsfinishednumber: Int = 0 {
+    var creditsfinishednumber: Double = 0.0 {
         didSet {
-            if creditsfinishednumber > 180 {
-                creditsfinishednumber = 180
+            if creditsfinishednumber > 180.0 {
+                creditsfinishednumber = 180.0
                 self.creditsFinished.text = "\(creditsfinishednumber)"
             }
         }
@@ -121,16 +121,16 @@ class CGPAViewController: UIViewController {
     // ObjC Function For Autoset Validation For TextFields
     @objc func didChangeText() {
         if let num1 = Double(self.currentGPA.text!) {
-            self.currentgpanumber = Int(num1)
+            self.currentgpanumber = Double(num1)
         }
         if let num2 = Double(self.currentSemCredits.text!) {
-            self.currentsemcreditsnumber = Int(num2)
+            self.currentsemcreditsnumber = Double(num2)
         }
         if let num3 = Double(self.cgpaBeforeThisSem.text!) {
-            self.cgpabeforethissemnumber = Int(num3)
+            self.cgpabeforethissemnumber = Double(num3)
         }
         if let num4 = Double(self.creditsFinished.text!) {
-            self.creditsfinishednumber = Int(num4)
+            self.creditsfinishednumber = Double(num4)
         }
     }
     
@@ -201,13 +201,17 @@ class CGPAViewController: UIViewController {
             return
         } */
             
-            Calculations()
+        /* if currentGPA.text?.isEmpty ?? true {
+            answer.text = "Empty Textfields"
+        } */
+        
+        Calculations()
             
-            // PopUp Animation
-            PopUpAnimation()
+        // PopUp Animation
+        PopUpAnimation()
             
-            AnimateIn(desiredView: blurView)    // This First
-            AnimateIn(desiredView: popUpView)   // This Next
+        AnimateIn(desiredView: blurView)    // This First
+        AnimateIn(desiredView: popUpView)   // This Next
         
     }
     
