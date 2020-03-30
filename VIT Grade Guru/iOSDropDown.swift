@@ -1,4 +1,3 @@
-
 //
 //  iOSDropDown.swift
 //
@@ -50,17 +49,17 @@ open class DropDown : UITextField {
     }
     
     //Variables
-    fileprivate  var tableheightX: CGFloat = 100
-    fileprivate  var dataArray = [String]()
+    fileprivate var tableheightX: CGFloat = 100
+    fileprivate var dataArray = [String]()
     public var optionArray = [String]() {
-        didSet{
+        didSet {
             self.dataArray = self.optionArray
         }
     }
     
     public var optionIds : [Int]?
     var searchText = String() {
-        didSet{
+        didSet {
             if searchText == "" {
                 self.dataArray = self.optionArray
             } else {
@@ -76,7 +75,7 @@ open class DropDown : UITextField {
     
     @IBInspectable public var arrowSize: CGFloat = 15 {
         didSet {
-            let center =  arrow.superview!.center
+            let center = arrow.superview!.center
             arrow.frame = CGRect(x: center.x - arrowSize/2, y: center.y - arrowSize/2, width: arrowSize, height: arrowSize)
         }
     }
@@ -115,13 +114,12 @@ open class DropDown : UITextField {
     }
     
     fileprivate func addGesture() {
-        let gesture =  UITapGestureRecognizer(target: self, action:  #selector(touchAction))
-        if isSearchEnable{
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(touchAction))
+        if isSearchEnable {
             self.rightView?.addGestureRecognizer(gesture)
         } else {
             self.addGestureRecognizer(gesture)
         }
-        
     }
     
     public func showList() {
@@ -132,14 +130,10 @@ open class DropDown : UITextField {
         } else {
             self.tableheightX = listHeight
         }
-        table = UITableView(frame: CGRect(x: self.frame.minX,
-                                          y: self.frame.minY,
-                                          width: self.frame.width,
-                                          height: self.frame.height))
-        shadow = UIView(frame: CGRect(x: self.frame.minX,
-                                      y: self.frame.minY,
-                                      width: self.frame.width,
-                                      height: self.frame.height))
+        table = UITableView(frame: CGRect(x: self.frame.minX, y: self.frame.minY, width: self.frame.width, height: self.frame.height))
+        
+        shadow = UIView(frame: CGRect(x: self.frame.minX, y: self.frame.minY, width: self.frame.width, height: self.frame.height))
+        
         shadow.backgroundColor = .clear
         
         table.dataSource = self
@@ -159,20 +153,16 @@ open class DropDown : UITextField {
                        initialSpringVelocity: 0.1,
                        options: .curveEaseInOut,
                        animations: { () -> Void in
-                        
                         self.table.frame = CGRect(x: self.frame.minX,
                                                   y: self.frame.maxY+5,
                                                   width: self.frame.width,
                                                   height: self.tableheightX)
-                        
                         self.table.alpha = 1
                         self.shadow.frame = self.table.frame
                         self.shadow.dropShadow()
                         self.arrow.position = .up
-                        
         },
                        completion: { (finish) -> Void in
-                        
         })
         
     }
@@ -180,9 +170,9 @@ open class DropDown : UITextField {
     public func hideList() {
         
         TableWillDisappearCompletion()
-        UIView.animate(withDuration: 1.0,
-                       delay: 0.4,
-                       usingSpringWithDamping: 0.9,
+        UIView.animate(withDuration: 0.9,
+                       delay: 0.2,
+                       usingSpringWithDamping: 0.6,
                        initialSpringVelocity: 0.1,
                        options: .curveEaseInOut,
                        animations: { () -> Void in
@@ -204,7 +194,6 @@ open class DropDown : UITextField {
     }
     
     @objc public func touchAction() {
-        
         isSelected ?  hideList() : showList()
     }
     
@@ -228,7 +217,6 @@ open class DropDown : UITextField {
         },
                        completion: { (didFinish) -> Void in
                         self.shadow.layer.shadowPath = UIBezierPath(rect: self.table.bounds).cgPath
-                        
         })
     }
     
@@ -274,7 +262,7 @@ extension DropDown : UITextFieldDelegate {
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if string != "" {
             self.searchText = self.text! + string
-        }else{
+        }else {
             let subText = self.text?.dropLast()
             self.searchText = String(subText!)
         }
@@ -305,7 +293,7 @@ extension DropDown: UITableViewDataSource {
         
         if indexPath.row != selectedIndex{
             cell!.backgroundColor = rowBackgroundColor
-        }else {
+        } else {
             cell?.backgroundColor = selectedRowColor
         }
         
@@ -332,7 +320,6 @@ extension DropDown: UITableViewDelegate {
         } ,
                        completion: { (didFinish) -> Void in
                         self.text = "\(selectedText)"
-                        
                         tableView.reloadData()
         })
         if hideOptionsWhenSelect {
@@ -342,7 +329,7 @@ extension DropDown: UITableViewDelegate {
         if let selected = optionArray.firstIndex(where: {$0 == selectedText}) {
             if let id = optionIds?[selected] {
                 didSelectCompletion(selectedText, selected , id )
-            }else{
+            } else {
                 didSelectCompletion(selectedText, selected , 0)
             }
             
@@ -362,20 +349,17 @@ enum Position {
 class Arrow: UIView {
     
     var position: Position = .down {
-        didSet{
+        didSet {
             switch position {
             case .left:
                 self.transform = CGAffineTransform(rotationAngle: -CGFloat.pi/2)
                 break
-                
             case .down:
                 self.transform = CGAffineTransform(rotationAngle: CGFloat.pi*2)
                 break
-                
             case .right:
                 self.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
                 break
-                
             case .up:
                 self.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
                 break
