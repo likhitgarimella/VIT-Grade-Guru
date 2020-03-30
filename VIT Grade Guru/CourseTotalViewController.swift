@@ -30,48 +30,23 @@ class CourseTotalViewController: UIViewController {
     func Calculations() {
         
         let string1 = cat1.text!
-        var number1 = Double(string1)
+        let number1 = Double(string1)
         let string2 = cat2.text!
-        var number2 = Double(string2)
+        let number2 = Double(string2)
         let string3 = da1.text!
-        var number3 = Double(string3)
+        let number3 = Double(string3)
         let string4 = da2.text!
-        var number4 = Double(string4)
+        let number4 = Double(string4)
         let string5 = da3.text!
-        var number5 = Double(string5)
+        let number5 = Double(string5)
         let string6 = fat.text!
-        var number6 = Double(string6)
+        let number6 = Double(string6)
         let string7 = lab.text!
-        var number7 = Double(string7)
+        let number7 = Double(string7)
         let string8 = project.text!
-        var number8 = Double(string8)
+        let number8 = Double(string8)
         
-        // Textfield Validation
-        if (cat1.text!.isEmpty) {
-           number1 = 0
-        }
-        if (cat2.text!.isEmpty) {
-           number2 = 0
-        }
-        if (da1.text!.isEmpty) {
-           number3 = 0
-        }
-        if (da2.text!.isEmpty) {
-           number4 = 0
-        }
-        if (da3.text!.isEmpty) {
-           number5 = 0
-        }
-        if (fat.text!.isEmpty) {
-           number6 = 0
-        }
-        if (lab.text!.isEmpty) {
-           number7 = 0
-        }
-        if (project.text!.isEmpty) {
-           number8 = 0
-        }
-        
+
         if labSwitch.isOn==true && projectSwitch.isOn==true {
             if (lab.text!.isEmpty || project.text!.isEmpty) {
                 print("Empty Fields Last Two")
@@ -324,6 +299,17 @@ class CourseTotalViewController: UIViewController {
 
     @IBAction func button(_ sender: UIButton) {
         
+        // 1
+        if labSwitch.isOn==true && projectSwitch.isOn==true {
+        if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty || lab.text!.isEmpty || project.text!.isEmpty) {
+            // Alert
+            let myAlert = UIAlertController(title: "Empty Fields #1", message: "", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert, animated: true, completion: nil)
+            return
+        } else {
+        
         Calculations()
         
         // PopUp Animation
@@ -331,6 +317,75 @@ class CourseTotalViewController: UIViewController {
         
         AnimateIn(desiredView: blurView)    // This First
         AnimateIn(desiredView: popUpView)   // This Next
+            
+        }
+        }
+        
+        // 2
+        if labSwitch.isOn==true && projectSwitch.isOn==false {
+        if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty || lab.text!.isEmpty) {
+            // Alert
+            let myAlert = UIAlertController(title: "Empty Fields #2", message: "", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert, animated: true, completion: nil)
+            return
+        } else {
+        
+        Calculations()
+        
+        // PopUp Animation
+        PopUpAnimation()
+        
+        AnimateIn(desiredView: blurView)    // This First
+        AnimateIn(desiredView: popUpView)   // This Next
+            
+        }
+        }
+        
+        // 3
+        if labSwitch.isOn==false && projectSwitch.isOn==true {
+        if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty || project.text!.isEmpty) {
+            // Alert
+            let myAlert = UIAlertController(title: "Empty Fields #3", message: "", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert, animated: true, completion: nil)
+            return
+        } else {
+        
+        Calculations()
+        
+        // PopUp Animation
+        PopUpAnimation()
+        
+        AnimateIn(desiredView: blurView)    // This First
+        AnimateIn(desiredView: popUpView)   // This Next
+            
+        }
+        }
+        
+        // 4
+        if labSwitch.isOn==false && projectSwitch.isOn==false {
+        if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty) {
+            // Alert
+            let myAlert = UIAlertController(title: "Empty Fields #4", message: "", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert, animated: true, completion: nil)
+            return
+        } else {
+        
+        Calculations()
+        
+        // PopUp Animation
+        PopUpAnimation()
+        
+        AnimateIn(desiredView: blurView)    // This First
+        AnimateIn(desiredView: popUpView)   // This Next
+            
+        }
+        }
         
     }
     
