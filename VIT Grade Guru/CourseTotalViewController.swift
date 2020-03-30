@@ -10,6 +10,7 @@ import UIKit
 
 class CourseTotalViewController: UIViewController {
     
+    // Outlets
     @IBOutlet var topBar: UIView!
     
     @IBOutlet var labSwitch: UISwitch!
@@ -29,6 +30,7 @@ class CourseTotalViewController: UIViewController {
     // Function for calculations
     func Calculations() {
         
+        // String to Double conversions
         let string1 = cat1.text!
         let number1 = Double(string1)
         let string2 = cat2.text!
@@ -46,7 +48,8 @@ class CourseTotalViewController: UIViewController {
         let string8 = project.text!
         let number8 = Double(string8)
         
-
+        
+        // If both Lab and Project Switches are On
         if labSwitch.isOn==true && projectSwitch.isOn==true {
             if (lab.text!.isEmpty || project.text!.isEmpty) {
                 print("Empty Fields Last Two")
@@ -54,8 +57,9 @@ class CourseTotalViewController: UIViewController {
             } else {
             answer.text = String( (( ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )/2) + (number7!)/4 + (number8!)/4)
             }   // If Lab and Project Fields aren't empty
-        }   // If both Lab and Project Switches are On
+        }
         
+        // If Lab Switch is On and Project Switche is Off
         if labSwitch.isOn==true && projectSwitch.isOn==false {
             if (lab.text!.isEmpty) {
                 print("Empty Lab Field")
@@ -63,8 +67,9 @@ class CourseTotalViewController: UIViewController {
             } else {
                 answer.text = String( (3*( ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )/4) + (number7!)/4)
             }   // If Lab Field isn't empty
-        }   // If Lab Switch is On and Project Switche is Off
+        }
         
+        // If Lab Switch is Off and Project Switche is On
         if labSwitch.isOn==false && projectSwitch.isOn==true {
             if (project.text!.isEmpty) {
                 print("Empty Project Field")
@@ -72,11 +77,12 @@ class CourseTotalViewController: UIViewController {
             } else {
                 answer.text = String( (3*( ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )/4) + (number8!)/4)
             }   // If Project Field isn't empty
-        }   // If Lab Switch is Off and Project Switche is On
+        }
         
+        // If both Lab and Project Switches are Off
         if labSwitch.isOn==false && projectSwitch.isOn==false {
             answer.text = String( ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )
-        }       // If both Lab and Project Switches are Off
+        }
     }           // Entire Calculations Function
     
     /* //////////////////////////////////////////////////////////////////////////////// */
@@ -85,35 +91,35 @@ class CourseTotalViewController: UIViewController {
     func Autoset() {
         
         cat1.keyboardType = .decimalPad
-        cat1.text = ""
+        cat1.text = ""      // Initialise empty textfield
         cat1.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         cat2.keyboardType = .decimalPad
-        cat2.text = ""
+        cat2.text = ""      // Initialise empty textfield
         cat2.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         da1.keyboardType = .decimalPad
-        da1.text = ""
+        da1.text = ""       // Initialise empty textfield
         da1.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         da2.keyboardType = .decimalPad
-        da2.text = ""
+        da2.text = ""       // Initialise empty textfield
         da2.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         da3.keyboardType = .decimalPad
-        da3.text = ""
+        da3.text = ""       // Initialise empty textfield
         da3.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         fat.keyboardType = .decimalPad
-        fat.text = ""
+        fat.text = ""       // Initialise empty textfield
         fat.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         lab.keyboardType = .decimalPad
-        lab.text = ""
+        lab.text = ""       // Initialise empty textfield
         lab.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         project.keyboardType = .decimalPad
-        project.text = ""
+        project.text = ""   // Initialise empty textfield
         project.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
     }
@@ -299,7 +305,7 @@ class CourseTotalViewController: UIViewController {
 
     @IBAction func button(_ sender: UIButton) {
         
-        // 1
+        // 1 // If both Lab and Project Switches are On
         if labSwitch.isOn==true && projectSwitch.isOn==true {
         if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty || lab.text!.isEmpty || project.text!.isEmpty) {
             // Alert
@@ -321,7 +327,7 @@ class CourseTotalViewController: UIViewController {
         }
         }
         
-        // 2
+        // 2 // If Lab Switch is On and Project Switche is Off
         if labSwitch.isOn==true && projectSwitch.isOn==false {
         if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty || lab.text!.isEmpty) {
             // Alert
@@ -343,7 +349,7 @@ class CourseTotalViewController: UIViewController {
         }
         }
         
-        // 3
+        // 3 // If Lab Switch is Off and Project Switche is On
         if labSwitch.isOn==false && projectSwitch.isOn==true {
         if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty || project.text!.isEmpty) {
             // Alert
@@ -365,7 +371,7 @@ class CourseTotalViewController: UIViewController {
         }
         }
         
-        // 4
+        // 4 // If both Lab and Project Switches are Off
         if labSwitch.isOn==false && projectSwitch.isOn==false {
         if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty) {
             // Alert
@@ -432,6 +438,7 @@ class CourseTotalViewController: UIViewController {
         
     }
     
+    // Popup view outlets
     @IBOutlet var blurView: UIVisualEffectView!
     
     @IBOutlet var popUpView: UIView!
