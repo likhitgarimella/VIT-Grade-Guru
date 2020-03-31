@@ -390,6 +390,8 @@ class CourseTotalViewController: UIViewController {
         AnimateIn(desiredView: blurView)    // This First
         AnimateIn(desiredView: popUpView)   // This Next
             
+        ChangeImageInPopUpView()
+            
         }
         }
         
@@ -459,6 +461,34 @@ class CourseTotalViewController: UIViewController {
         
     }
     
+    func ChangeImageInPopUpView() {
+        
+        let outputString = answer.text!
+        let outputNumber = Double(outputString)
+        
+        // if (90...100 ~= outputNumber) // Forgot to unwrap
+        // if (outputNumber == 10) // Forgot to set bounds
+        if (90...100 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "About")
+        }
+        if (80..<90 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "9Poi")
+        }
+        if (70..<80 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "cgpa")
+        }
+        if (60..<70 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "gpa")
+        }
+        if (50..<60 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "course")
+        }
+        if (0..<50 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "Avatar")
+        }
+        
+    }
+    
     @IBAction func Ok(_ sender: UIButton) {
         
         AnimateOut(desiredView: popUpView)  // This First
@@ -466,4 +496,4 @@ class CourseTotalViewController: UIViewController {
         
     }
     
-}
+}   // #500
