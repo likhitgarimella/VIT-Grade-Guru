@@ -62,7 +62,8 @@ class NinePointerViewController: UIViewController {
     func DropDownOptions() {
     
         // DropDown Options For Credits TextFields
-        selectPointer.optionArray = ["9 Pointer", "8 Pointer", "7 Pointer", "6 Pointer"]
+        // Added additional .5 pointer options
+        selectPointer.optionArray = ["9.5 Pointer", "9 Pointer", "8.5 Pointer", "8 Pointer", "7.5 Pointer", "7 Pointer", "6.5 Pointer", "6 Pointer"]
         selectPointer.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
         
     }

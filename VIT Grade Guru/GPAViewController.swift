@@ -10,6 +10,7 @@ import UIKit
 
 class GPAViewController: UIViewController {
     
+    // Outlets
     @IBOutlet var topBar: UIView!
     
     @IBOutlet var credits01: DropDown!
@@ -40,6 +41,8 @@ class GPAViewController: UIViewController {
     // Function for calculations
     func Calculations() {
         
+        // String to Double conversions &
+        // Grabbing double value from given string
         let string1 = credits01.text!
         var number1 = Double(string1.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string2 = credits02.text!
@@ -159,10 +162,12 @@ class GPAViewController: UIViewController {
             // Denominator Validation
             if (credits01.text!.isEmpty && credits02.text!.isEmpty && credits03.text!.isEmpty && credits04.text!.isEmpty && credits05.text!.isEmpty && credits06.text!.isEmpty && credits07.text!.isEmpty && credits08.text!.isEmpty && credits09.text!.isEmpty && credits10.text!.isEmpty && credits11.text!.isEmpty)
             {
-                answer.text = "0"
+                answer.text = "Your GPA : 0.0" // when credits textfield input given, and leave grade textfield empty, calculations being done, and displayed double value 0.0
+                // hence even when credits textfield is left empty, display value "Your GPA : 0.0"
             } else {
+            
             // Actual Formula
-            answer.text = String( ((number1!*numberA!)+(number2!*numberB!)+(number3!*numberC!)+(number4!*numberD!)+(number5!*numberE!)+(number6!*numberF!)+(number7!*numberG!)+(number8!*numberH!)+(number9!*numberI!)+(number10!*numberJ!)+(number11!*numberK!))/(number1!+number2!+number3!+number4!+number5!+number6!+number7!+number8!+number9!+number10!+number11!) )
+            answer.text = String("Your GPA : \(((number1!*numberA!)+(number2!*numberB!)+(number3!*numberC!)+(number4!*numberD!)+(number5!*numberE!)+(number6!*numberF!)+(number7!*numberG!)+(number8!*numberH!)+(number9!*numberI!)+(number10!*numberJ!)+(number11!*numberK!))/(number1!+number2!+number3!+number4!+number5!+number6!+number7!+number8!+number9!+number10!+number11!))")
             }
             
         }       // Entire Calculations Function
@@ -400,6 +405,8 @@ class GPAViewController: UIViewController {
         AnimateIn(desiredView: blurView)    // This First
         AnimateIn(desiredView: popUpView)   // This Next
         
+        ChangeImageInPopUpView()
+        
     }
     
     func PopUpAnimation() {
@@ -445,6 +452,7 @@ class GPAViewController: UIViewController {
         
     }
     
+    // Popup view outlets
     @IBOutlet var blurView: UIVisualEffectView!
     
     @IBOutlet var popUpView: UIView!
@@ -462,6 +470,34 @@ class GPAViewController: UIViewController {
         popUpView.layer.cornerRadius = 16
         okOutlet.layer.cornerRadius = 16
         okOutlet.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        
+    }
+    
+    func ChangeImageInPopUpView() {
+        
+        let outputString = answer.text!
+        let outputNumber = Double(outputString.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        
+        // if (90...100 ~= outputNumber) // Forgot to unwrap
+        // if (outputNumber == 10) // Forgot to set bounds
+        if (9...10 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "About")
+        }
+        if (8..<9 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "9Poi")
+        }
+        if (7..<8 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "cgpa")
+        }
+        if (6..<7 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "gpa")
+        }
+        if (5..<6 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "course")
+        }
+        if (0..<5 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "Avatar")
+        }
         
     }
     
