@@ -23,16 +23,16 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
     func Calculations() {
         
         let string1 = currentGPA.text!
-        var number1 = Double(string1)
+        let number1 = Double(string1)
         let string2 = currentSemCredits.text!
-        var number2 = Double(string2)
+        let number2 = Double(string2)
         let string3 = cgpaBeforeThisSem.text!
-        var number3 = Double(string3)
+        let number3 = Double(string3)
         let string4 = creditsFinished.text!
-        var number4 = Double(string4)
+        let number4 = Double(string4)
         
         // Credits Textfield Validation
-        if (currentGPA.text!.isEmpty) {
+        /* if (currentGPA.text!.isEmpty) {
            number1 = 0
         }
         if (currentSemCredits.text!.isEmpty) {
@@ -50,15 +50,13 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
             answer.text = "0.0" // when both credits textfields input given, and leave gpa & cgpa textfields empty, calculations being done, and displayed double value 0.0
             // hence even when credits textfields are left empty, display value "0.0"
             
-        } else {
+        } */
         
         // let lenghtOfChar = (number2!+number4!)
         // guard lenghtOfChar != 0 else { return }
         
         // Actual Formula
         answer.text = String(((number3!*number4!)+(number1!*number2!))/(number2!+number4!))
-            
-        }
         
     }       // Entire Calculations Function
     
@@ -137,19 +135,6 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
     
     /* //////////////////////////////////////////////////////////////////////////////// */
     
-    /* var placeHolder = ""
-    
-    @objc func textFieldDidBeginEditing(_ textField: UITextField) {
-        placeHolder = textField.placeholder ?? ""
-        textField.placeholder = ""
-    }
-
-    @objc func textFieldDidEndEditing(_ textField: UITextField) {
-        if textField.placeholder == "" {
-        textField.placeholder = placeHolder
-        }
-    } */   // Hide placeholder when cursor is brought // Not working
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -205,19 +190,15 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func calculateCgpa(_ sender: UIButton) {
         
-        /* if ((currentGPA.text!.isEmpty && currentSemCredits.text!.isEmpty && cgpaBeforeThisSem.text!.isEmpty && creditsFinished.text!.isEmpty))
+        if ((currentGPA.text!.isEmpty || currentSemCredits.text!.isEmpty || cgpaBeforeThisSem.text!.isEmpty || creditsFinished.text!.isEmpty))
         {
             // Alert
-            let myAlert = UIAlertController(title: "Alert", message: "Check Validation", preferredStyle: UIAlertController.Style.alert)
+            let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
             myAlert.addAction(okAction)
             self.present(myAlert, animated: true, completion: nil)
             return
-        } */
-            
-        /* if currentGPA.text?.isEmpty ?? true {
-            answer.text = "Empty Textfields"
-        } */
+        } else {
         
         Calculations()
             
@@ -226,6 +207,10 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
             
         AnimateIn(desiredView: blurView)    // This First
         AnimateIn(desiredView: popUpView)   // This Next
+        
+        ChangeImageInPopUpView()
+            
+        }
         
     }
     
@@ -292,6 +277,34 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    func ChangeImageInPopUpView() {
+        
+        let outputString = answer.text!
+        let outputNumber = Double(outputString)
+        
+        // if (90...100 ~= outputNumber) // Forgot to unwrap
+        // if (outputNumber == 10) // Forgot to set bounds
+        if (9...10 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "About")
+        }
+        if (8..<9 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "9Poi")
+        }
+        if (7..<8 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "cgpa")
+        }
+        if (6..<7 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "gpa")
+        }
+        if (5..<6 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "course")
+        }
+        if (0..<5 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "Avatar")
+        }
+        
+    }
+    
     @IBAction func Ok(_ sender: UIButton) {
         
         AnimateOut(desiredView: popUpView)  // This First
@@ -299,4 +312,4 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-}
+}   // #316

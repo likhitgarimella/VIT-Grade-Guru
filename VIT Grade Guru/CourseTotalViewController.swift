@@ -324,6 +324,8 @@ class CourseTotalViewController: UIViewController {
         AnimateIn(desiredView: blurView)    // This First
         AnimateIn(desiredView: popUpView)   // This Next
             
+        ChangeImageInPopUpView()
+            
         }
         }
         
@@ -346,6 +348,8 @@ class CourseTotalViewController: UIViewController {
         AnimateIn(desiredView: blurView)    // This First
         AnimateIn(desiredView: popUpView)   // This Next
             
+        ChangeImageInPopUpView()
+            
         }
         }
         
@@ -367,6 +371,8 @@ class CourseTotalViewController: UIViewController {
         
         AnimateIn(desiredView: blurView)    // This First
         AnimateIn(desiredView: popUpView)   // This Next
+            
+        ChangeImageInPopUpView()
             
         }
         }
@@ -496,4 +502,4 @@ class CourseTotalViewController: UIViewController {
         
     }
     
-}   // #500
+}   // #506
