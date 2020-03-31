@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CGPAViewController: UIViewController {
+class CGPAViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var topBar: UIView!
     
@@ -47,7 +47,8 @@ class CGPAViewController: UIViewController {
         
         if (currentSemCredits.text!.isEmpty && creditsFinished.text!.isEmpty) {
             
-            answer.text = "0"
+            answer.text = "0.0" // when both credits textfields input given, and leave gpa & cgpa textfields empty, calculations being done, and displayed double value 0.0
+            // hence even when credits textfields are left empty, display value "0.0"
             
         } else {
         
@@ -135,6 +136,19 @@ class CGPAViewController: UIViewController {
     }
     
     /* //////////////////////////////////////////////////////////////////////////////// */
+    
+    /* var placeHolder = ""
+    
+    @objc func textFieldDidBeginEditing(_ textField: UITextField) {
+        placeHolder = textField.placeholder ?? ""
+        textField.placeholder = ""
+    }
+
+    @objc func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField.placeholder == "" {
+        textField.placeholder = placeHolder
+        }
+    } */   // Hide placeholder when cursor is brought // Not working
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,6 +7,17 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sen-Bold.ttf">
+            <string>Sen-Bold</string>
+        </array>
+        <array key="Sen-ExtraBold.ttf">
+            <string>Sen-ExtraBold</string>
+        </array>
+        <array key="Sen-Regular.ttf">
+            <string>Sen-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -41,36 +52,60 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="egY-1J-zhc">
-                                        <rect key="frame" x="16" y="9" width="42" height="42"/>
+                                        <rect key="frame" x="16" y="8" width="44" height="44"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="42" id="fLx-fM-9P1"/>
-                                            <constraint firstAttribute="width" constant="42" id="xbe-2L-NA5"/>
+                                            <constraint firstAttribute="height" constant="44" id="fLx-fM-9P1"/>
+                                            <constraint firstAttribute="width" constant="44" id="xbe-2L-NA5"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIq-He-Esp">
+                                        <rect key="frame" x="118" y="17.666666666666668" width="58" height="25.000000000000004"/>
+                                        <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5I-wy-8fc">
+                                        <rect key="frame" x="180" y="17.666666666666668" width="43.666666666666657" height="25.000000000000004"/>
+                                        <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sg3-yV-eCH">
+                                        <rect key="frame" x="76" y="18" width="38" height="24.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Sen-ExtraBold" family="Sen" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="6DK-UM-P37"/>
                                     <constraint firstItem="egY-1J-zhc" firstAttribute="centerY" secondItem="GiW-Y1-Zoj" secondAttribute="centerY" id="Ami-du-ISf"/>
+                                    <constraint firstItem="jIq-He-Esp" firstAttribute="leading" secondItem="sg3-yV-eCH" secondAttribute="trailing" constant="4" id="GFj-Tw-0xV"/>
+                                    <constraint firstItem="J5I-wy-8fc" firstAttribute="centerY" secondItem="GiW-Y1-Zoj" secondAttribute="centerY" id="Qvm-nY-P2u"/>
                                     <constraint firstItem="egY-1J-zhc" firstAttribute="leading" secondItem="GiW-Y1-Zoj" secondAttribute="leading" constant="16" id="RJx-li-XYm"/>
+                                    <constraint firstItem="J5I-wy-8fc" firstAttribute="leading" secondItem="jIq-He-Esp" secondAttribute="trailing" constant="4" id="lgQ-Kf-oUy"/>
+                                    <constraint firstItem="sg3-yV-eCH" firstAttribute="leading" secondItem="egY-1J-zhc" secondAttribute="trailing" constant="16" id="qE9-cd-tsB"/>
+                                    <constraint firstItem="sg3-yV-eCH" firstAttribute="centerY" secondItem="GiW-Y1-Zoj" secondAttribute="centerY" id="rhI-wq-sG7"/>
+                                    <constraint firstItem="jIq-He-Esp" firstAttribute="centerY" secondItem="GiW-Y1-Zoj" secondAttribute="centerY" id="sNA-5j-yFQ"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbS-10-GhE">
-                                <rect key="frame" x="0.0" y="80" width="414" height="990"/>
+                                <rect key="frame" x="0.0" y="68" width="414" height="1002"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dft-N2-gFJ" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="990"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kak-OL-IkD">
-                                                <rect key="frame" x="294" y="18" width="56" height="24"/>
+                                                <rect key="frame" x="292" y="18" width="58" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="ibG-Yy-vCH"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="20"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1rM-eE-xWB" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="1rM-eE-xWB" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="250" y="772" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -82,7 +117,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="akS-nG-buS"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -91,7 +126,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TQY-pv-HEK" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="TQY-pv-HEK" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="250" y="702" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -103,7 +138,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="cox-14-wBr"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -112,7 +147,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U4c-Le-YUB" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="U4c-Le-YUB" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="250" y="632" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -124,7 +159,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="slQ-V1-QoR"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -133,7 +168,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZTb-9q-HT0" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZTb-9q-HT0" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="250" y="562" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -145,7 +180,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="mFL-YM-Mft"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -154,7 +189,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hRc-3n-ipB" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="hRc-3n-ipB" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="250" y="492" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -166,7 +201,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="IZb-kq-MeS"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -175,7 +210,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8VX-T1-y1T" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="8VX-T1-y1T" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="250" y="422" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -187,7 +222,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="jWN-je-58s"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -196,7 +231,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="79h-9v-7OH" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="79h-9v-7OH" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="250" y="352" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -208,7 +243,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="a1I-S2-IB0"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -217,7 +252,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QJk-LV-FSk" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="QJk-LV-FSk" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="250" y="282" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -229,7 +264,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="xdZ-IX-DjE"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -238,7 +273,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ywp-kB-8Ka" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="ywp-kB-8Ka" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="250" y="212" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -250,7 +285,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="mn0-Rt-SWD"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -259,7 +294,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CLi-FM-41i" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="CLi-FM-41i" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="250" y="142" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -271,7 +306,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="weF-4O-uXY"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -280,7 +315,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OoY-XE-V9Z" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="OoY-XE-V9Z" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="250" y="72" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -292,7 +327,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="j9e-9Y-cZ4"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -302,15 +337,15 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bq-NS-hEk">
-                                                <rect key="frame" x="60" y="18" width="64" height="24"/>
+                                                <rect key="frame" x="60.000000000000007" y="18" width="68.666666666666686" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="hDg-Xw-PO9"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="20"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jiE-5Z-TPu" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="jiE-5Z-TPu" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="772" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -322,7 +357,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="yqH-ID-hMK"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -331,7 +366,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wjW-Qh-sP0" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="wjW-Qh-sP0" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="702" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -343,7 +378,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="cKl-OT-AuM"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -352,7 +387,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HhK-A8-5tD" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="HhK-A8-5tD" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="632" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -364,7 +399,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="saB-Ap-YLr"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -373,7 +408,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ahb-Le-US1" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="ahb-Le-US1" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="562" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -385,7 +420,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="DJf-fP-FaA"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -394,7 +429,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nao-9w-c9H" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="nao-9w-c9H" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="492" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -406,7 +441,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="Sbf-J9-G4H"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -415,7 +450,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Os6-uc-O0r" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Os6-uc-O0r" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="422" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -427,7 +462,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="hxk-6J-zBy"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -436,7 +471,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Wt-tV-ckp" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="7Wt-tV-ckp" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="352" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -448,7 +483,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="IQg-w7-OYZ"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -457,7 +492,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ezy-mR-7Pi" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Ezy-mR-7Pi" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="282" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -469,7 +504,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="fRf-Wb-kcK"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -478,7 +513,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qje-hW-Ccc" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="qje-hW-Ccc" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="212" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -490,7 +525,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="geb-Qo-jiy"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -499,7 +534,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jzh-4c-j3m" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="jzh-4c-j3m" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="142" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -511,7 +546,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="Igj-xE-F9p"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -520,7 +555,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vKA-YW-5gS" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="vKA-YW-5gS" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="72" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -532,7 +567,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="Q5I-sD-aqa"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -628,7 +663,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="zp6-fo-ytJ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
                                         <state key="normal" title="Calculate GPA">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -650,7 +685,7 @@
                         <constraints>
                             <constraint firstItem="BAh-BF-duI" firstAttribute="top" secondItem="wbS-10-GhE" secondAttribute="bottom" id="0jU-tX-OOI"/>
                             <constraint firstItem="GiW-Y1-Zoj" firstAttribute="top" secondItem="dvN-j8-Vak" secondAttribute="top" id="661-br-8hP"/>
-                            <constraint firstItem="wbS-10-GhE" firstAttribute="top" secondItem="GiW-Y1-Zoj" secondAttribute="bottom" constant="20" id="AHG-DP-8en"/>
+                            <constraint firstItem="wbS-10-GhE" firstAttribute="top" secondItem="GiW-Y1-Zoj" secondAttribute="bottom" constant="8" id="AHG-DP-8en"/>
                             <constraint firstItem="GiW-Y1-Zoj" firstAttribute="trailing" secondItem="dvN-j8-Vak" secondAttribute="trailing" id="F5r-9O-eTw"/>
                             <constraint firstItem="BAh-BF-duI" firstAttribute="bottom" secondItem="dvN-j8-Vak" secondAttribute="bottom" id="GRV-WU-jvJ"/>
                             <constraint firstItem="BAh-BF-duI" firstAttribute="trailing" secondItem="dvN-j8-Vak" secondAttribute="trailing" id="Pbn-ze-Q4P"/>
@@ -712,11 +747,11 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veT-HZ-f2Y">
-                            <rect key="frame" x="12" y="12" width="256" height="32"/>
+                            <rect key="frame" x="12" y="136.66666666666666" width="256" height="51.333333333333343"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="veT-HZ-f2Y" secondAttribute="height" multiplier="8:1" id="EAh-e4-FNO"/>
+                                <constraint firstAttribute="width" secondItem="veT-HZ-f2Y" secondAttribute="height" multiplier="5:1" id="EAh-e4-FNO"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="24"/>
                             <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -726,23 +761,13 @@
                                 <constraint firstAttribute="width" secondItem="kqG-WI-sPc" secondAttribute="height" multiplier="1:1" id="q3E-x4-huk"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wy3-gG-88j">
-                            <rect key="frame" x="12" y="136.66666666666666" width="256" height="51.333333333333343"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="wy3-gG-88j" secondAttribute="height" multiplier="5:1" id="Iiw-KG-Nmp"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="Courier-BoldOblique" family="Courier" pointSize="16"/>
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                            <color key="shadowColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYl-ny-kSH">
                             <rect key="frame" x="0.0" y="200" width="280" height="40"/>
                             <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="sYl-ny-kSH" secondAttribute="height" multiplier="7:1" id="dXD-0i-Jgf"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                            <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
                             <state key="normal" title="Ok">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -750,21 +775,31 @@
                                 <action selector="Ok:" destination="RAY-mN-huw" eventType="touchUpInside" id="e4d-73-ilq"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wy3-gG-88j">
+                            <rect key="frame" x="12" y="12" width="256" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="wy3-gG-88j" secondAttribute="height" multiplier="8:1" id="Iiw-KG-Nmp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="veT-HZ-f2Y" firstAttribute="leading" secondItem="R3f-lv-3An" secondAttribute="leading" constant="12" id="18s-Bp-dP3"/>
                         <constraint firstItem="wy3-gG-88j" firstAttribute="leading" secondItem="R3f-lv-3An" secondAttribute="leading" constant="12" id="3FV-zf-moz"/>
-                        <constraint firstItem="wy3-gG-88j" firstAttribute="top" secondItem="kqG-WI-sPc" secondAttribute="bottom" constant="12" id="7Wr-lD-8fi"/>
+                        <constraint firstItem="sYl-ny-kSH" firstAttribute="top" secondItem="veT-HZ-f2Y" secondAttribute="bottom" constant="12" id="4jb-oy-p2q"/>
                         <constraint firstItem="sYl-ny-kSH" firstAttribute="leading" secondItem="R3f-lv-3An" secondAttribute="leading" id="84N-ce-fn9"/>
                         <constraint firstItem="R3f-lv-3An" firstAttribute="bottom" secondItem="sYl-ny-kSH" secondAttribute="bottom" id="8wb-LE-p2D"/>
+                        <constraint firstItem="kqG-WI-sPc" firstAttribute="top" secondItem="wy3-gG-88j" secondAttribute="bottom" constant="12" id="Ams-OD-ory"/>
                         <constraint firstItem="sYl-ny-kSH" firstAttribute="trailing" secondItem="R3f-lv-3An" secondAttribute="trailing" id="COF-IP-MGo"/>
-                        <constraint firstItem="kqG-WI-sPc" firstAttribute="top" secondItem="veT-HZ-f2Y" secondAttribute="bottom" constant="12" id="HeT-c0-jY3"/>
+                        <constraint firstItem="wy3-gG-88j" firstAttribute="top" secondItem="R3f-lv-3An" secondAttribute="top" constant="12" id="EdP-rZ-Pdk"/>
                         <constraint firstItem="R3f-lv-3An" firstAttribute="trailing" secondItem="wy3-gG-88j" secondAttribute="trailing" constant="12" id="Hfe-Tg-pDU"/>
-                        <constraint firstItem="sYl-ny-kSH" firstAttribute="top" secondItem="wy3-gG-88j" secondAttribute="bottom" constant="12" id="XFb-hW-q7J"/>
                         <constraint firstItem="R3f-lv-3An" firstAttribute="trailing" secondItem="veT-HZ-f2Y" secondAttribute="trailing" constant="12" id="ZsH-qa-BDv"/>
-                        <constraint firstItem="veT-HZ-f2Y" firstAttribute="top" secondItem="R3f-lv-3An" secondAttribute="top" constant="12" id="dBf-pO-J3u"/>
                         <constraint firstItem="kqG-WI-sPc" firstAttribute="centerX" secondItem="EVE-3V-2h2" secondAttribute="centerX" id="mWY-ye-0Ez"/>
+                        <constraint firstItem="veT-HZ-f2Y" firstAttribute="top" secondItem="kqG-WI-sPc" secondAttribute="bottom" constant="12" id="ogB-xf-7df"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="R3f-lv-3An"/>
                 </view>
@@ -783,214 +818,238 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="hd5-uL-Umw">
-                                        <rect key="frame" x="16" y="9" width="42" height="42"/>
+                                        <rect key="frame" x="16" y="8" width="44" height="44"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="42" id="8tp-fs-RKP"/>
-                                            <constraint firstAttribute="height" constant="42" id="tCM-AH-Oyn"/>
+                                            <constraint firstAttribute="width" constant="44" id="8tp-fs-RKP"/>
+                                            <constraint firstAttribute="height" constant="44" id="tCM-AH-Oyn"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5IW-4S-53W">
+                                        <rect key="frame" x="76" y="18" width="38" height="24.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Sen-ExtraBold" family="Sen" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMh-q3-bL8">
+                                        <rect key="frame" x="118" y="17.666666666666668" width="58" height="25.000000000000004"/>
+                                        <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pyr-Ee-aRf">
+                                        <rect key="frame" x="180" y="17.666666666666668" width="43.666666666666657" height="25.000000000000004"/>
+                                        <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="493-Q7-CTs"/>
+                                    <constraint firstItem="XMh-q3-bL8" firstAttribute="centerY" secondItem="Bum-GU-5eL" secondAttribute="centerY" id="9lR-m5-TTf"/>
                                     <constraint firstItem="hd5-uL-Umw" firstAttribute="centerY" secondItem="Bum-GU-5eL" secondAttribute="centerY" id="Feu-Sb-7cP"/>
+                                    <constraint firstItem="Pyr-Ee-aRf" firstAttribute="centerY" secondItem="Bum-GU-5eL" secondAttribute="centerY" id="Q3u-Oi-95L"/>
                                     <constraint firstItem="hd5-uL-Umw" firstAttribute="leading" secondItem="Bum-GU-5eL" secondAttribute="leading" constant="16" id="Ups-Ep-Fz6"/>
+                                    <constraint firstItem="Pyr-Ee-aRf" firstAttribute="leading" secondItem="XMh-q3-bL8" secondAttribute="trailing" constant="4" id="m3p-Z8-HZK"/>
+                                    <constraint firstItem="XMh-q3-bL8" firstAttribute="leading" secondItem="5IW-4S-53W" secondAttribute="trailing" constant="4" id="nBV-Tt-Rbb"/>
+                                    <constraint firstItem="5IW-4S-53W" firstAttribute="centerY" secondItem="Bum-GU-5eL" secondAttribute="centerY" id="p8c-Gb-foA"/>
+                                    <constraint firstItem="5IW-4S-53W" firstAttribute="leading" secondItem="hd5-uL-Umw" secondAttribute="trailing" constant="16" id="ryQ-EY-D1P"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKd-yj-twr">
-                                <rect key="frame" x="0.0" y="80" width="414" height="607"/>
+                                <rect key="frame" x="0.0" y="68" width="414" height="619"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcs-9v-oPD">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="827"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Lab" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KU5-77-OxW">
-                                                <rect key="frame" x="50" y="24" width="92" height="24"/>
+                                                <rect key="frame" x="38.000000000000007" y="24" width="109.66666666666669" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="GiO-4R-ksU"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="20"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Project" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDP-Jv-GTX">
-                                                <rect key="frame" x="259.66666666666669" y="24" width="117.33333333333331" height="24"/>
+                                                <rect key="frame" x="249" y="24" width="142" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="r4A-Af-4X6"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="20"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VIa-JL-ssr">
-                                                <rect key="frame" x="71.666666666666671" y="56" width="51" height="31"/>
+                                                <rect key="frame" x="68.333333333333329" y="56" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="enableLab:" destination="afN-NI-Fxq" eventType="valueChanged" id="hVN-NZ-Jaa"/>
                                                 </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y4B-Kk-huu">
-                                                <rect key="frame" x="294" y="56" width="51" height="31"/>
+                                                <rect key="frame" x="295.66666666666669" y="56" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="enableProject:" destination="afN-NI-Fxq" eventType="valueChanged" id="dVo-2X-P7c"/>
                                                 </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAT1 (Max 50)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvS-fR-l8L">
-                                                <rect key="frame" x="49" y="111" width="94" height="24"/>
+                                                <rect key="frame" x="38.666666666666664" y="111" width="108.33333333333334" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="HR4-ph-VoR"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vho-hu-hYz">
-                                                <rect key="frame" x="36" y="143" width="120" height="52"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Vho-hu-hYz">
+                                                <rect key="frame" x="33" y="143" width="120" height="52"/>
                                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="1Ew-4C-1HX"/>
                                                     <constraint firstAttribute="width" constant="120" id="5Pn-Ao-NnF"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAT2 (Max 50)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Of-NH-Ahe">
-                                                <rect key="frame" x="271.33333333333331" y="111" width="94" height="24"/>
+                                                <rect key="frame" x="266" y="111" width="108.33333333333331" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="68k-EQ-ssN"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U97-HN-H3H">
-                                                <rect key="frame" x="258.33333333333331" y="143" width="120" height="52"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="U97-HN-H3H">
+                                                <rect key="frame" x="260" y="143" width="120" height="52"/>
                                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="ssJ-zR-eRd"/>
                                                     <constraint firstAttribute="height" constant="52" id="wqX-uR-JzZ"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DA1 (Max 10)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDH-Gq-MCf">
-                                                <rect key="frame" x="52.666666666666664" y="219" width="86.666666666666686" height="24"/>
+                                                <rect key="frame" x="42.333333333333336" y="219" width="101.33333333333331" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="f5r-b7-o0P"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W1d-Od-GFG">
-                                                <rect key="frame" x="36" y="251" width="120" height="52"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="W1d-Od-GFG">
+                                                <rect key="frame" x="33" y="251" width="120" height="52"/>
                                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="M7h-f8-OZj"/>
                                                     <constraint firstAttribute="width" constant="120" id="iOK-KF-lA1"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DA2 (Max 10)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lx6-7j-NGf">
-                                                <rect key="frame" x="275" y="219" width="86.666666666666686" height="24"/>
+                                                <rect key="frame" x="269.33333333333331" y="219" width="101.33333333333331" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="n1d-Ar-GQ0"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="frs-tk-QeL">
-                                                <rect key="frame" x="258.33333333333331" y="251" width="120" height="52"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="frs-tk-QeL">
+                                                <rect key="frame" x="260" y="251" width="120" height="52"/>
                                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="4pV-vW-sj0"/>
                                                     <constraint firstAttribute="height" constant="52" id="d9v-d9-LsV"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DA3 (Max 10)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="022-X4-hLa">
-                                                <rect key="frame" x="52.666666666666664" y="327" width="86.666666666666686" height="24"/>
+                                                <rect key="frame" x="42.333333333333336" y="327" width="101.33333333333331" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="rnH-Us-hsE"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aHL-gW-AAT">
-                                                <rect key="frame" x="36" y="359" width="120" height="52"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="aHL-gW-AAT">
+                                                <rect key="frame" x="33" y="359" width="120" height="52"/>
                                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="Wqd-Rc-sAf"/>
                                                     <constraint firstAttribute="height" constant="52" id="xt1-ap-X7A"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAT (Max 100)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBU-1G-G48">
-                                                <rect key="frame" x="272.66666666666669" y="327" width="91.333333333333314" height="24"/>
+                                                <rect key="frame" x="266.33333333333331" y="327" width="107.66666666666669" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="Bso-YR-XQR"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DT8-GZ-6ha">
-                                                <rect key="frame" x="258.33333333333331" y="359" width="120" height="52"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="DT8-GZ-6ha">
+                                                <rect key="frame" x="260" y="359" width="120" height="52"/>
                                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="5BN-Ku-o3I"/>
                                                     <constraint firstAttribute="height" constant="52" id="Y16-p6-9dg"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAB (Max 100)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOF-w6-G4N">
-                                                <rect key="frame" x="49.333333333333336" y="435" width="93.666666666666657" height="24"/>
+                                                <rect key="frame" x="38" y="435" width="110" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="N7w-Zm-vaC"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VEF-x2-ov0">
-                                                <rect key="frame" x="36" y="467" width="120" height="52"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="VEF-x2-ov0">
+                                                <rect key="frame" x="33" y="467" width="120" height="52"/>
                                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="RNY-qj-B7N"/>
                                                     <constraint firstAttribute="width" constant="120" id="VXt-4D-wim"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROJECT (Max 100)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvh-vp-nwE">
-                                                <rect key="frame" x="252.33333333333331" y="435" width="132.33333333333331" height="24"/>
+                                                <rect key="frame" x="247" y="435" width="146" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="BZy-oW-Ny1"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XEp-B7-UJg">
-                                                <rect key="frame" x="258.33333333333331" y="467" width="120" height="52"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="XEp-B7-UJg">
+                                                <rect key="frame" x="260" y="467" width="120" height="52"/>
                                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="8vv-ym-Awb"/>
                                                     <constraint firstAttribute="width" constant="120" id="pv4-LR-l5E"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlJ-5I-chn">
@@ -999,7 +1058,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="stJ-LN-RPz"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
                                                 <state key="normal" title="Grand Total">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -1030,7 +1089,7 @@
                                             <constraint firstItem="yvS-fR-l8L" firstAttribute="centerX" secondItem="KU5-77-OxW" secondAttribute="centerX" id="Dlv-WV-Smd"/>
                                             <constraint firstItem="tlJ-5I-chn" firstAttribute="leading" secondItem="bcs-9v-oPD" secondAttribute="leading" constant="32" id="Ica-io-8fV"/>
                                             <constraint firstItem="W1d-Od-GFG" firstAttribute="centerY" secondItem="frs-tk-QeL" secondAttribute="centerY" id="J3Q-X2-ohe"/>
-                                            <constraint firstItem="KU5-77-OxW" firstAttribute="leading" secondItem="bcs-9v-oPD" secondAttribute="leading" constant="50" id="JPA-5b-P0U"/>
+                                            <constraint firstItem="KU5-77-OxW" firstAttribute="leading" secondItem="bcs-9v-oPD" secondAttribute="leading" constant="38" id="JPA-5b-P0U"/>
                                             <constraint firstAttribute="trailing" secondItem="tlJ-5I-chn" secondAttribute="trailing" constant="32" id="KZ3-q7-Ivb"/>
                                             <constraint firstItem="yvS-fR-l8L" firstAttribute="centerY" secondItem="1Of-NH-Ahe" secondAttribute="centerY" id="LVa-Dh-WPB"/>
                                             <constraint firstItem="022-X4-hLa" firstAttribute="top" secondItem="W1d-Od-GFG" secondAttribute="bottom" constant="24" id="MdI-wk-Xfn"/>
@@ -1057,7 +1116,7 @@
                                             <constraint firstItem="U97-HN-H3H" firstAttribute="centerX" secondItem="oDP-Jv-GTX" secondAttribute="centerX" id="pe9-IR-yvT"/>
                                             <constraint firstItem="VEF-x2-ov0" firstAttribute="centerY" secondItem="XEp-B7-UJg" secondAttribute="centerY" id="q1H-fA-lRZ"/>
                                             <constraint firstItem="Y4B-Kk-huu" firstAttribute="top" secondItem="oDP-Jv-GTX" secondAttribute="bottom" constant="8" id="r81-sZ-9Nx"/>
-                                            <constraint firstAttribute="trailing" secondItem="oDP-Jv-GTX" secondAttribute="trailing" constant="37" id="rIg-XG-J5G"/>
+                                            <constraint firstAttribute="trailing" secondItem="oDP-Jv-GTX" secondAttribute="trailing" constant="23" id="rIg-XG-J5G"/>
                                             <constraint firstItem="aHL-gW-AAT" firstAttribute="top" secondItem="022-X4-hLa" secondAttribute="bottom" constant="8" id="scA-jv-67X"/>
                                             <constraint firstItem="DT8-GZ-6ha" firstAttribute="top" secondItem="kBU-1G-G48" secondAttribute="bottom" constant="8" id="tBe-Os-0wo"/>
                                             <constraint firstItem="vOF-w6-G4N" firstAttribute="centerX" secondItem="KU5-77-OxW" secondAttribute="centerX" id="tDj-Dh-Ljf"/>
@@ -1083,7 +1142,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Bum-GU-5eL" firstAttribute="top" secondItem="ZSP-uc-4sF" secondAttribute="top" id="D65-Y4-ERL"/>
-                            <constraint firstItem="TKd-yj-twr" firstAttribute="top" secondItem="Bum-GU-5eL" secondAttribute="bottom" constant="20" id="ESN-Pj-qGr"/>
+                            <constraint firstItem="TKd-yj-twr" firstAttribute="top" secondItem="Bum-GU-5eL" secondAttribute="bottom" constant="8" id="ESN-Pj-qGr"/>
                             <constraint firstItem="ZSP-uc-4sF" firstAttribute="trailing" secondItem="TKd-yj-twr" secondAttribute="trailing" id="Qet-OP-TUc"/>
                             <constraint firstItem="Bum-GU-5eL" firstAttribute="leading" secondItem="ZSP-uc-4sF" secondAttribute="leading" id="TRe-an-RxW"/>
                             <constraint firstItem="ZSP-uc-4sF" firstAttribute="bottom" secondItem="TKd-yj-twr" secondAttribute="bottom" id="gfA-hB-ZKg"/>
@@ -1132,36 +1191,31 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgx-wg-359">
-                            <rect key="frame" x="20" y="20" width="240" height="24"/>
+                            <rect key="frame" x="12" y="136.66666666666666" width="256" height="51.333333333333343"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="Xgx-wg-359" secondAttribute="height" multiplier="10:1" id="XAr-Ap-h6P"/>
+                                <constraint firstAttribute="width" secondItem="Xgx-wg-359" secondAttribute="height" multiplier="5:1" id="XAr-Ap-h6P"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="24"/>
                             <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="c42-Nt-xLx">
-                            <rect key="frame" x="104" y="62" width="72" height="72"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFC-eG-maZ">
+                            <rect key="frame" x="12" y="12" width="256" height="32"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="c42-Nt-xLx" secondAttribute="height" multiplier="1:1" id="15E-RH-kWZ"/>
+                                <constraint firstAttribute="width" secondItem="FFC-eG-maZ" secondAttribute="height" multiplier="8:1" id="cqM-JQ-as9"/>
                             </constraints>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFC-eG-maZ">
-                            <rect key="frame" x="20" y="152" width="240" height="24"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="FFC-eG-maZ" secondAttribute="height" multiplier="10:1" id="cqM-JQ-as9"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="Courier-BoldOblique" family="Courier" pointSize="16"/>
+                            <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJC-zD-ncn">
                             <rect key="frame" x="0.0" y="200" width="280" height="40"/>
                             <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="40" id="t9V-t7-KGn"/>
+                                <constraint firstAttribute="width" secondItem="FJC-zD-ncn" secondAttribute="height" multiplier="7:1" id="hIL-gT-JCO"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                            <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
                             <state key="normal" title="Ok">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -1169,26 +1223,32 @@
                                 <action selector="Ok:" destination="afN-NI-Fxq" eventType="touchUpInside" id="Wsu-NJ-cNI"/>
                             </connections>
                         </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c42-Nt-xLx">
+                            <rect key="frame" x="105.66666666666666" y="56.000000000000007" width="68.666666666666657" height="68.666666666666686"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="c42-Nt-xLx" secondAttribute="height" multiplier="1:1" id="15E-RH-kWZ"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="FJC-zD-ncn" firstAttribute="top" secondItem="Xgx-wg-359" secondAttribute="bottom" constant="12" id="Dbo-Js-cO3"/>
+                        <constraint firstItem="FFC-eG-maZ" firstAttribute="top" secondItem="cDD-Fn-hjs" secondAttribute="top" constant="12" id="Gl5-6l-5r9"/>
                         <constraint firstItem="FJC-zD-ncn" firstAttribute="bottom" secondItem="cDD-Fn-hjs" secondAttribute="bottom" id="JEw-Qm-flX"/>
-                        <constraint firstItem="FJC-zD-ncn" firstAttribute="top" secondItem="FFC-eG-maZ" secondAttribute="bottom" constant="24" id="O2i-s2-G8E"/>
-                        <constraint firstItem="FFC-eG-maZ" firstAttribute="top" secondItem="c42-Nt-xLx" secondAttribute="bottom" constant="18" id="U4x-YX-Y4h"/>
-                        <constraint firstItem="cDD-Fn-hjs" firstAttribute="trailing" secondItem="FFC-eG-maZ" secondAttribute="trailing" constant="20" id="YFs-zV-50S"/>
-                        <constraint firstItem="cDD-Fn-hjs" firstAttribute="trailing" secondItem="Xgx-wg-359" secondAttribute="trailing" constant="20" id="ZV0-jp-I8v"/>
-                        <constraint firstItem="FFC-eG-maZ" firstAttribute="leading" secondItem="cDD-Fn-hjs" secondAttribute="leading" constant="20" id="aFd-Ob-4Ux"/>
-                        <constraint firstItem="c42-Nt-xLx" firstAttribute="top" secondItem="Xgx-wg-359" secondAttribute="bottom" constant="18" id="ag6-sH-ScF"/>
+                        <constraint firstItem="Xgx-wg-359" firstAttribute="top" secondItem="c42-Nt-xLx" secondAttribute="bottom" constant="12" id="LHO-So-5KR"/>
+                        <constraint firstItem="c42-Nt-xLx" firstAttribute="centerX" secondItem="wBB-BL-gGT" secondAttribute="centerX" id="UYd-77-FKF"/>
+                        <constraint firstItem="cDD-Fn-hjs" firstAttribute="trailing" secondItem="FFC-eG-maZ" secondAttribute="trailing" constant="12" id="YFs-zV-50S"/>
+                        <constraint firstItem="cDD-Fn-hjs" firstAttribute="trailing" secondItem="Xgx-wg-359" secondAttribute="trailing" constant="12" id="ZV0-jp-I8v"/>
+                        <constraint firstItem="FFC-eG-maZ" firstAttribute="leading" secondItem="cDD-Fn-hjs" secondAttribute="leading" constant="12" id="aFd-Ob-4Ux"/>
                         <constraint firstItem="cDD-Fn-hjs" firstAttribute="trailing" secondItem="FJC-zD-ncn" secondAttribute="trailing" id="apm-zF-dV3"/>
-                        <constraint firstItem="Xgx-wg-359" firstAttribute="leading" secondItem="cDD-Fn-hjs" secondAttribute="leading" constant="20" id="cL2-Gv-TsH"/>
-                        <constraint firstItem="Xgx-wg-359" firstAttribute="top" secondItem="cDD-Fn-hjs" secondAttribute="top" constant="20" id="kWE-NH-qIP"/>
+                        <constraint firstItem="Xgx-wg-359" firstAttribute="leading" secondItem="cDD-Fn-hjs" secondAttribute="leading" constant="12" id="cL2-Gv-TsH"/>
+                        <constraint firstItem="c42-Nt-xLx" firstAttribute="top" secondItem="FFC-eG-maZ" secondAttribute="bottom" constant="12" id="i3O-kP-hVE"/>
                         <constraint firstItem="FJC-zD-ncn" firstAttribute="leading" secondItem="cDD-Fn-hjs" secondAttribute="leading" id="mTA-RH-uI1"/>
-                        <constraint firstItem="c42-Nt-xLx" firstAttribute="centerX" secondItem="wBB-BL-gGT" secondAttribute="centerX" id="qx1-G6-y8c"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="cDD-Fn-hjs"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="-13" y="-1193"/>
+            <point key="canvasLocation" x="-13.043478260869566" y="-1193.4782608695652"/>
         </scene>
         <!--CGPA-->
         <scene sceneID="bQy-S0-td6">
@@ -1202,33 +1262,57 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="6nk-sv-eeD">
-                                        <rect key="frame" x="16" y="9" width="42" height="42"/>
+                                        <rect key="frame" x="16" y="8" width="44" height="44"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="42" id="d3C-9b-VNQ"/>
-                                            <constraint firstAttribute="width" constant="42" id="wik-nX-AQ0"/>
+                                            <constraint firstAttribute="height" constant="44" id="d3C-9b-VNQ"/>
+                                            <constraint firstAttribute="width" constant="44" id="wik-nX-AQ0"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6X8-j0-yAd">
+                                        <rect key="frame" x="180" y="17.666666666666668" width="43.666666666666657" height="25.000000000000004"/>
+                                        <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYX-5s-HDo">
+                                        <rect key="frame" x="118" y="17.666666666666668" width="58" height="25.000000000000004"/>
+                                        <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVH-Zh-6D1">
+                                        <rect key="frame" x="76" y="18" width="38" height="24.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Sen-ExtraBold" family="Sen" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="6X8-j0-yAd" firstAttribute="centerY" secondItem="eKN-Rh-FjQ" secondAttribute="centerY" id="94a-rA-0rz"/>
+                                    <constraint firstItem="6X8-j0-yAd" firstAttribute="leading" secondItem="zYX-5s-HDo" secondAttribute="trailing" constant="4" id="AsO-pp-Dgf"/>
+                                    <constraint firstItem="zYX-5s-HDo" firstAttribute="centerY" secondItem="eKN-Rh-FjQ" secondAttribute="centerY" id="Gez-yl-3H2"/>
                                     <constraint firstAttribute="height" constant="60" id="KEs-bN-XBW"/>
                                     <constraint firstItem="6nk-sv-eeD" firstAttribute="centerY" secondItem="eKN-Rh-FjQ" secondAttribute="centerY" id="cmf-eh-0VB"/>
+                                    <constraint firstItem="cVH-Zh-6D1" firstAttribute="leading" secondItem="6nk-sv-eeD" secondAttribute="trailing" constant="16" id="czc-JS-08R"/>
                                     <constraint firstItem="6nk-sv-eeD" firstAttribute="leading" secondItem="eKN-Rh-FjQ" secondAttribute="leading" constant="16" id="fcq-KE-N9B"/>
+                                    <constraint firstItem="cVH-Zh-6D1" firstAttribute="centerY" secondItem="eKN-Rh-FjQ" secondAttribute="centerY" id="j50-X6-23G"/>
+                                    <constraint firstItem="zYX-5s-HDo" firstAttribute="leading" secondItem="cVH-Zh-6D1" secondAttribute="trailing" constant="4" id="kKm-72-l42"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80N-hI-Plw">
-                                <rect key="frame" x="0.0" y="80" width="414" height="607"/>
+                                <rect key="frame" x="0.0" y="68" width="414" height="619"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwu-Us-Ylb">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="588"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current GPA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H0e-x6-RX1" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current GPA" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="H0e-x6-RX1" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="20" width="374" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="0sF-M7-2i9"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -1236,13 +1320,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Sem Credits" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3uy-d8-bVj" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Sem Credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="3uy-d8-bVj" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="92" width="374" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="Org-Cr-UF6"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -1250,13 +1334,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CGPA Before This Sem" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aig-ee-M5l" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CGPA Before This Sem" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="aig-ee-M5l" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="164" width="374" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="zaV-XH-yls"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -1264,13 +1348,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Credits Finished Before This Sem" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v1O-6c-rDU" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Credits Finished Before This Sem" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="v1O-6c-rDU" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="236" width="374" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="CVp-yY-Z9r"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -1284,7 +1368,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="dtP-FL-SJ2"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="18"/>
                                                 <state key="normal" title="Calculate CGPA">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -1331,7 +1415,7 @@
                             <constraint firstItem="80N-hI-Plw" firstAttribute="trailing" secondItem="sUI-eJ-fmI" secondAttribute="trailing" id="0GR-qg-8SJ"/>
                             <constraint firstItem="eKN-Rh-FjQ" firstAttribute="leading" secondItem="sUI-eJ-fmI" secondAttribute="leading" id="4db-bV-osI"/>
                             <constraint firstItem="eKN-Rh-FjQ" firstAttribute="top" secondItem="sUI-eJ-fmI" secondAttribute="top" id="Tza-WV-eU9"/>
-                            <constraint firstItem="80N-hI-Plw" firstAttribute="top" secondItem="eKN-Rh-FjQ" secondAttribute="bottom" constant="20" id="bIw-mH-h7w"/>
+                            <constraint firstItem="80N-hI-Plw" firstAttribute="top" secondItem="eKN-Rh-FjQ" secondAttribute="bottom" constant="8" id="bIw-mH-h7w"/>
                             <constraint firstItem="eKN-Rh-FjQ" firstAttribute="trailing" secondItem="sUI-eJ-fmI" secondAttribute="trailing" id="meR-rP-01J"/>
                             <constraint firstItem="80N-hI-Plw" firstAttribute="leading" secondItem="sUI-eJ-fmI" secondAttribute="leading" id="nZL-gw-T8u"/>
                             <constraint firstItem="80N-hI-Plw" firstAttribute="bottom" secondItem="sUI-eJ-fmI" secondAttribute="bottom" id="qrg-cJ-P1W"/>
@@ -1369,22 +1453,23 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBG-3s-9Te">
-                            <rect key="frame" x="20" y="20" width="240" height="24"/>
+                            <rect key="frame" x="12" y="136.66666666666666" width="256" height="51.333333333333343"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="MBG-3s-9Te" secondAttribute="height" multiplier="10:1" id="F5i-E0-T5z"/>
+                                <constraint firstAttribute="width" secondItem="MBG-3s-9Te" secondAttribute="height" multiplier="5:1" id="F5i-E0-T5z"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="24"/>
                             <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBn-j8-EeG">
-                            <rect key="frame" x="20" y="152" width="240" height="24"/>
+                            <rect key="frame" x="12" y="12" width="256" height="32"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="qBn-j8-EeG" secondAttribute="height" multiplier="10:1" id="D8s-u0-UQf"/>
+                                <constraint firstAttribute="width" secondItem="qBn-j8-EeG" secondAttribute="height" multiplier="8:1" id="D8s-u0-UQf"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Courier-BoldOblique" family="Courier" pointSize="16"/>
+                            <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gu2-jG-OTr">
                             <rect key="frame" x="0.0" y="200" width="280" height="40"/>
@@ -1392,7 +1477,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="ReK-xe-EpX"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                            <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
                             <state key="normal" title="Ok">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -1400,8 +1485,8 @@
                                 <action selector="Ok:" destination="VmV-2Q-OTv" eventType="touchUpInside" id="tKQ-oh-F2j"/>
                             </connections>
                         </button>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="NP2-bT-8qh">
-                            <rect key="frame" x="104" y="62" width="72" height="72"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NP2-bT-8qh">
+                            <rect key="frame" x="105.66666666666666" y="56.000000000000007" width="68.666666666666657" height="68.666666666666686"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="NP2-bT-8qh" secondAttribute="height" multiplier="1:1" id="lhk-Ug-dds"/>
                             </constraints>
@@ -1409,23 +1494,23 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="suJ-93-XPs" firstAttribute="trailing" secondItem="qBn-j8-EeG" secondAttribute="trailing" constant="20" id="5on-3i-m3W"/>
+                        <constraint firstItem="suJ-93-XPs" firstAttribute="trailing" secondItem="qBn-j8-EeG" secondAttribute="trailing" constant="12" id="5on-3i-m3W"/>
                         <constraint firstItem="gu2-jG-OTr" firstAttribute="trailing" secondItem="suJ-93-XPs" secondAttribute="trailing" id="99E-Iy-Ty7"/>
-                        <constraint firstItem="NP2-bT-8qh" firstAttribute="top" secondItem="MBG-3s-9Te" secondAttribute="bottom" constant="18" id="H6c-FW-Tph"/>
+                        <constraint firstItem="gu2-jG-OTr" firstAttribute="top" secondItem="MBG-3s-9Te" secondAttribute="bottom" constant="12" id="Dtg-Pb-eJv"/>
                         <constraint firstItem="gu2-jG-OTr" firstAttribute="bottom" secondItem="suJ-93-XPs" secondAttribute="bottom" id="I9o-xd-1qY"/>
-                        <constraint firstItem="qBn-j8-EeG" firstAttribute="leading" secondItem="suJ-93-XPs" secondAttribute="leading" constant="20" id="TE2-pM-eDQ"/>
-                        <constraint firstItem="qBn-j8-EeG" firstAttribute="top" secondItem="NP2-bT-8qh" secondAttribute="bottom" constant="18" id="Z8D-GB-AO8"/>
-                        <constraint firstItem="gu2-jG-OTr" firstAttribute="top" secondItem="qBn-j8-EeG" secondAttribute="bottom" constant="24" id="bio-Td-mFn"/>
-                        <constraint firstItem="suJ-93-XPs" firstAttribute="trailing" secondItem="MBG-3s-9Te" secondAttribute="trailing" constant="20" id="cfL-xt-DAd"/>
-                        <constraint firstItem="MBG-3s-9Te" firstAttribute="leading" secondItem="suJ-93-XPs" secondAttribute="leading" constant="20" id="loL-9c-wJX"/>
-                        <constraint firstItem="MBG-3s-9Te" firstAttribute="top" secondItem="suJ-93-XPs" secondAttribute="top" constant="20" id="oNb-Ki-0Gx"/>
+                        <constraint firstItem="qBn-j8-EeG" firstAttribute="leading" secondItem="suJ-93-XPs" secondAttribute="leading" constant="12" id="TE2-pM-eDQ"/>
+                        <constraint firstItem="NP2-bT-8qh" firstAttribute="top" secondItem="qBn-j8-EeG" secondAttribute="bottom" constant="12" id="WlV-B9-vxX"/>
+                        <constraint firstItem="suJ-93-XPs" firstAttribute="trailing" secondItem="MBG-3s-9Te" secondAttribute="trailing" constant="12" id="cfL-xt-DAd"/>
+                        <constraint firstItem="MBG-3s-9Te" firstAttribute="top" secondItem="NP2-bT-8qh" secondAttribute="bottom" constant="12" id="dPq-iP-usB"/>
+                        <constraint firstItem="MBG-3s-9Te" firstAttribute="leading" secondItem="suJ-93-XPs" secondAttribute="leading" constant="12" id="loL-9c-wJX"/>
+                        <constraint firstItem="qBn-j8-EeG" firstAttribute="top" secondItem="suJ-93-XPs" secondAttribute="top" constant="12" id="oWo-Sn-6Cq"/>
                         <constraint firstItem="gu2-jG-OTr" firstAttribute="leading" secondItem="suJ-93-XPs" secondAttribute="leading" id="rGL-6V-V9m"/>
-                        <constraint firstItem="NP2-bT-8qh" firstAttribute="centerX" secondItem="Py2-No-597" secondAttribute="centerX" id="wsT-nS-Z5z"/>
+                        <constraint firstItem="NP2-bT-8qh" firstAttribute="centerX" secondItem="Py2-No-597" secondAttribute="centerX" id="tqm-V8-hsb"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="suJ-93-XPs"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="1055" y="83"/>
+            <point key="canvasLocation" x="1055" y="-231"/>
         </scene>
         <!--Nine Pointer-->
         <scene sceneID="tVH-w9-kyh">
@@ -1439,33 +1524,57 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="0HB-F5-5mX">
-                                        <rect key="frame" x="16" y="9" width="42" height="42"/>
+                                        <rect key="frame" x="16" y="8" width="44" height="44"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="42" id="Y0w-ci-MMS"/>
-                                            <constraint firstAttribute="width" constant="42" id="iNc-MH-x4C"/>
+                                            <constraint firstAttribute="height" constant="44" id="Y0w-ci-MMS"/>
+                                            <constraint firstAttribute="width" constant="44" id="iNc-MH-x4C"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhg-jr-8wD">
+                                        <rect key="frame" x="118" y="17.666666666666668" width="58" height="25.000000000000004"/>
+                                        <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00k-e4-ypd">
+                                        <rect key="frame" x="76" y="18" width="38" height="24.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Sen-ExtraBold" family="Sen" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1T-dZ-aPL">
+                                        <rect key="frame" x="180" y="17.666666666666668" width="43.666666666666657" height="25.000000000000004"/>
+                                        <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="d1T-dZ-aPL" firstAttribute="centerY" secondItem="g6f-ob-uQ6" secondAttribute="centerY" id="0o3-Sg-hh9"/>
+                                    <constraint firstItem="yhg-jr-8wD" firstAttribute="centerY" secondItem="g6f-ob-uQ6" secondAttribute="centerY" id="3Fa-AR-C8p"/>
                                     <constraint firstItem="0HB-F5-5mX" firstAttribute="leading" secondItem="g6f-ob-uQ6" secondAttribute="leading" constant="16" id="6q6-Oh-g1U"/>
+                                    <constraint firstItem="yhg-jr-8wD" firstAttribute="leading" secondItem="00k-e4-ypd" secondAttribute="trailing" constant="4" id="8Bv-V9-tVI"/>
                                     <constraint firstAttribute="height" constant="60" id="9Cf-16-kKv"/>
+                                    <constraint firstItem="d1T-dZ-aPL" firstAttribute="leading" secondItem="yhg-jr-8wD" secondAttribute="trailing" constant="4" id="GUQ-UE-X3r"/>
+                                    <constraint firstItem="00k-e4-ypd" firstAttribute="leading" secondItem="0HB-F5-5mX" secondAttribute="trailing" constant="16" id="Ow1-57-UFd"/>
                                     <constraint firstItem="0HB-F5-5mX" firstAttribute="centerY" secondItem="g6f-ob-uQ6" secondAttribute="centerY" id="QP9-kD-C9N"/>
+                                    <constraint firstItem="00k-e4-ypd" firstAttribute="centerY" secondItem="g6f-ob-uQ6" secondAttribute="centerY" id="Wpp-Fn-8jD"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DL6-Ve-J4Y">
-                                <rect key="frame" x="0.0" y="80" width="414" height="607"/>
+                                <rect key="frame" x="0.0" y="68" width="414" height="619"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANl-kX-0wW">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="588"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Sem Credits" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="age-JW-T0m" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Sem Credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="age-JW-T0m" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="236" width="374" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="DB1-rA-H7I"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -1473,13 +1582,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Credits Finished Before This Sem" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b57-Nx-Aym" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Credits Finished Before This Sem" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="b57-Nx-Aym" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="164" width="374" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="E8R-xC-u9m"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -1487,13 +1596,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current CGPA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JpA-Z9-spW" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current CGPA" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="JpA-Z9-spW" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="92" width="374" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="7jb-Ij-uda"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -1501,13 +1610,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Pointer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NfI-Oa-AOv" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Pointer" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="NfI-Oa-AOv" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="20" width="374" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="Cmd-dP-qCA"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -1522,7 +1631,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="WxC-oe-2j4"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="18"/>
                                                 <state key="normal" title="Calculate">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -1565,7 +1674,7 @@
                         <constraints>
                             <constraint firstItem="DL6-Ve-J4Y" firstAttribute="trailing" secondItem="Twg-eI-2yE" secondAttribute="trailing" id="A7X-CG-3sl"/>
                             <constraint firstItem="g6f-ob-uQ6" firstAttribute="leading" secondItem="Twg-eI-2yE" secondAttribute="leading" id="Byi-xW-i4u"/>
-                            <constraint firstItem="DL6-Ve-J4Y" firstAttribute="top" secondItem="g6f-ob-uQ6" secondAttribute="bottom" constant="20" id="M0q-jB-DLW"/>
+                            <constraint firstItem="DL6-Ve-J4Y" firstAttribute="top" secondItem="g6f-ob-uQ6" secondAttribute="bottom" constant="8" id="M0q-jB-DLW"/>
                             <constraint firstItem="DL6-Ve-J4Y" firstAttribute="leading" secondItem="Twg-eI-2yE" secondAttribute="leading" id="WAw-ZV-MRK"/>
                             <constraint firstItem="g6f-ob-uQ6" firstAttribute="top" secondItem="Twg-eI-2yE" secondAttribute="top" id="dYX-d1-SGg"/>
                             <constraint firstItem="DL6-Ve-J4Y" firstAttribute="bottom" secondItem="Twg-eI-2yE" secondAttribute="bottom" id="ilz-yG-pyi"/>

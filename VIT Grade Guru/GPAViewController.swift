@@ -162,12 +162,12 @@ class GPAViewController: UIViewController {
             // Denominator Validation
             if (credits01.text!.isEmpty && credits02.text!.isEmpty && credits03.text!.isEmpty && credits04.text!.isEmpty && credits05.text!.isEmpty && credits06.text!.isEmpty && credits07.text!.isEmpty && credits08.text!.isEmpty && credits09.text!.isEmpty && credits10.text!.isEmpty && credits11.text!.isEmpty)
             {
-                answer.text = "Your GPA : 0.0" // when credits textfield input given, and leave grade textfield empty, calculations being done, and displayed double value 0.0
-                // hence even when credits textfield is left empty, display value "Your GPA : 0.0"
+                answer.text = "0.0" // when credits textfield input given, and leave grade textfield empty, calculations being done, and displayed double value 0.0
+                // hence even when credits textfield is left empty, display value "0.0"
             } else {
             
             // Actual Formula
-            answer.text = String("Your GPA : \(((number1!*numberA!)+(number2!*numberB!)+(number3!*numberC!)+(number4!*numberD!)+(number5!*numberE!)+(number6!*numberF!)+(number7!*numberG!)+(number8!*numberH!)+(number9!*numberI!)+(number10!*numberJ!)+(number11!*numberK!))/(number1!+number2!+number3!+number4!+number5!+number6!+number7!+number8!+number9!+number10!+number11!))")
+            answer.text = String(((number1!*numberA!)+(number2!*numberB!)+(number3!*numberC!)+(number4!*numberD!)+(number5!*numberE!)+(number6!*numberF!)+(number7!*numberG!)+(number8!*numberH!)+(number9!*numberI!)+(number10!*numberJ!)+(number11!*numberK!))/(number1!+number2!+number3!+number4!+number5!+number6!+number7!+number8!+number9!+number10!+number11!))
             }
             
         }       // Entire Calculations Function
@@ -476,7 +476,7 @@ class GPAViewController: UIViewController {
     func ChangeImageInPopUpView() {
         
         let outputString = answer.text!
-        let outputNumber = Double(outputString.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let outputNumber = Double(outputString)
         
         // if (90...100 ~= outputNumber) // Forgot to unwrap
         // if (outputNumber == 10) // Forgot to set bounds
