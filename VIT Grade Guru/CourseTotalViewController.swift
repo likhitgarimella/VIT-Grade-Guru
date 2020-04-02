@@ -314,18 +314,6 @@ class CourseTotalViewController: UIViewController {
             myAlert.addAction(okAction)
             self.present(myAlert, animated: true, completion: nil)
             return
-        } else {
-        
-        Calculations()
-        
-        // PopUp Animation
-        PopUpAnimation()
-        
-        AnimateIn(desiredView: blurView)    // This First
-        AnimateIn(desiredView: popUpView)   // This Next
-            
-        ChangeImageInPopUpView()
-            
         }
         }
         
@@ -338,18 +326,6 @@ class CourseTotalViewController: UIViewController {
             myAlert.addAction(okAction)
             self.present(myAlert, animated: true, completion: nil)
             return
-        } else {
-        
-        Calculations()
-        
-        // PopUp Animation
-        PopUpAnimation()
-        
-        AnimateIn(desiredView: blurView)    // This First
-        AnimateIn(desiredView: popUpView)   // This Next
-            
-        ChangeImageInPopUpView()
-            
         }
         }
         
@@ -362,18 +338,6 @@ class CourseTotalViewController: UIViewController {
             myAlert.addAction(okAction)
             self.present(myAlert, animated: true, completion: nil)
             return
-        } else {
-        
-        Calculations()
-        
-        // PopUp Animation
-        PopUpAnimation()
-        
-        AnimateIn(desiredView: blurView)    // This First
-        AnimateIn(desiredView: popUpView)   // This Next
-            
-        ChangeImageInPopUpView()
-            
         }
         }
         
@@ -386,7 +350,8 @@ class CourseTotalViewController: UIViewController {
             myAlert.addAction(okAction)
             self.present(myAlert, animated: true, completion: nil)
             return
-        } else {
+        }
+        }
         
         Calculations()
         
@@ -397,9 +362,34 @@ class CourseTotalViewController: UIViewController {
         AnimateIn(desiredView: popUpView)   // This Next
             
         ChangeImageInPopUpView()
-            
-        }
-        }
+        
+        // Clear textfields after popup goes off
+        ClearTextFields()
+        
+    }
+    
+    func ClearTextFields() {
+        
+        // Clear textfields after popup goes off
+        self.cat1.text = ""
+        self.cat2.text = ""
+        self.da1.text = ""
+        self.da2.text = ""
+        self.da3.text = ""
+        self.fat.text = ""
+        self.lab.text = ""
+        self.project.text = ""
+        
+        
+        //And to enable back for a new input in textfield
+        self.cat1.isEnabled = true
+        self.cat2.isEnabled = true
+        self.da1.isEnabled = true
+        self.da2.isEnabled = true
+        self.da3.isEnabled = true
+        self.fat.isEnabled = true
+        self.lab.isEnabled = true
+        self.project.isEnabled = true
         
     }
     
@@ -502,4 +492,4 @@ class CourseTotalViewController: UIViewController {
         
     }
     
-}   // #506
+}   // #496

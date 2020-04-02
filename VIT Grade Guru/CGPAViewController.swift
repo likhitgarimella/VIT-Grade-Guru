@@ -31,30 +31,6 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
         let string4 = creditsFinished.text!
         let number4 = Double(string4)
         
-        // Credits Textfield Validation
-        /* if (currentGPA.text!.isEmpty) {
-           number1 = 0
-        }
-        if (currentSemCredits.text!.isEmpty) {
-           number2 = 0
-        }
-        if (cgpaBeforeThisSem.text!.isEmpty) {
-           number3 = 0
-        }
-        if (creditsFinished.text!.isEmpty) {
-           number4 = 0
-        }
-        
-        if (currentSemCredits.text!.isEmpty && creditsFinished.text!.isEmpty) {
-            
-            answer.text = "0.0" // when both credits textfields input given, and leave gpa & cgpa textfields empty, calculations being done, and displayed double value 0.0
-            // hence even when credits textfields are left empty, display value "0.0"
-            
-        } */
-        
-        // let lenghtOfChar = (number2!+number4!)
-        // guard lenghtOfChar != 0 else { return }
-        
         // Actual Formula
         answer.text = String(((number3!*number4!)+(number1!*number2!))/(number2!+number4!))
         
@@ -198,7 +174,7 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
             myAlert.addAction(okAction)
             self.present(myAlert, animated: true, completion: nil)
             return
-        } else {
+        }
         
         Calculations()
             
@@ -209,8 +185,26 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
         AnimateIn(desiredView: popUpView)   // This Next
         
         ChangeImageInPopUpView()
-            
-        }
+        
+        // Clear textfields after popup goes off
+        ClearTextFields()
+        
+    }
+    
+    func ClearTextFields() {
+        
+        // Clear textfields after popup goes off
+        self.currentGPA.text = ""
+        self.currentSemCredits.text = ""
+        self.cgpaBeforeThisSem.text = ""
+        self.creditsFinished.text = ""
+        
+        
+        //And to enable back for a new input in textfield
+        self.currentGPA.isEnabled = true
+        self.currentSemCredits.isEnabled = true
+        self.cgpaBeforeThisSem.isEnabled = true
+        self.creditsFinished.isEnabled = true
         
     }
     
@@ -312,4 +306,4 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-}   // #316
+}   // #310

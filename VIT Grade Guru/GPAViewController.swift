@@ -407,6 +407,64 @@ class GPAViewController: UIViewController {
         
         ChangeImageInPopUpView()
         
+        // Clear textfields after popup goes off
+        ClearTextFields()
+        
+    }
+    
+    func ClearTextFields() {
+        
+        // Clear textfields after popup goes off
+        self.credits01.text = ""
+        self.credits02.text = ""
+        self.credits03.text = ""
+        self.credits04.text = ""
+        self.credits05.text = ""
+        self.credits06.text = ""
+        self.credits07.text = ""
+        self.credits08.text = ""
+        self.credits09.text = ""
+        self.credits10.text = ""
+        self.credits11.text = ""
+        
+        self.grade01.text = ""
+        self.grade02.text = ""
+        self.grade03.text = ""
+        self.grade04.text = ""
+        self.grade05.text = ""
+        self.grade06.text = ""
+        self.grade07.text = ""
+        self.grade08.text = ""
+        self.grade09.text = ""
+        self.grade10.text = ""
+        self.grade11.text = ""
+        
+        
+        //And to enable back for a new input in textfield
+        self.credits01.isEnabled = true
+        self.credits02.isEnabled = true
+        self.credits03.isEnabled = true
+        self.credits04.isEnabled = true
+        self.credits05.isEnabled = true
+        self.credits06.isEnabled = true
+        self.credits07.isEnabled = true
+        self.credits08.isEnabled = true
+        self.credits09.isEnabled = true
+        self.credits10.isEnabled = true
+        self.credits11.isEnabled = true
+        
+        self.grade01.isEnabled = true
+        self.grade02.isEnabled = true
+        self.grade03.isEnabled = true
+        self.grade04.isEnabled = true
+        self.grade05.isEnabled = true
+        self.grade06.isEnabled = true
+        self.grade07.isEnabled = true
+        self.grade08.isEnabled = true
+        self.grade09.isEnabled = true
+        self.grade10.isEnabled = true
+        self.grade11.isEnabled = true
+        
     }
     
     func PopUpAnimation() {
@@ -508,4 +566,4 @@ class GPAViewController: UIViewController {
         
     }
     
-}   // #512
+}   // #570
