@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = .systemBlue
         
         // Increase Launch Screen Time
-        // Thread.sleep(forTimeInterval: 1.2)
+        Thread.sleep(forTimeInterval: 2)
         // RunLoop.current.run(until: Date(timeIntervalSinceNow: 1.0)) // Old Code
         
         return true

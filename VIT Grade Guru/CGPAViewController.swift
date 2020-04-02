@@ -32,7 +32,7 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
         let number4 = Double(string4)
         
         // Actual Formula
-        answer.text = String(((number3!*number4!)+(number1!*number2!))/(number2!+number4!))
+        answer.text = String(format: "%.2f", ((number3!*number4!)+(number1!*number2!))/(number2!+number4!))
         
     }       // Entire Calculations Function
     

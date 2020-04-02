@@ -55,7 +55,7 @@ class CourseTotalViewController: UIViewController {
                 print("Empty Fields Last Two")
                 // If Lab and Project Fields are empty
             } else {
-            answer.text = String( (( ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )/2) + (number7!)/4 + (number8!)/4)
+            answer.text = String(format: "%.2f", (( ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )/2) + (number7!)/4 + (number8!)/4)
             }   // If Lab and Project Fields aren't empty
         }
         
@@ -65,7 +65,7 @@ class CourseTotalViewController: UIViewController {
                 print("Empty Lab Field")
                 // If Lab Field is empty
             } else {
-                answer.text = String( (3*( ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )/4) + (number7!)/4)
+                answer.text = String(format: "%.2f", (3*( ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )/4) + (number7!)/4)
             }   // If Lab Field isn't empty
         }
         
@@ -75,13 +75,13 @@ class CourseTotalViewController: UIViewController {
                 print("Empty Project Field")
                 // If Project Field is empty
             } else {
-                answer.text = String( (3*( ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )/4) + (number8!)/4)
+                answer.text = String(format: "%.2f", (3*( ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )/4) + (number8!)/4)
             }   // If Project Field isn't empty
         }
         
         // If both Lab and Project Switches are Off
         if labSwitch.isOn==false && projectSwitch.isOn==false {
-            answer.text = String( ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )
+            answer.text = String(format: "%.2f", ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )
         }
     }           // Entire Calculations Function
     

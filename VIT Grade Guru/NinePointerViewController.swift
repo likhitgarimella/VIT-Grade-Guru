@@ -18,6 +18,23 @@ class NinePointerViewController: UIViewController {
     @IBOutlet var currentCredits: FloatLabelTextField!
     
     @IBOutlet var calculateButtonOutlet: UIButton!
+    
+    // Function for calculations
+    func Calculations() {
+        
+        let string1 = selectPointer.text!
+        let number1 = Double(string1.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+        let string2 = currentSemCgpa.text!
+        let number2 = Double(string2)
+        let string3 = creditsFinished.text!
+        let number3 = Double(string3)
+        let string4 = currentCredits.text!
+        let number4 = Double(string4)
+        
+        // Actual Formula
+        answer.text = String(format: "%.2f", ((number1!*(number3!+number4!))-(number2!*number3!))/number4!)
+        
+    }       // Entire Calculations Function
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +52,9 @@ class NinePointerViewController: UIViewController {
         
         // Button Properties
         ButtonProp()
+        
+        // PopUp UIView Properties
+        PopUpProp()
 
     }
     
@@ -64,7 +84,7 @@ class NinePointerViewController: UIViewController {
         // DropDown Options For Credits TextFields
         // Added additional .5 pointer options
         selectPointer.optionArray = ["9.5 Pointer", "9 Pointer", "8.5 Pointer", "8 Pointer", "7.5 Pointer", "7 Pointer", "6.5 Pointer", "6 Pointer"]
-        selectPointer.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        selectPointer.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
     }
     
@@ -78,4 +98,114 @@ class NinePointerViewController: UIViewController {
         
     }
     
-}
+    @IBAction func calculate(_ sender: UIButton) {
+        
+        if ((selectPointer.text!.isEmpty || currentSemCgpa.text!.isEmpty || creditsFinished.text!.isEmpty || currentCredits.text!.isEmpty))
+        {
+            // Alert
+            let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert, animated: true, completion: nil)
+            return
+        }
+        
+        Calculations()
+        
+        // PopUp Animation
+        PopUpAnimation()
+            
+        AnimateIn(desiredView: blurView)    // This First
+        AnimateIn(desiredView: popUpView)   // This Next
+        
+        // Clear textfields after popup goes off
+        ClearTextFields()
+        
+    }
+    
+    func ClearTextFields() {
+        
+        // Clear textfields after popup goes off
+        self.selectPointer.text = ""
+        self.currentSemCgpa.text = ""
+        self.creditsFinished.text = ""
+        self.currentCredits.text = ""
+        
+        
+        //And to enable back for a new input in textfield
+        self.selectPointer.isEnabled = true
+        self.currentSemCgpa.isEnabled = true
+        self.creditsFinished.isEnabled = true
+        self.currentCredits.isEnabled = true
+        
+    }
+    
+    func PopUpAnimation() {
+        
+        blurView.bounds = self.view.bounds
+        popUpView.bounds = CGRect(x: 0, y: 0, width: self.view.bounds.width*0.68, height: self.view.bounds.height*0.2)
+        
+    }
+    
+    // Animate in a specified view
+    func AnimateIn(desiredView: UIView) {
+        
+        let backgroundView = self.view!
+        
+        // Attach our desired view to the screen
+        backgroundView.addSubview(desiredView)
+        
+        // Sets the view's scaling to be 120%
+        desiredView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        desiredView.alpha = 0
+        desiredView.center = backgroundView.center
+        // Animate from here ⬆️
+        
+        // To here ⬇️
+        // Animate the effect
+        UIView.animate(withDuration: 0.2, animations: {
+            desiredView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            desiredView.alpha = 1
+        })
+        
+    }
+    
+    // Animate out a specified view
+    func AnimateOut(desiredView: UIView) {
+        
+       UIView.animate(withDuration: 0.2, animations: {
+            desiredView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            desiredView.alpha = 1
+       }, completion: { _ in
+        // This code runs when when above AnimateOut animation is done
+        desiredView.removeFromSuperview()
+       })
+        
+    }
+    
+    @IBOutlet var blurView: UIVisualEffectView!
+    
+    @IBOutlet var popUpView: UIView!
+    
+    @IBOutlet var answer: UILabel!
+        
+    @IBOutlet var labelDescription: UILabel!
+    
+    @IBOutlet var okOutlet: UIButton!
+    
+    func PopUpProp() {
+        
+        popUpView.layer.cornerRadius = 16
+        okOutlet.layer.cornerRadius = 16
+        okOutlet.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        
+    }
+    
+    @IBAction func Ok(_ sender: UIButton) {
+        
+        AnimateOut(desiredView: popUpView)  // This First
+        AnimateOut(desiredView: blurView)   // This Next
+        
+    }
+    
+} // #212

@@ -167,7 +167,7 @@ class GPAViewController: UIViewController {
             } else {
             
             // Actual Formula
-            answer.text = String(((number1!*numberA!)+(number2!*numberB!)+(number3!*numberC!)+(number4!*numberD!)+(number5!*numberE!)+(number6!*numberF!)+(number7!*numberG!)+(number8!*numberH!)+(number9!*numberI!)+(number10!*numberJ!)+(number11!*numberK!))/(number1!+number2!+number3!+number4!+number5!+number6!+number7!+number8!+number9!+number10!+number11!))
+            answer.text = String(format: "%.2f", ((number1!*numberA!)+(number2!*numberB!)+(number3!*numberC!)+(number4!*numberD!)+(number5!*numberE!)+(number6!*numberF!)+(number7!*numberG!)+(number8!*numberH!)+(number9!*numberI!)+(number10!*numberJ!)+(number11!*numberK!))/(number1!+number2!+number3!+number4!+number5!+number6!+number7!+number8!+number9!+number10!+number11!))
             }
             
         }       // Entire Calculations Function
@@ -274,62 +274,62 @@ class GPAViewController: UIViewController {
         
         // DropDown Options For Credits TextFields
         credits01.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
-        credits01.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        credits01.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
         credits02.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
-        credits02.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        credits02.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
         credits03.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
-        credits03.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        credits03.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
         credits04.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
-        credits04.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        credits04.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
         credits05.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
-        credits05.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        credits05.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
         credits06.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
-        credits06.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        credits06.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
         credits07.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
-        credits07.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        credits07.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
         credits08.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
-        credits08.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        credits08.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
         credits09.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
-        credits09.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        credits09.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
         credits10.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
-        credits10.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        credits10.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
         credits11.optionArray = [" 1 credit", " 2 credits", " 3 credits", " 4 credits", " 5 credits", " 6 credits", " 7 credits", " 8 credits", " 9 credits", " 10 credits"]
-        credits11.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        credits11.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
         
         // DropDown Options For Grades TextFields
         grade01.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
-        grade01.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade01.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         grade02.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
-        grade02.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade02.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         grade03.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
-        grade03.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade03.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         grade04.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
-        grade04.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade04.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         grade05.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
-        grade05.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade05.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         grade06.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
-        grade06.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade06.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         grade07.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
-        grade07.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade07.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         grade08.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
-        grade08.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade08.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         grade09.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
-        grade09.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade09.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         grade10.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
-        grade10.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade10.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         grade11.optionArray = [" S grade - 10", " A grade - 9", " B grade - 8", " C grade - 7", " D grade - 6", " E grade - 5", " F grade - 0"]
-        grade11.selectedRowColor = UIColor(red:0.98, green:0.64, blue:0.10, alpha:1.0)
+        grade11.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
 
     }
     
