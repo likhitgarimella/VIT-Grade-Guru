@@ -9,7 +9,7 @@
 import UIKit
 
 // Colors
-struct Colors {
+/* struct Colors {
     
     static let brightOrange     = UIColor(red: 255.0/255.0, green: 69.0/255.0, blue: 0.0/255.0, alpha: 1.0)
     static let red              = UIColor(red: 255.0/255.0, green: 115.0/255.0, blue: 115.0/255.0, alpha: 1.0)
@@ -21,7 +21,7 @@ struct Colors {
     static let lightGrey        = UIColor(red: 200.0/255.0, green: 200.0/255.0, blue: 200.0/255.0, alpha: 1.0)
     static let black            = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
     static let white            = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0)
-}
+} */
 
 class ExtensionsViewController: UIViewController {
 
@@ -63,7 +63,7 @@ extension UITextField {
 }
 
 // Gradient for Popup UIView
-extension UIView {
+/* extension UIView {
     
     func setGradientBackground(colorOne: UIColor, colorTwo: UIColor) {
         
@@ -76,4 +76,4 @@ extension UIView {
         
         layer.insertSublayer(gradientLayer, at: 0)
     }
-}
+} */

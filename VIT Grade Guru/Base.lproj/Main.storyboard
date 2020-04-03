@@ -106,7 +106,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="1rM-eE-xWB" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="250" y="772" width="156" height="40"/>
+                                                <rect key="frame" x="254" y="772" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -127,7 +127,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="TQY-pv-HEK" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="250" y="702" width="156" height="40"/>
+                                                <rect key="frame" x="254" y="702" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -148,7 +148,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="U4c-Le-YUB" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="250" y="632" width="156" height="40"/>
+                                                <rect key="frame" x="254" y="632" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -169,7 +169,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZTb-9q-HT0" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="250" y="562" width="156" height="40"/>
+                                                <rect key="frame" x="254" y="562" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -190,7 +190,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="hRc-3n-ipB" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="250" y="492" width="156" height="40"/>
+                                                <rect key="frame" x="254" y="492" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -211,7 +211,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="8VX-T1-y1T" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="250" y="422" width="156" height="40"/>
+                                                <rect key="frame" x="254" y="422" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -232,7 +232,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="79h-9v-7OH" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="250" y="352" width="156" height="40"/>
+                                                <rect key="frame" x="254" y="352" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -253,7 +253,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="QJk-LV-FSk" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="250" y="282" width="156" height="40"/>
+                                                <rect key="frame" x="254" y="282" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -274,7 +274,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="ywp-kB-8Ka" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="250" y="212" width="156" height="40"/>
+                                                <rect key="frame" x="254" y="212" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -295,7 +295,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="CLi-FM-41i" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="250" y="142" width="156" height="40"/>
+                                                <rect key="frame" x="254" y="142" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -316,7 +316,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="OoY-XE-V9Z" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="250" y="72" width="156" height="40"/>
+                                                <rect key="frame" x="254" y="72" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -346,7 +346,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="jiE-5Z-TPu" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="772" width="156" height="40"/>
+                                                <rect key="frame" x="4" y="772" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -367,7 +367,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="wjW-Qh-sP0" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="702" width="156" height="40"/>
+                                                <rect key="frame" x="4" y="702" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -388,7 +388,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="HhK-A8-5tD" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="632" width="156" height="40"/>
+                                                <rect key="frame" x="4" y="632" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -409,7 +409,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="ahb-Le-US1" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="562" width="156" height="40"/>
+                                                <rect key="frame" x="4" y="562" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -430,7 +430,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="nao-9w-c9H" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="492" width="156" height="40"/>
+                                                <rect key="frame" x="4" y="492" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -451,7 +451,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Os6-uc-O0r" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="422" width="156" height="40"/>
+                                                <rect key="frame" x="4" y="422" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -472,7 +472,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="7Wt-tV-ckp" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="352" width="156" height="40"/>
+                                                <rect key="frame" x="4" y="352" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -493,7 +493,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Ezy-mR-7Pi" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="282" width="156" height="40"/>
+                                                <rect key="frame" x="4" y="282" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -514,7 +514,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="qje-hW-Ccc" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="212" width="156" height="40"/>
+                                                <rect key="frame" x="4" y="212" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -535,7 +535,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="jzh-4c-j3m" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="142" width="156" height="40"/>
+                                                <rect key="frame" x="4" y="142" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -556,7 +556,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="vKA-YW-5gS" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="72" width="156" height="40"/>
+                                                <rect key="frame" x="4" y="72" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -579,68 +579,68 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="1rM-eE-xWB" secondAttribute="trailing" constant="8" id="0r9-Kg-VMm"/>
+                                            <constraint firstAttribute="trailing" secondItem="1rM-eE-xWB" secondAttribute="trailing" constant="4" id="0r9-Kg-VMm"/>
                                             <constraint firstItem="8Bq-NS-hEk" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="60" id="1z0-WE-g17"/>
                                             <constraint firstItem="qje-hW-Ccc" firstAttribute="top" secondItem="jzh-4c-j3m" secondAttribute="bottom" constant="30" id="2LV-xT-8PR"/>
-                                            <constraint firstItem="ahb-Le-US1" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="8" id="2ko-dM-Xgu"/>
-                                            <constraint firstItem="U4c-Le-YUB" firstAttribute="leading" relation="lessThanOrEqual" secondItem="HhK-A8-5tD" secondAttribute="trailing" constant="86" id="3Mf-aC-4tU"/>
+                                            <constraint firstItem="ahb-Le-US1" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="2ko-dM-Xgu"/>
+                                            <constraint firstItem="U4c-Le-YUB" firstAttribute="leading" relation="lessThanOrEqual" secondItem="HhK-A8-5tD" secondAttribute="trailing" constant="94" id="3Mf-aC-4tU"/>
                                             <constraint firstItem="U4c-Le-YUB" firstAttribute="top" secondItem="ZTb-9q-HT0" secondAttribute="bottom" constant="30" id="4Nw-Gk-Z3n"/>
-                                            <constraint firstItem="nao-9w-c9H" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="8" id="4Pz-5R-bS4"/>
-                                            <constraint firstItem="Os6-uc-O0r" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="8" id="4nV-sz-Fei"/>
+                                            <constraint firstItem="nao-9w-c9H" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="4Pz-5R-bS4"/>
+                                            <constraint firstItem="Os6-uc-O0r" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="4nV-sz-Fei"/>
                                             <constraint firstItem="Os6-uc-O0r" firstAttribute="top" secondItem="7Wt-tV-ckp" secondAttribute="bottom" constant="30" id="69V-K3-ZVM"/>
                                             <constraint firstItem="OoY-XE-V9Z" firstAttribute="top" secondItem="Kak-OL-IkD" secondAttribute="bottom" constant="30" id="6nF-tE-Kc0"/>
-                                            <constraint firstItem="QJk-LV-FSk" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Ezy-mR-7Pi" secondAttribute="trailing" constant="86" id="7lk-iC-hbs"/>
+                                            <constraint firstItem="QJk-LV-FSk" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Ezy-mR-7Pi" secondAttribute="trailing" constant="94" id="7lk-iC-hbs"/>
                                             <constraint firstItem="Ezy-mR-7Pi" firstAttribute="top" secondItem="qje-hW-Ccc" secondAttribute="bottom" constant="30" id="8WD-gu-4iO"/>
-                                            <constraint firstItem="jzh-4c-j3m" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="8" id="8jJ-LI-woT"/>
-                                            <constraint firstAttribute="trailing" secondItem="79h-9v-7OH" secondAttribute="trailing" constant="8" id="9IE-CS-3yC"/>
+                                            <constraint firstItem="jzh-4c-j3m" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="8jJ-LI-woT"/>
+                                            <constraint firstAttribute="trailing" secondItem="79h-9v-7OH" secondAttribute="trailing" constant="4" id="9IE-CS-3yC"/>
                                             <constraint firstItem="QJk-LV-FSk" firstAttribute="top" secondItem="ywp-kB-8Ka" secondAttribute="bottom" constant="30" id="9uG-im-Tb7"/>
-                                            <constraint firstItem="1rM-eE-xWB" firstAttribute="leading" relation="lessThanOrEqual" secondItem="jiE-5Z-TPu" secondAttribute="trailing" constant="86" id="A3Z-RO-w6v"/>
+                                            <constraint firstItem="1rM-eE-xWB" firstAttribute="leading" relation="lessThanOrEqual" secondItem="jiE-5Z-TPu" secondAttribute="trailing" constant="94" id="A3Z-RO-w6v"/>
                                             <constraint firstItem="7Wt-tV-ckp" firstAttribute="top" secondItem="Ezy-mR-7Pi" secondAttribute="bottom" constant="30" id="A8d-ba-Kcg"/>
                                             <constraint firstItem="1rM-eE-xWB" firstAttribute="top" secondItem="TQY-pv-HEK" secondAttribute="bottom" constant="30" id="AmW-5i-xZQ"/>
                                             <constraint firstItem="79h-9v-7OH" firstAttribute="top" secondItem="QJk-LV-FSk" secondAttribute="bottom" constant="30" id="BDB-ng-2zG"/>
-                                            <constraint firstItem="hRc-3n-ipB" firstAttribute="leading" relation="lessThanOrEqual" secondItem="nao-9w-c9H" secondAttribute="trailing" constant="86" id="BWn-Z9-md2"/>
+                                            <constraint firstItem="hRc-3n-ipB" firstAttribute="leading" relation="lessThanOrEqual" secondItem="nao-9w-c9H" secondAttribute="trailing" constant="94" id="BWn-Z9-md2"/>
                                             <constraint firstItem="vKA-YW-5gS" firstAttribute="top" secondItem="8Bq-NS-hEk" secondAttribute="bottom" constant="30" id="BcM-rb-mbP"/>
-                                            <constraint firstAttribute="trailing" secondItem="QJk-LV-FSk" secondAttribute="trailing" constant="8" id="Dfm-jp-AP4"/>
-                                            <constraint firstItem="qje-hW-Ccc" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="8" id="GHT-IB-aJu"/>
-                                            <constraint firstAttribute="trailing" secondItem="U4c-Le-YUB" secondAttribute="trailing" constant="8" id="HEE-1U-5ha"/>
-                                            <constraint firstItem="7Wt-tV-ckp" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="8" id="HaF-bP-lay"/>
-                                            <constraint firstAttribute="trailing" secondItem="ZTb-9q-HT0" secondAttribute="trailing" constant="8" id="JPW-Hr-N5w"/>
-                                            <constraint firstItem="TQY-pv-HEK" firstAttribute="leading" relation="lessThanOrEqual" secondItem="wjW-Qh-sP0" secondAttribute="trailing" constant="86" id="Jt1-Uw-EH1"/>
-                                            <constraint firstItem="79h-9v-7OH" firstAttribute="leading" relation="lessThanOrEqual" secondItem="7Wt-tV-ckp" secondAttribute="trailing" constant="86" id="Kz4-iv-fOy"/>
+                                            <constraint firstAttribute="trailing" secondItem="QJk-LV-FSk" secondAttribute="trailing" constant="4" id="Dfm-jp-AP4"/>
+                                            <constraint firstItem="qje-hW-Ccc" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="GHT-IB-aJu"/>
+                                            <constraint firstAttribute="trailing" secondItem="U4c-Le-YUB" secondAttribute="trailing" constant="4" id="HEE-1U-5ha"/>
+                                            <constraint firstItem="7Wt-tV-ckp" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="HaF-bP-lay"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZTb-9q-HT0" secondAttribute="trailing" constant="4" id="JPW-Hr-N5w"/>
+                                            <constraint firstItem="TQY-pv-HEK" firstAttribute="leading" relation="lessThanOrEqual" secondItem="wjW-Qh-sP0" secondAttribute="trailing" constant="94" id="Jt1-Uw-EH1"/>
+                                            <constraint firstItem="79h-9v-7OH" firstAttribute="leading" relation="lessThanOrEqual" secondItem="7Wt-tV-ckp" secondAttribute="trailing" constant="94" id="Kz4-iv-fOy"/>
                                             <constraint firstItem="Kak-OL-IkD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8Bq-NS-hEk" secondAttribute="trailing" constant="8" symbolic="YES" id="MEQ-Rw-ckV"/>
-                                            <constraint firstAttribute="trailing" secondItem="hRc-3n-ipB" secondAttribute="trailing" constant="8" id="ML7-SC-1AY"/>
+                                            <constraint firstAttribute="trailing" secondItem="hRc-3n-ipB" secondAttribute="trailing" constant="4" id="ML7-SC-1AY"/>
                                             <constraint firstAttribute="trailing" secondItem="Kak-OL-IkD" secondAttribute="trailing" constant="64" id="Mrg-bG-P5x"/>
-                                            <constraint firstAttribute="trailing" secondItem="8VX-T1-y1T" secondAttribute="trailing" constant="8" id="PL9-zN-aPm"/>
+                                            <constraint firstAttribute="trailing" secondItem="8VX-T1-y1T" secondAttribute="trailing" constant="4" id="PL9-zN-aPm"/>
                                             <constraint firstItem="Kak-OL-IkD" firstAttribute="top" secondItem="Dft-N2-gFJ" secondAttribute="top" constant="18" id="R1z-bd-aXx"/>
                                             <constraint firstItem="nao-9w-c9H" firstAttribute="top" secondItem="Os6-uc-O0r" secondAttribute="bottom" constant="30" id="R6x-pT-kvf"/>
-                                            <constraint firstItem="OoY-XE-V9Z" firstAttribute="leading" relation="lessThanOrEqual" secondItem="vKA-YW-5gS" secondAttribute="trailing" constant="86" id="UEZ-OX-Q3y"/>
+                                            <constraint firstItem="OoY-XE-V9Z" firstAttribute="leading" relation="lessThanOrEqual" secondItem="vKA-YW-5gS" secondAttribute="trailing" constant="94" id="UEZ-OX-Q3y"/>
                                             <constraint firstItem="HhK-A8-5tD" firstAttribute="top" secondItem="ahb-Le-US1" secondAttribute="bottom" constant="30" id="UQY-xi-0n1"/>
                                             <constraint firstItem="ywp-kB-8Ka" firstAttribute="top" secondItem="CLi-FM-41i" secondAttribute="bottom" constant="30" id="Ved-87-QIa"/>
-                                            <constraint firstAttribute="trailing" secondItem="CLi-FM-41i" secondAttribute="trailing" constant="8" id="Wip-2P-eE7"/>
-                                            <constraint firstItem="Ezy-mR-7Pi" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="8" id="Y8H-P9-0YF"/>
+                                            <constraint firstAttribute="trailing" secondItem="CLi-FM-41i" secondAttribute="trailing" constant="4" id="Wip-2P-eE7"/>
+                                            <constraint firstItem="Ezy-mR-7Pi" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="Y8H-P9-0YF"/>
                                             <constraint firstItem="jzh-4c-j3m" firstAttribute="top" secondItem="vKA-YW-5gS" secondAttribute="bottom" constant="30" id="Zuq-zu-gbo"/>
-                                            <constraint firstItem="wjW-Qh-sP0" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="8" id="bpw-q8-EUR"/>
-                                            <constraint firstAttribute="trailing" secondItem="TQY-pv-HEK" secondAttribute="trailing" constant="8" id="caK-9E-7rA"/>
+                                            <constraint firstItem="wjW-Qh-sP0" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="bpw-q8-EUR"/>
+                                            <constraint firstAttribute="trailing" secondItem="TQY-pv-HEK" secondAttribute="trailing" constant="4" id="caK-9E-7rA"/>
                                             <constraint firstItem="TQY-pv-HEK" firstAttribute="top" secondItem="U4c-Le-YUB" secondAttribute="bottom" constant="30" id="fLY-uU-naM"/>
-                                            <constraint firstItem="8VX-T1-y1T" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Os6-uc-O0r" secondAttribute="trailing" constant="86" id="g4J-bB-XyS"/>
+                                            <constraint firstItem="8VX-T1-y1T" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Os6-uc-O0r" secondAttribute="trailing" constant="94" id="g4J-bB-XyS"/>
                                             <constraint firstItem="CLi-FM-41i" firstAttribute="top" secondItem="OoY-XE-V9Z" secondAttribute="bottom" constant="30" id="gau-y1-OWa"/>
                                             <constraint firstItem="ahb-Le-US1" firstAttribute="top" secondItem="nao-9w-c9H" secondAttribute="bottom" constant="30" id="gmp-AG-lpX"/>
-                                            <constraint firstItem="CLi-FM-41i" firstAttribute="leading" relation="lessThanOrEqual" secondItem="jzh-4c-j3m" secondAttribute="trailing" constant="86" id="gvT-tx-FXA"/>
-                                            <constraint firstAttribute="trailing" secondItem="OoY-XE-V9Z" secondAttribute="trailing" constant="8" id="hcW-cM-yIF"/>
+                                            <constraint firstItem="CLi-FM-41i" firstAttribute="leading" relation="lessThanOrEqual" secondItem="jzh-4c-j3m" secondAttribute="trailing" constant="94" id="gvT-tx-FXA"/>
+                                            <constraint firstAttribute="trailing" secondItem="OoY-XE-V9Z" secondAttribute="trailing" constant="4" id="hcW-cM-yIF"/>
                                             <constraint firstItem="wjW-Qh-sP0" firstAttribute="top" secondItem="HhK-A8-5tD" secondAttribute="bottom" constant="30" id="kgi-Zo-kdP"/>
-                                            <constraint firstItem="ywp-kB-8Ka" firstAttribute="leading" relation="lessThanOrEqual" secondItem="qje-hW-Ccc" secondAttribute="trailing" constant="86" id="mDf-eO-9hi"/>
-                                            <constraint firstItem="HhK-A8-5tD" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="8" id="nFX-vS-xp2"/>
+                                            <constraint firstItem="ywp-kB-8Ka" firstAttribute="leading" relation="lessThanOrEqual" secondItem="qje-hW-Ccc" secondAttribute="trailing" constant="94" id="mDf-eO-9hi"/>
+                                            <constraint firstItem="HhK-A8-5tD" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="nFX-vS-xp2"/>
                                             <constraint firstItem="hRc-3n-ipB" firstAttribute="top" secondItem="8VX-T1-y1T" secondAttribute="bottom" constant="30" id="nyk-Bz-ddG"/>
                                             <constraint firstItem="8VX-T1-y1T" firstAttribute="top" secondItem="79h-9v-7OH" secondAttribute="bottom" constant="30" id="oi9-7U-xIc"/>
                                             <constraint firstAttribute="bottom" secondItem="jiE-5Z-TPu" secondAttribute="bottom" constant="178" id="pkY-uE-Mwa"/>
-                                            <constraint firstItem="jiE-5Z-TPu" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="8" id="qwn-CW-8IN"/>
-                                            <constraint firstAttribute="trailing" secondItem="ywp-kB-8Ka" secondAttribute="trailing" constant="8" id="rFi-AQ-G3J"/>
+                                            <constraint firstItem="jiE-5Z-TPu" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="qwn-CW-8IN"/>
+                                            <constraint firstAttribute="trailing" secondItem="ywp-kB-8Ka" secondAttribute="trailing" constant="4" id="rFi-AQ-G3J"/>
                                             <constraint firstItem="8Bq-NS-hEk" firstAttribute="top" secondItem="Dft-N2-gFJ" secondAttribute="top" constant="18" id="skG-Gp-6eQ"/>
-                                            <constraint firstItem="ZTb-9q-HT0" firstAttribute="leading" relation="lessThanOrEqual" secondItem="ahb-Le-US1" secondAttribute="trailing" constant="86" id="ttT-rG-Eam"/>
+                                            <constraint firstItem="ZTb-9q-HT0" firstAttribute="leading" relation="lessThanOrEqual" secondItem="ahb-Le-US1" secondAttribute="trailing" constant="94" id="ttT-rG-Eam"/>
                                             <constraint firstItem="jiE-5Z-TPu" firstAttribute="top" secondItem="wjW-Qh-sP0" secondAttribute="bottom" constant="30" id="ugh-vj-iWe"/>
                                             <constraint firstItem="ZTb-9q-HT0" firstAttribute="top" secondItem="hRc-3n-ipB" secondAttribute="bottom" constant="30" id="wmJ-Ab-O1A"/>
                                             <constraint firstAttribute="bottom" secondItem="1rM-eE-xWB" secondAttribute="bottom" constant="178" id="zPT-QV-5IM"/>
-                                            <constraint firstItem="vKA-YW-5gS" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="8" id="zYP-MW-nlV"/>
+                                            <constraint firstItem="vKA-YW-5gS" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="zYP-MW-nlV"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1275,19 +1275,19 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6X8-j0-yAd">
-                                        <rect key="frame" x="178" y="17.666666666666668" width="43.666666666666657" height="25.000000000000004"/>
+                                        <rect key="frame" x="168.33333333333334" y="18.333333333333336" width="43.666666666666657" height="23.333333333333336"/>
                                         <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYX-5s-HDo">
-                                        <rect key="frame" x="116" y="17.666666666666668" width="58" height="25.000000000000004"/>
+                                        <rect key="frame" x="108.99999999999999" y="18.333333333333336" width="55.333333333333329" height="23.333333333333336"/>
                                         <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVH-Zh-6D1">
-                                        <rect key="frame" x="76" y="18" width="36" height="24.333333333333329"/>
+                                        <rect key="frame" x="76" y="18" width="29" height="24.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>

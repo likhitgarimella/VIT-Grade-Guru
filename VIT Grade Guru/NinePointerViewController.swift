@@ -35,6 +35,66 @@ class NinePointerViewController: UIViewController {
         answer.text = String(format: "%.2f", ((number1!*(number3!+number4!))-(number2!*number3!))/number4!)
         
     }       // Entire Calculations Function
+    
+    /* //////////////////////////////////////////////////////////////////////////////// */
+    
+    // Function For Autoset Validation For TextFields
+    func Autoset() {
+        
+        currentSemCgpa.keyboardType = .decimalPad
+        currentSemCgpa.text = ""
+        currentSemCgpa.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
+        
+        creditsFinished.keyboardType = .decimalPad
+        creditsFinished.text = ""
+        creditsFinished.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
+        
+        currentCredits.keyboardType = .decimalPad
+        currentCredits.text = ""
+        currentCredits.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
+        
+        }
+        
+        // Autoset Validation For TextFields
+        var currentsemcgpanumber: Double = 0.0 {
+            didSet {
+                if currentsemcgpanumber > 10.0 {
+                    currentsemcgpanumber = 10.0
+                    self.currentSemCgpa.text = "\(currentsemcgpanumber)"
+                }
+            }
+        }
+        var creditsfinishednumber: Double = 0.0 {
+            didSet {
+                if creditsfinishednumber > 180.0 {
+                    creditsfinishednumber = 180.0
+                    self.creditsFinished.text = "\(creditsfinishednumber)"
+                }
+            }
+        }
+        var currentcreditsnumber: Double = 0.0 {
+            didSet {
+                if currentcreditsnumber > 27.0 {
+                    currentcreditsnumber = 27.0
+                    self.currentCredits.text = "\(currentcreditsnumber)"
+                }
+            }
+        }
+        
+        // ObjC Function For Autoset Validation For TextFields
+        @objc func didChangeText() {
+            if let num2 = Double(self.currentSemCgpa.text!) {
+                self.currentsemcgpanumber = Double(num2)
+            }
+            if let num3 = Double(self.creditsFinished.text!) {
+                self.creditsfinishednumber = Double(num3)
+            }
+            if let num4 = Double(self.currentCredits.text!) {
+                self.currentcreditsnumber = Double(num4)
+            }
+        }
+    
+    /* //////////////////////////////////////////////////////////////////////////////// */
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +106,9 @@ class NinePointerViewController: UIViewController {
         
         // Underline for TextField
         UnderlineTextField()
+        
+        // Autoset Validation For TextFields
+        Autoset()
         
         // DropDown Options For TextFields
         DropDownOptions()
