@@ -166,6 +166,8 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func calculateCgpa(_ sender: UIButton) {
         
+        sender.flash()
+        
         if ((currentGPA.text!.isEmpty || currentSemCredits.text!.isEmpty || cgpaBeforeThisSem.text!.isEmpty || creditsFinished.text!.isEmpty))
         {
             // Alert
@@ -297,13 +299,25 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
             imagePop.image = UIImage(named: "Avatar")
         }
         
+        if ((outputNumber ?? 10) > 10) {
+            answer.text = "Sorry! Not possible :("
+        }
+        if ((outputNumber ?? 0) < 0) {
+            answer.text = "Sorry! Not possible :("
+        }
+        if (outputString == "nan") {
+            answer.text = "Sorry! Not possible :("
+        }
+        
     }
     
     @IBAction func Ok(_ sender: UIButton) {
+        
+        sender.flash()
         
         AnimateOut(desiredView: popUpView)  // This First
         AnimateOut(desiredView: blurView)   // This Next
         
     }
     
-}   // #310
+}   // #324

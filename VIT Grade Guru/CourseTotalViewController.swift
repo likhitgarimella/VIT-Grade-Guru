@@ -305,6 +305,8 @@ class CourseTotalViewController: UIViewController {
 
     @IBAction func button(_ sender: UIButton) {
         
+        sender.flash()
+        
         // 1 // If both Lab and Project Switches are On
         if labSwitch.isOn==true && projectSwitch.isOn==true {
         if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty || lab.text!.isEmpty || project.text!.isEmpty) {
@@ -487,9 +489,11 @@ class CourseTotalViewController: UIViewController {
     
     @IBAction func Ok(_ sender: UIButton) {
         
+        sender.flash()
+        
         AnimateOut(desiredView: popUpView)  // This First
         AnimateOut(desiredView: blurView)   // This Next
         
     }
     
-}   // #496
+}   // #500

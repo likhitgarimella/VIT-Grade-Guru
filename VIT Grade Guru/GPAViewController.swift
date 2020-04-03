@@ -397,6 +397,8 @@ class GPAViewController: UIViewController {
     
     @IBAction func calculateGpa(_ sender: UIButton) {
         
+        sender.flash()
+        
         Calculations()
         
         // PopUp Animation
@@ -561,9 +563,11 @@ class GPAViewController: UIViewController {
     
     @IBAction func Ok(_ sender: UIButton) {
         
+        sender.flash()
+        
         AnimateOut(desiredView: popUpView)  // This First
         AnimateOut(desiredView: blurView)   // This Next
         
     }
     
-}   // #570
+}   // #574

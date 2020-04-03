@@ -34,6 +34,21 @@ class NinePointerViewController: UIViewController {
         // Actual Formula
         answer.text = String(format: "%.2f", ((number1!*(number3!+number4!))-(number2!*number3!))/number4!)
         
+        let answerString = answer.text!
+        let answerNumber = Double(answerString)
+        
+        if ((answerNumber ?? 10) > 10) {
+            answer.text = "Sorry! Not possible :("
+        }
+        
+        if ((answerNumber ?? 0) < 0) {
+            answer.text = "Sorry! Not possible :("
+        }
+        
+        if (answerString == "nan") {
+            answer.text = "Sorry! Not possible :("
+        }
+        
     }       // Entire Calculations Function
     
     /* //////////////////////////////////////////////////////////////////////////////// */
@@ -163,6 +178,8 @@ class NinePointerViewController: UIViewController {
     
     @IBAction func calculate(_ sender: UIButton) {
         
+        sender.flash()
+        
         if ((selectPointer.text!.isEmpty || currentSemCgpa.text!.isEmpty || creditsFinished.text!.isEmpty || currentCredits.text!.isEmpty))
         {
             // Alert
@@ -266,9 +283,11 @@ class NinePointerViewController: UIViewController {
     
     @IBAction func Ok(_ sender: UIButton) {
         
+        sender.flash()
+        
         AnimateOut(desiredView: popUpView)  // This First
         AnimateOut(desiredView: blurView)   // This Next
         
     }
     
-} // #212
+} // #294

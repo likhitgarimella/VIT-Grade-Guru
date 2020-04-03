@@ -41,7 +41,6 @@ extension UIViewController {
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
-    
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
@@ -58,6 +57,21 @@ extension UITextField {
         border.borderWidth = width
         self.layer.addSublayer(border)
         self.layer.masksToBounds = true
+    }
+    
+}
+
+extension UIButton {
+    
+    func flash() {
+        let flash = CABasicAnimation(keyPath: "opacity")
+        flash.duration = 0.1
+        flash.fromValue = 1
+        flash.toValue = 0.1
+        flash.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        flash.autoreverses = true
+        flash.repeatCount = 1
+        layer.add(flash, forKey: nil)
     }
     
 }
