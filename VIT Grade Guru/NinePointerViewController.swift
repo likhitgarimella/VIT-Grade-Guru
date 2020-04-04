@@ -16,7 +16,6 @@ class NinePointerViewController: UIViewController {
     @IBOutlet var currentSemCgpa: FloatLabelTextField!
     @IBOutlet var creditsFinished: FloatLabelTextField!
     @IBOutlet var currentCredits: FloatLabelTextField!
-    
     @IBOutlet var calculateButtonOutlet: UIButton!
     
     // Function for calculations
@@ -57,15 +56,15 @@ class NinePointerViewController: UIViewController {
     func Autoset() {
         
         currentSemCgpa.keyboardType = .decimalPad
-        currentSemCgpa.text = ""
+        currentSemCgpa.text = ""        // Initialise empty textfield
         currentSemCgpa.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         creditsFinished.keyboardType = .decimalPad
-        creditsFinished.text = ""
+        creditsFinished.text = ""       // Initialise empty textfield
         creditsFinished.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         currentCredits.keyboardType = .decimalPad
-        currentCredits.text = ""
+        currentCredits.text = ""        // Initialise empty textfield
         currentCredits.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         }
@@ -169,10 +168,9 @@ class NinePointerViewController: UIViewController {
     func ButtonProp() {
         
         // Button Properties
-        calculateButtonOutlet.backgroundColor = .systemBlue
+        calculateButtonOutlet.clipsToBounds = true
         calculateButtonOutlet.layer.cornerRadius = 6
-        //buttonOutlet.layer.borderWidth = 1
-        //buttonOutlet.layer.borderColor = UIColor.darkGray.cgColor
+        calculateButtonOutlet.setGradientBackground(colorOne: UIColor(red: 20.0/255.0, green: 151.0/255.0, blue: 255.0/255.0, alpha: 1.0), colorTwo: UIColor(red: 71.0/255.0, green: 124.0/255.0, blue: 168.0/255.0, alpha: 1.0))
         
     }
     
@@ -210,8 +208,7 @@ class NinePointerViewController: UIViewController {
         self.currentSemCgpa.text = ""
         self.creditsFinished.text = ""
         self.currentCredits.text = ""
-        
-        
+
         //And to enable back for a new input in textfield
         self.selectPointer.isEnabled = true
         self.currentSemCgpa.isEnabled = true
@@ -263,6 +260,7 @@ class NinePointerViewController: UIViewController {
         
     }
     
+    // Popup view outlets
     @IBOutlet var blurView: UIVisualEffectView!
     
     @IBOutlet var popUpView: UIView!
@@ -290,4 +288,4 @@ class NinePointerViewController: UIViewController {
         
     }
     
-} // #294
+} // #292

@@ -4,22 +4,13 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>BigShouldersText-SemiBold.ttf</string>
+		<string>BigShouldersText-Bold.ttf</string>
+		<string>BigShouldersText-ExtraBold.ttf</string>
+		<string>BigShouldersText-Black.ttf</string>
 		<string>Sen-Bold.ttf</string>
 		<string>Sen-ExtraBold.ttf</string>
 		<string>Sen-Regular.ttf</string>
-		<string>Roboto-Black.ttf</string>
-		<string>Roboto-BlackItalic.ttf</string>
-		<string>Roboto-Bold.ttf</string>
-		<string>Roboto-BoldItalic.ttf</string>
-		<string>Roboto-Italic.ttf</string>
-		<string>Roboto-Light.ttf</string>
-		<string>Roboto-LightItalic.ttf</string>
-		<string>Roboto-Medium.ttf</string>
-		<string>Roboto-MediumItalic.ttf</string>
-		<string>Roboto-Regular.ttf</string>
-		<string>Roboto-Thin.ttf</string>
-		<string>Roboto-ThinItalic.ttf</string>
-		<string>Harmattan-Regular.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

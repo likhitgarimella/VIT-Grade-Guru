@@ -270,10 +270,9 @@ class CourseTotalViewController: UIViewController {
     func ButtonProp() {
         
         // Button Properties
-        buttonOutlet.backgroundColor = .systemBlue
+        buttonOutlet.clipsToBounds = true
         buttonOutlet.layer.cornerRadius = 6
-        //buttonOutlet.layer.borderWidth = 1
-        //buttonOutlet.layer.borderColor = UIColor.darkGray.cgColor
+        buttonOutlet.setGradientBackground(colorOne: UIColor(red: 20.0/255.0, green: 151.0/255.0, blue: 255.0/255.0, alpha: 1.0), colorTwo: UIColor(red: 71.0/255.0, green: 124.0/255.0, blue: 168.0/255.0, alpha: 1.0))
         
     }
     
@@ -381,7 +380,6 @@ class CourseTotalViewController: UIViewController {
         self.fat.text = ""
         self.lab.text = ""
         self.project.text = ""
-        
         
         //And to enable back for a new input in textfield
         self.cat1.isEnabled = true
@@ -496,4 +494,4 @@ class CourseTotalViewController: UIViewController {
         
     }
     
-}   // #500
+}   // #498

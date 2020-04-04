@@ -16,7 +16,6 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var currentSemCredits: FloatLabelTextField!
     @IBOutlet var cgpaBeforeThisSem: FloatLabelTextField!
     @IBOutlet var creditsFinished: FloatLabelTextField!
-    
     @IBOutlet var cgpaButtonOutlet: UIButton!
     
     // Function for calculations
@@ -42,19 +41,19 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
     func Autoset() {
         
         currentGPA.keyboardType = .decimalPad
-        currentGPA.text = ""
+        currentGPA.text = ""            // Initialise empty textfield
         currentGPA.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         currentSemCredits.keyboardType = .decimalPad
-        currentSemCredits.text = ""
+        currentSemCredits.text = ""     // Initialise empty textfield
         currentSemCredits.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         cgpaBeforeThisSem.keyboardType = .decimalPad
-        cgpaBeforeThisSem.text = ""
+        cgpaBeforeThisSem.text = ""     // Initialise empty textfield
         cgpaBeforeThisSem.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         creditsFinished.keyboardType = .decimalPad
-        creditsFinished.text = ""
+        creditsFinished.text = ""       // Initialise empty textfield
         creditsFinished.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
     }
@@ -157,10 +156,9 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
     func ButtonProp() {
         
         // Button Properties
-        cgpaButtonOutlet.backgroundColor = .systemBlue
+        cgpaButtonOutlet.clipsToBounds = true
         cgpaButtonOutlet.layer.cornerRadius = 6
-        //buttonOutlet.layer.borderWidth = 1
-        //buttonOutlet.layer.borderColor = UIColor.darkGray.cgColor
+        cgpaButtonOutlet.setGradientBackground(colorOne: UIColor(red: 20.0/255.0, green: 151.0/255.0, blue: 255.0/255.0, alpha: 1.0), colorTwo: UIColor(red: 71.0/255.0, green: 124.0/255.0, blue: 168.0/255.0, alpha: 1.0))
         
     }
     
@@ -200,8 +198,7 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
         self.currentSemCredits.text = ""
         self.cgpaBeforeThisSem.text = ""
         self.creditsFinished.text = ""
-        
-        
+
         //And to enable back for a new input in textfield
         self.currentGPA.isEnabled = true
         self.currentSemCredits.isEnabled = true
@@ -253,6 +250,7 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    // Popup view outlets
     @IBOutlet var blurView: UIVisualEffectView!
     
     @IBOutlet var popUpView: UIView!
@@ -320,4 +318,4 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-}   // #324
+}   // #322

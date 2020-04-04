@@ -388,10 +388,9 @@ class GPAViewController: UIViewController {
     func ButtonProp() {
         
         // Button Properties
-        gpaButtonOutlet.backgroundColor = .systemBlue
+        gpaButtonOutlet.clipsToBounds = true
         gpaButtonOutlet.layer.cornerRadius = 6
-        //buttonOutlet.layer.borderWidth = 1
-        //buttonOutlet.layer.borderColor = UIColor.darkGray.cgColor
+        gpaButtonOutlet.setGradientBackground(colorOne: UIColor(red: 20.0/255.0, green: 151.0/255.0, blue: 255.0/255.0, alpha: 1.0), colorTwo: UIColor(red: 71.0/255.0, green: 124.0/255.0, blue: 168.0/255.0, alpha: 1.0))
         
     }
     
@@ -440,7 +439,6 @@ class GPAViewController: UIViewController {
         self.grade09.text = ""
         self.grade10.text = ""
         self.grade11.text = ""
-        
         
         //And to enable back for a new input in textfield
         self.credits01.isEnabled = true
@@ -570,4 +568,4 @@ class GPAViewController: UIViewController {
         
     }
     
-}   // #574
+}   // #572
