@@ -10,7 +10,11 @@ import UIKit
 
 class NinePointerViewController: UIViewController {
     
+    // Outlets
     @IBOutlet var topBar: UIView!
+    @IBOutlet var VIT: UILabel!
+    @IBOutlet var Grade: UILabel!
+    @IBOutlet var Guru: UILabel!
     
     @IBOutlet var selectPointer: DropDown!
     @IBOutlet var currentSemCgpa: FloatLabelTextField!
@@ -143,6 +147,9 @@ class NinePointerViewController: UIViewController {
         topBar.layer.shadowOpacity = 0.5
         topBar.layer.shadowColor = UIColor.gray.cgColor
         topBar.layer.shadowOffset = CGSize(width: 0, height: 2)
+        VIT.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
+        Grade.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
+        Guru.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
         
     }
     
@@ -158,8 +165,7 @@ class NinePointerViewController: UIViewController {
     
     func DropDownOptions() {
     
-        // DropDown Options For Credits TextFields
-        // Removed additional .5 pointer options
+        // DropDown Options For Credits TextFields  // Removed additional .5 pointer options
         selectPointer.optionArray = ["9 Pointer", "8 Pointer", "7 Pointer", "6 Pointer"]
         selectPointer.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
@@ -170,7 +176,7 @@ class NinePointerViewController: UIViewController {
         // Button Properties
         calculateButtonOutlet.clipsToBounds = true
         calculateButtonOutlet.layer.cornerRadius = 6
-        calculateButtonOutlet.setGradientBackground(colorOne: UIColor(red: 20.0/255.0, green: 151.0/255.0, blue: 255.0/255.0, alpha: 1.0), colorTwo: UIColor(red: 71.0/255.0, green: 124.0/255.0, blue: 168.0/255.0, alpha: 1.0))
+        calculateButtonOutlet.backgroundColor = UIColor(red: 53/255.0, green: 163/255.0, blue: 251/255.0, alpha: 1.0)
         
     }
     
@@ -288,4 +294,4 @@ class NinePointerViewController: UIViewController {
         
     }
     
-} // #292
+} // #298

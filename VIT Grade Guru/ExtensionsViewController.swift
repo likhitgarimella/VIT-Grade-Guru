@@ -80,7 +80,7 @@ extension UIButton {
 }
 
 // Gradient for Popup UIView
-extension UIView {
+/* extension UIView {
     
     func setGradientBackground(colorOne: UIColor, colorTwo: UIColor) {
         
@@ -92,4 +92,4 @@ extension UIView {
         gradientLayer.endPoint = CGPoint(x: 0.0, y: 0.0)
         layer.insertSublayer(gradientLayer, at: 0)
     }
-}   // #96
+} */    // #96

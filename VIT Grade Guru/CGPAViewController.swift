@@ -8,9 +8,13 @@
 
 import UIKit
 
-class CGPAViewController: UIViewController, UITextFieldDelegate {
+class CGPAViewController: UIViewController {
     
+    // Outlets
     @IBOutlet var topBar: UIView!
+    @IBOutlet var VIT: UILabel!
+    @IBOutlet var Grade: UILabel!
+    @IBOutlet var Guru: UILabel!
     
     @IBOutlet var currentGPA: FloatLabelTextField!
     @IBOutlet var currentSemCredits: FloatLabelTextField!
@@ -140,6 +144,9 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
         topBar.layer.shadowOpacity = 0.5
         topBar.layer.shadowColor = UIColor.gray.cgColor
         topBar.layer.shadowOffset = CGSize(width: 0, height: 2)
+        VIT.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
+        Grade.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
+        Guru.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
         
     }
     
@@ -158,7 +165,7 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
         // Button Properties
         cgpaButtonOutlet.clipsToBounds = true
         cgpaButtonOutlet.layer.cornerRadius = 6
-        cgpaButtonOutlet.setGradientBackground(colorOne: UIColor(red: 20.0/255.0, green: 151.0/255.0, blue: 255.0/255.0, alpha: 1.0), colorTwo: UIColor(red: 71.0/255.0, green: 124.0/255.0, blue: 168.0/255.0, alpha: 1.0))
+        cgpaButtonOutlet.backgroundColor = UIColor(red: 53/255.0, green: 163/255.0, blue: 251/255.0, alpha: 1.0)
         
     }
     
@@ -276,8 +283,7 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
         let outputString = answer.text!
         let outputNumber = Double(outputString)
         
-        // if (90...100 ~= outputNumber) // Forgot to unwrap
-        // if (outputNumber == 10) // Forgot to set bounds
+        // if (90...100 ~= outputNumber) // Forgot to unwrap    // if (outputNumber == 10) // Forgot to set bounds
         if (9...10 ~= outputNumber!) {
             imagePop.image = UIImage(named: "About")
         }
@@ -318,4 +324,4 @@ class CGPAViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-}   // #322
+}   // #328

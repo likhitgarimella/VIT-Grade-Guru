@@ -12,6 +12,9 @@ class CourseTotalViewController: UIViewController {
     
     // Outlets
     @IBOutlet var topBar: UIView!
+    @IBOutlet var VIT: UILabel!
+    @IBOutlet var Grade: UILabel!
+    @IBOutlet var Guru: UILabel!
     
     @IBOutlet var labSwitch: UISwitch!
     @IBOutlet var projectSwitch: UISwitch!
@@ -250,6 +253,9 @@ class CourseTotalViewController: UIViewController {
         topBar.layer.shadowOpacity = 0.5
         topBar.layer.shadowColor = UIColor.gray.cgColor
         topBar.layer.shadowOffset = CGSize(width: 0, height: 2)
+        VIT.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
+        Grade.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
+        Guru.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
         
     }
     
@@ -272,7 +278,7 @@ class CourseTotalViewController: UIViewController {
         // Button Properties
         buttonOutlet.clipsToBounds = true
         buttonOutlet.layer.cornerRadius = 6
-        buttonOutlet.setGradientBackground(colorOne: UIColor(red: 20.0/255.0, green: 151.0/255.0, blue: 255.0/255.0, alpha: 1.0), colorTwo: UIColor(red: 71.0/255.0, green: 124.0/255.0, blue: 168.0/255.0, alpha: 1.0))
+        buttonOutlet.backgroundColor = UIColor(red: 53/255.0, green: 163/255.0, blue: 251/255.0, alpha: 1.0)
         
     }
     
@@ -310,7 +316,7 @@ class CourseTotalViewController: UIViewController {
         if labSwitch.isOn==true && projectSwitch.isOn==true {
         if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty || lab.text!.isEmpty || project.text!.isEmpty) {
             // Alert
-            let myAlert = UIAlertController(title: "Empty Fields #1", message: "", preferredStyle: UIAlertController.Style.alert)
+            let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
             myAlert.addAction(okAction)
             self.present(myAlert, animated: true, completion: nil)
@@ -322,7 +328,7 @@ class CourseTotalViewController: UIViewController {
         if labSwitch.isOn==true && projectSwitch.isOn==false {
         if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty || lab.text!.isEmpty) {
             // Alert
-            let myAlert = UIAlertController(title: "Empty Fields #2", message: "", preferredStyle: UIAlertController.Style.alert)
+            let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
             myAlert.addAction(okAction)
             self.present(myAlert, animated: true, completion: nil)
@@ -334,7 +340,7 @@ class CourseTotalViewController: UIViewController {
         if labSwitch.isOn==false && projectSwitch.isOn==true {
         if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty || project.text!.isEmpty) {
             // Alert
-            let myAlert = UIAlertController(title: "Empty Fields #3", message: "", preferredStyle: UIAlertController.Style.alert)
+            let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
             myAlert.addAction(okAction)
             self.present(myAlert, animated: true, completion: nil)
@@ -346,7 +352,7 @@ class CourseTotalViewController: UIViewController {
         if labSwitch.isOn==false && projectSwitch.isOn==false {
         if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty) {
             // Alert
-            let myAlert = UIAlertController(title: "Empty Fields #4", message: "", preferredStyle: UIAlertController.Style.alert)
+            let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
             myAlert.addAction(okAction)
             self.present(myAlert, animated: true, completion: nil)
@@ -494,4 +500,4 @@ class CourseTotalViewController: UIViewController {
         
     }
     
-}   // #498
+}   // #504
