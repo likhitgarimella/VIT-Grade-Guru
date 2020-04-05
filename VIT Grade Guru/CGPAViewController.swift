@@ -273,6 +273,8 @@ class CGPAViewController: UIViewController {
     func PopUpProp() {
         
         popUpView.layer.cornerRadius = 16
+        imagePop.layer.cornerRadius = 16
+        imagePop.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         okOutlet.layer.cornerRadius = 16
         okOutlet.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         
@@ -283,24 +285,22 @@ class CGPAViewController: UIViewController {
         let outputString = answer.text!
         let outputNumber = Double(outputString)
         
-        // if (90...100 ~= outputNumber) // Forgot to unwrap    // if (outputNumber == 10) // Forgot to set bounds
+        // if (90...100 ~= outputNumber) // Forgot to unwrap
+        // if (outputNumber == 10) // Forgot to set bounds
         if (9...10 ~= outputNumber!) {
-            imagePop.image = UIImage(named: "About")
+            imagePop.image = UIImage(named: "Group 1")
         }
         if (8..<9 ~= outputNumber!) {
-            imagePop.image = UIImage(named: "9Poi")
+            imagePop.image = UIImage(named: "Group 2")
         }
         if (7..<8 ~= outputNumber!) {
-            imagePop.image = UIImage(named: "cgpa")
+            imagePop.image = UIImage(named: "Group 3")
         }
         if (6..<7 ~= outputNumber!) {
-            imagePop.image = UIImage(named: "gpa")
+            imagePop.image = UIImage(named: "Group 4")
         }
-        if (5..<6 ~= outputNumber!) {
-            imagePop.image = UIImage(named: "course")
-        }
-        if (0..<5 ~= outputNumber!) {
-            imagePop.image = UIImage(named: "Avatar")
+        if (0..<6 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "Group 5")
         }
         
         if ((outputNumber ?? 10) > 10) {

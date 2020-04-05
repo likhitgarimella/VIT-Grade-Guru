@@ -43,11 +43,9 @@ class NinePointerViewController: UIViewController {
         if ((answerNumber ?? 10) > 10) {
             answer.text = "Sorry! Not possible :("
         }
-        
         if ((answerNumber ?? 0) < 0) {
             answer.text = "Sorry! Not possible :("
         }
-        
         if (answerString == "nan") {
             answer.text = "Sorry! Not possible :("
         }
@@ -294,4 +292,4 @@ class NinePointerViewController: UIViewController {
         
     }
     
-} // #298
+} // #296

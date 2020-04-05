@@ -458,6 +458,8 @@ class CourseTotalViewController: UIViewController {
     func PopUpProp() {
         
         popUpView.layer.cornerRadius = 16
+        imagePop.layer.cornerRadius = 16
+        imagePop.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         okOutlet.layer.cornerRadius = 16
         okOutlet.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         
@@ -470,23 +472,31 @@ class CourseTotalViewController: UIViewController {
         
         // if (90...100 ~= outputNumber) // Forgot to unwrap
         // if (outputNumber == 10) // Forgot to set bounds
-        if (90...100 ~= outputNumber!) {
-            imagePop.image = UIImage(named: "About")
+        if (87.5...100 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "Group 1")
         }
-        if (80..<90 ~= outputNumber!) {
-            imagePop.image = UIImage(named: "9Poi")
+        if (75..<87.5 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "Group 2")
         }
-        if (70..<80 ~= outputNumber!) {
-            imagePop.image = UIImage(named: "cgpa")
+        if (62.5..<75 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "Group 3")
         }
-        if (60..<70 ~= outputNumber!) {
-            imagePop.image = UIImage(named: "gpa")
-        }
-        if (50..<60 ~= outputNumber!) {
-            imagePop.image = UIImage(named: "course")
+        if (50..<62.5 ~= outputNumber!) {
+            imagePop.image = UIImage(named: "Group 4")
         }
         if (0..<50 ~= outputNumber!) {
-            imagePop.image = UIImage(named: "Avatar")
+            imagePop.image = UIImage(named: "Group 5")
+        }
+        
+        
+        if ((outputNumber ?? 100) > 100) {
+            answer.text = "Sorry! Not possible :("
+        }
+        if ((outputNumber ?? 0) < 0) {
+            answer.text = "Sorry! Not possible :("
+        }
+        if (outputString == "nan") {
+            answer.text = "Sorry! Not possible :("
         }
         
     }
@@ -500,4 +510,4 @@ class CourseTotalViewController: UIViewController {
         
     }
     
-}   // #504
+}   // #514
