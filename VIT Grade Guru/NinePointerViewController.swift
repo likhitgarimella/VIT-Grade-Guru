@@ -36,18 +36,34 @@ class NinePointerViewController: UIViewController {
         
         // Actual Formula
         answer.text = String(format: "%.2f", ((number1!*(number3!+number4!))-(number2!*number3!))/number4!)
+        answer.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
+        labelDescription.text = "Your Required GPA is: -"
+        labelDescription.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
+        imagePop.image = UIImage(named: "Grey")
         
         let answerString = answer.text!
         let answerNumber = Double(answerString)
         
         if ((answerNumber ?? 10) > 10) {
-            answer.text = "Sorry! Not possible :("
+            answer.text = ""
+            answer.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
+            labelDescription.text = ""
+            labelDescription.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
+            imagePop.image = UIImage(named: "Red")
         }
         if ((answerNumber ?? 0) < 0) {
-            answer.text = "Sorry! Not possible :("
+            answer.text = ""
+            answer.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
+            labelDescription.text = ""
+            labelDescription.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
+            imagePop.image = UIImage(named: "Red")
         }
         if (answerString == "nan") {
-            answer.text = "Sorry! Not possible :("
+            answer.text = ""
+            answer.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
+            labelDescription.text = ""
+            labelDescription.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
+            imagePop.image = UIImage(named: "Red")
         }
         
     }       // Entire Calculations Function
@@ -163,7 +179,8 @@ class NinePointerViewController: UIViewController {
     
     func DropDownOptions() {
     
-        // DropDown Options For Credits TextFields  // Removed additional .5 pointer options
+        // DropDown Options For Credits TextFields
+        // Removed additional .5 pointer options
         selectPointer.optionArray = ["9 Pointer", "8 Pointer", "7 Pointer", "6 Pointer"]
         selectPointer.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
@@ -224,7 +241,7 @@ class NinePointerViewController: UIViewController {
     func PopUpAnimation() {
         
         blurView.bounds = self.view.bounds
-        popUpView.bounds = CGRect(x: 0, y: 0, width: self.view.bounds.width*0.68, height: self.view.bounds.height*0.2)
+        popUpView.bounds = CGRect(x: 0, y: 0, width: self.view.bounds.width*0.68, height: self.view.bounds.height*0.28)
         
     }
     
@@ -270,6 +287,8 @@ class NinePointerViewController: UIViewController {
     @IBOutlet var popUpView: UIView!
     
     @IBOutlet var answer: UILabel!
+    
+    @IBOutlet var imagePop: UIImageView!
         
     @IBOutlet var labelDescription: UILabel!
     
@@ -278,6 +297,7 @@ class NinePointerViewController: UIViewController {
     func PopUpProp() {
         
         popUpView.layer.cornerRadius = 16
+        imagePop.layer.cornerRadius = 16
         okOutlet.layer.cornerRadius = 16
         okOutlet.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         
@@ -292,4 +312,4 @@ class NinePointerViewController: UIViewController {
         
     }
     
-} // #296
+} // #316

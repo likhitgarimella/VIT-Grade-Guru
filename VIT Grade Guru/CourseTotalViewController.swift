@@ -474,29 +474,37 @@ class CourseTotalViewController: UIViewController {
         // if (outputNumber == 10) // Forgot to set bounds
         if (87.5...100 ~= outputNumber!) {
             imagePop.image = UIImage(named: "Group 1")
+            labelDescription.text = "Outstanding!"
         }
         if (75..<87.5 ~= outputNumber!) {
             imagePop.image = UIImage(named: "Group 2")
+            labelDescription.text = "Keep it up!"
         }
         if (62.5..<75 ~= outputNumber!) {
             imagePop.image = UIImage(named: "Group 3")
+            labelDescription.text = "Good!"
         }
         if (50..<62.5 ~= outputNumber!) {
             imagePop.image = UIImage(named: "Group 4")
+            labelDescription.text = "Do better!"
         }
         if (0..<50 ~= outputNumber!) {
             imagePop.image = UIImage(named: "Group 5")
+            labelDescription.text = "Work hard!"
         }
         
         
         if ((outputNumber ?? 100) > 100) {
-            answer.text = "Sorry! Not possible :("
+            answer.text = "Invalid!"
+            labelDescription.text = ""
         }
         if ((outputNumber ?? 0) < 0) {
-            answer.text = "Sorry! Not possible :("
+            answer.text = "Invalid!"
+            labelDescription.text = ""
         }
         if (outputString == "nan") {
-            answer.text = "Sorry! Not possible :("
+            answer.text = "Invalid!"
+            labelDescription.text = ""
         }
         
     }
@@ -510,4 +518,4 @@ class CourseTotalViewController: UIViewController {
         
     }
     
-}   // #514
+}   // #522

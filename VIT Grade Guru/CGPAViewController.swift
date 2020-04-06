@@ -289,28 +289,36 @@ class CGPAViewController: UIViewController {
         // if (outputNumber == 10) // Forgot to set bounds
         if (9...10 ~= outputNumber!) {
             imagePop.image = UIImage(named: "Group 1")
+            labelDescription.text = "Outstanding!"
         }
         if (8..<9 ~= outputNumber!) {
             imagePop.image = UIImage(named: "Group 2")
+            labelDescription.text = "Keep it up!"
         }
         if (7..<8 ~= outputNumber!) {
             imagePop.image = UIImage(named: "Group 3")
+            labelDescription.text = "Good!"
         }
         if (6..<7 ~= outputNumber!) {
             imagePop.image = UIImage(named: "Group 4")
+            labelDescription.text = "Do better!"
         }
         if (0..<6 ~= outputNumber!) {
             imagePop.image = UIImage(named: "Group 5")
+            labelDescription.text = "Work hard!"
         }
         
         if ((outputNumber ?? 10) > 10) {
-            answer.text = "Sorry! Not possible :("
+            answer.text = "Invalid!"
+            labelDescription.text = ""
         }
         if ((outputNumber ?? 0) < 0) {
-            answer.text = "Sorry! Not possible :("
+            answer.text = "Invalid!"
+            labelDescription.text = ""
         }
         if (outputString == "nan") {
-            answer.text = "Sorry! Not possible :("
+            answer.text = "Invalid!"
+            labelDescription.text = ""
         }
         
     }
@@ -324,4 +332,4 @@ class CGPAViewController: UIViewController {
         
     }
     
-}   // #328
+}   // #336
