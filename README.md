@@ -27,4 +27,22 @@ With a user-friendly and refined UI/UX and customised motivating notes on grade 
   </tr>
 </table>
 
+**Attention all iPhone users out there!**
+
+1. Eager to know how much will you score this semester?
+
+2. Fed up of long calculations to predict your grades?
+
+3. Want to know your GPA for this semester in one tap?
+
+4. Want to know whether you can be a 9 pointer?
+
+5. No more frustration about your grade calculation!
+
+With a user friendly and refined UI/UX and customised motivating notes on grade prediction, know your grade in a single tap now!
+
+Download VIT Grade Guru now!
+
+https://apps.apple.com/in/app/vit-grade-guru/id1506676734
+
 ##### Copyright © 2020 Likhit Garimella
