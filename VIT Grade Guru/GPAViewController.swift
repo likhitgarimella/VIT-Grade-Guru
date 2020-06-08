@@ -38,6 +38,7 @@ class GPAViewController: UIViewController {
     @IBOutlet var grade09: DropDown!
     @IBOutlet var grade10: DropDown!
     @IBOutlet var gpaButtonOutlet: UIButton!
+    @IBOutlet var resetButtonOutlet: UIButton!
     
     
     // Function for calculations
@@ -189,6 +190,19 @@ class GPAViewController: UIViewController {
         
         // PopUp UIView Properties
         PopUpProp()
+        
+        // Reset button properties
+        ResetButton()
+        
+    }
+    
+    func ResetButton() {
+        
+        let myColor = UIColor(red: 91/255, green: 19/255, blue: 114/255, alpha: 1.0)
+        resetButtonOutlet.layer.masksToBounds = true
+        resetButtonOutlet.layer.borderColor = myColor.cgColor
+        resetButtonOutlet.layer.borderWidth = 2.0
+        resetButtonOutlet.layer.cornerRadius = 10
         
     }
     
@@ -564,4 +578,4 @@ class GPAViewController: UIViewController {
         
     }
     
-}   // #568
+}   // #582
