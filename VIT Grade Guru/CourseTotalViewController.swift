@@ -45,11 +45,16 @@ class CourseTotalViewController: UIViewController {
         let string5 = da3.text!
         let number5 = Double(string5)
         let string6 = addlLearning.text!
-        let number6 = Double(string6)
+        var number6 = Double(string6)
         let string7 = lab.text!
         let number7 = Double(string7)
         let string8 = project.text!
         let number8 = Double(string8)
+        
+        // Textfield Validation
+        if (addlLearning.text!.isEmpty) {
+           number6 = 0
+        }
         
         
         // If both Lab and Project Switches are On
@@ -62,29 +67,29 @@ class CourseTotalViewController: UIViewController {
             }   // If Lab and Project Fields aren't empty
         }
         
-        // If Lab Switch is On and Project Switche is Off
+        // If Lab Switch is On and Project Switch is Off
         if labSwitch.isOn==true && projectSwitch.isOn==false {
             if (lab.text!.isEmpty) {
                 print("Empty Lab Field")
                 // If Lab Field is empty
             } else {
-                answer.text = String(format: "%.2f", (3*( ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )/4) + (number7!)/4)
+                answer.text = String(format: "%.2f", (3*( ( ((3*(number1!+number2!))/10) + number3! + number4! + number5! ) + ((2*(((3*(number1!+number2!))/10) + number3! + number4! + number5!))/3) )/4) + (number7! + (2*(number7!)/3))/4)
             }   // If Lab Field isn't empty
         }
         
-        // If Lab Switch is Off and Project Switche is On
+        // If Lab Switch is Off and Project Switch is On
         if labSwitch.isOn==false && projectSwitch.isOn==true {
             if (project.text!.isEmpty) {
                 print("Empty Project Field")
                 // If Project Field is empty
             } else {
-                answer.text = String(format: "%.2f", (3*( ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )/4) + (number8!)/4)
+                answer.text = String(format: "%.2f", (3*( ( ((3*(number1!+number2!))/10) + number3! + number4! + number5! ) + ((2*(((3*(number1!+number2!))/10) + number3! + number4! + number5!))/3) + number6! )/4) + (number8!)/4)
             }   // If Project Field isn't empty
         }
         
         // If both Lab and Project Switches are Off
         if labSwitch.isOn==false && projectSwitch.isOn==false {
-            answer.text = String(format: "%.2f", ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )
+            answer.text = String(format: "%.2f", ( ((3*(number1!+number2!))/10) + number3! + number4! + number5! ) + ((2*(((3*(number1!+number2!))/10) + number3! + number4! + number5!))/3) + number6!)
         }
     }           // Entire Calculations Function
     
@@ -472,7 +477,7 @@ class CourseTotalViewController: UIViewController {
         
         // if (90...100 ~= outputNumber) // Forgot to unwrap
         // if (outputNumber == 10) // Forgot to set bounds
-        if (87.5...100 ~= outputNumber!) {
+        if (87.5...1000 ~= outputNumber!) {
             imagePop.image = UIImage(named: "Group 1")
             labelDescription.text = "Outstanding!"
         }
@@ -495,7 +500,7 @@ class CourseTotalViewController: UIViewController {
         
         
         if ((outputNumber ?? 100) > 100) {
-            answer.text = "Invalid!"
+            answer.text = "100.00"
             labelDescription.text = ""
         }
         if ((outputNumber ?? 0) < 0) {
