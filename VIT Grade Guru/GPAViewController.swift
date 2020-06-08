@@ -392,6 +392,8 @@ class GPAViewController: UIViewController {
     
     @IBAction func resetButton(_ sender: UIButton) {
         
+        sender.flash()
+        
         // Clear textfields after popup goes off
         ClearTextFields()
         
@@ -582,4 +584,4 @@ class GPAViewController: UIViewController {
         
     }
     
-}   // #586
+}   // #588
