@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -68,13 +68,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIq-He-Esp">
-                                        <rect key="frame" x="116" y="17.666666666666668" width="58" height="25.000000000000004"/>
+                                        <rect key="frame" x="116" y="18.333333333333336" width="58" height="23.333333333333336"/>
                                         <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5I-wy-8fc">
-                                        <rect key="frame" x="178" y="17.666666666666668" width="44" height="25.000000000000004"/>
+                                        <rect key="frame" x="178" y="18.333333333333336" width="44" height="23.333333333333336"/>
                                         <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -764,7 +764,7 @@
                             <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veT-HZ-f2Y">
-                            <rect key="frame" x="12" y="164" width="257.66666666666669" height="38.333333333333343"/>
+                            <rect key="frame" x="12" y="165" width="257.66666666666669" height="37.333333333333343"/>
                             <fontDescription key="fontDescription" name="BigShouldersText-ExtraBold" family="Big Shoulders Text" pointSize="32"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -1280,13 +1280,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYX-5s-HDo">
-                                        <rect key="frame" x="116" y="17.666666666666668" width="58" height="25.000000000000004"/>
+                                        <rect key="frame" x="116" y="18.333333333333336" width="58" height="23.333333333333336"/>
                                         <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6X8-j0-yAd">
-                                        <rect key="frame" x="178" y="17.666666666666668" width="43.666666666666657" height="25.000000000000004"/>
+                                        <rect key="frame" x="178" y="18.333333333333336" width="43.666666666666657" height="23.333333333333336"/>
                                         <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1476,7 +1476,7 @@
                             <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBG-3s-9Te">
-                            <rect key="frame" x="12" y="164" width="257.66666666666669" height="38.333333333333343"/>
+                            <rect key="frame" x="12" y="165" width="257.66666666666669" height="37.333333333333343"/>
                             <fontDescription key="fontDescription" name="BigShouldersText-ExtraBold" family="Big Shoulders Text" pointSize="32"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -1547,13 +1547,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhg-jr-8wD">
-                                        <rect key="frame" x="116" y="17.666666666666664" width="58" height="24.666666666666664"/>
+                                        <rect key="frame" x="116" y="18.333333333333336" width="58" height="23.333333333333336"/>
                                         <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1T-dZ-aPL">
-                                        <rect key="frame" x="178" y="17.666666666666664" width="44" height="24.666666666666664"/>
+                                        <rect key="frame" x="178" y="18.333333333333336" width="44" height="23.333333333333336"/>
                                         <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1577,16 +1577,16 @@
                                 <rect key="frame" x="0.0" y="68" width="453" height="623.66666666666663"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANl-kX-0wW">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="622"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="621.66666666666663"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to Become" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DA0-Uu-R2I">
-                                                <rect key="frame" x="127.66666666666669" y="24" width="159" height="24.666666666666671"/>
+                                                <rect key="frame" x="127.66666666666669" y="24" width="159" height="24.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="20"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Sem Credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="age-JW-T0m" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="288.66666666666669" width="374" height="36"/>
+                                                <rect key="frame" x="20" y="288.33333333333331" width="374" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="DB1-rA-H7I"/>
                                                 </constraints>
@@ -1600,7 +1600,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Credits Finished Before This Sem" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="b57-Nx-Aym" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="216.66666666666669" width="374" height="36"/>
+                                                <rect key="frame" x="20" y="216.33333333333331" width="374" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="E8R-xC-u9m"/>
                                                 </constraints>
@@ -1614,7 +1614,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current CGPA" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="JpA-Z9-spW" customClass="FloatLabelTextField" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="144.66666666666666" width="374" height="36"/>
+                                                <rect key="frame" x="20" y="144.33333333333334" width="374" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="7jb-Ij-uda"/>
                                                 </constraints>
@@ -1628,7 +1628,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Pointer" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="NfI-Oa-AOv" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="72.666666666666657" width="374" height="36"/>
+                                                <rect key="frame" x="20" y="72.333333333333343" width="374" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="Cmd-dP-qCA"/>
                                                 </constraints>
@@ -1643,7 +1643,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbf-EV-bEP">
-                                                <rect key="frame" x="32" y="364.66666666666669" width="350" height="36"/>
+                                                <rect key="frame" x="32" y="364.33333333333331" width="350" height="36"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="WxC-oe-2j4"/>
@@ -1801,35 +1801,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="840"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnB-uf-Z7W">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnB-uf-Z7W">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="791"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Eo-e7-0Jz">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Eo-e7-0Jz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="791"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgB-tp-iqO">
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kgB-tp-iqO">
                                                 <rect key="frame" x="10" y="72" width="394" height="267.33333333333331"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzD-Ma-AUJ">
-                                                        <rect key="frame" x="118.00000000000001" y="12.000000000000002" width="39.666666666666671" height="25.666666666666671"/>
+                                                        <rect key="frame" x="118" y="12.000000000000002" width="32" height="25.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="22"/>
                                                         <color key="textColor" red="0.20195864611445435" green="0.19718734879450001" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q57-kt-f5O">
-                                                        <rect key="frame" x="163.66666666666666" y="12.000000000000002" width="64" height="25.666666666666671"/>
+                                                        <rect key="frame" x="156" y="12.000000000000002" width="61" height="25.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="22"/>
                                                         <color key="textColor" red="0.20195864611445435" green="0.19718734879450001" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ke6-gx-ASZ">
-                                                        <rect key="frame" x="233.66666666666663" y="12.000000000000002" width="48" height="25.666666666666671"/>
+                                                        <rect key="frame" x="223" y="12.000000000000002" width="48" height="25.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="22"/>
                                                         <color key="textColor" red="0.20195864611445435" green="0.19718734879450001" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RO2-T4-QVJ">
-                                                        <rect key="frame" x="12" y="56.000000000000014" width="370" height="201.33333333333337"/>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RO2-T4-QVJ">
+                                                        <rect key="frame" x="12" y="56" width="370" height="201.33333333333337"/>
                                                         <string key="text">VIT Grade Guru is a quick and accurate grade and CGPA calculator designed exclusively for the students of VIT. It is a one of it's kind iOS app that aids you to calculate your grand total for a subject, know your current semester GPA, determine your overall CGPA and estimate whether you will be a 9 pointer.
 
 With a user-friendly and refined UI/UX and customised motivating notes on grade prediction, say goodbye to long worthless calculations and know your grade in a single tap now!</string>
@@ -1859,19 +1859,19 @@ With a user-friendly and refined UI/UX and customised motivating notes on grade 
                                                     <constraint firstAttribute="width" constant="112" id="cgq-LD-zXP"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aX2-2g-ES9">
-                                                <rect key="frame" x="24.000000000000007" y="367.33333333333331" width="127.66666666666669" height="29"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Developers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aX2-2g-ES9">
+                                                <rect key="frame" x="24" y="367.33333333333331" width="121" height="29"/>
                                                 <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="24"/>
                                                 <color key="textColor" red="0.2019586461" green="0.1971873488" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 9" translatesAutoresizingMaskIntoConstraints="NO" id="rI5-Q5-yPV">
-                                                <rect key="frame" x="10" y="400.33333333333331" width="394" height="183.99999999999994"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Group 9" translatesAutoresizingMaskIntoConstraints="NO" id="rI5-Q5-yPV">
+                                                <rect key="frame" x="10" y="400.33333333333326" width="394" height="184"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="184" id="qoz-ed-x9m"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 10" translatesAutoresizingMaskIntoConstraints="NO" id="CRY-zm-LlJ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Group 10" translatesAutoresizingMaskIntoConstraints="NO" id="CRY-zm-LlJ">
                                                 <rect key="frame" x="10" y="584.33333333333337" width="394" height="184"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="184" id="sCA-IB-O7w"/>
