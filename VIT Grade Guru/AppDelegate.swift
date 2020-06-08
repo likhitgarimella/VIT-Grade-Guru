@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         UITabBar.appearance().barTintColor = .white
-        UITabBar.appearance().tintColor = .systemBlue
+        UITabBar.appearance().tintColor = UIColor(red: 167/255, green: 97/255, blue: 242/255, alpha: 1.0)
         
         // Increase Launch Screen Time
         Thread.sleep(forTimeInterval: 1)

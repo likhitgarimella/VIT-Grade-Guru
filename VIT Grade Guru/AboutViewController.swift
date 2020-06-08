@@ -21,10 +21,10 @@ class AboutViewController: UIViewController {
         
         Desc.backgroundColor = UIColor(red: 233.0/255.0, green: 243.0/255.0, blue: 252.0/255.0, alpha: 1.0)
         Desc.layer.cornerRadius = 30
-        VIT.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
-        Grade.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
-        Guru.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
-        Developers.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
+        VIT.textColor = UIColor(red: 95/255.0, green: 49/255.0, blue: 144/255.0, alpha: 1.0)
+        Grade.textColor = UIColor(red: 95/255.0, green: 49/255.0, blue: 144/255.0, alpha: 1.0)
+        Guru.textColor = UIColor(red: 95/255.0, green: 49/255.0, blue: 144/255.0, alpha: 1.0)
+        Developers.textColor = UIColor(red: 95/255.0, green: 49/255.0, blue: 144/255.0, alpha: 1.0)
     
     }
     

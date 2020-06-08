@@ -261,9 +261,9 @@ class CourseTotalViewController: UIViewController {
         topBar.layer.shadowOpacity = 0.5
         topBar.layer.shadowColor = UIColor.gray.cgColor
         topBar.layer.shadowOffset = CGSize(width: 0, height: 2)
-        VIT.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
-        Grade.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
-        Guru.textColor = UIColor(red: 58/255.0, green: 98/255.0, blue: 130/255.0, alpha: 1.0)
+        VIT.textColor = UIColor(red: 95/255.0, green: 49/255.0, blue: 144/255.0, alpha: 1.0)
+        Grade.textColor = UIColor(red: 95/255.0, green: 49/255.0, blue: 144/255.0, alpha: 1.0)
+        Guru.textColor = UIColor(red: 95/255.0, green: 49/255.0, blue: 144/255.0, alpha: 1.0)
         
     }
     
@@ -286,7 +286,7 @@ class CourseTotalViewController: UIViewController {
         // Button Properties
         buttonOutlet.clipsToBounds = true
         buttonOutlet.layer.cornerRadius = 6
-        buttonOutlet.backgroundColor = UIColor(red: 53/255.0, green: 163/255.0, blue: 251/255.0, alpha: 1.0)
+        buttonOutlet.backgroundColor = UIColor(red: 167/255.0, green: 97/255.0, blue: 242/255.0, alpha: 1.0)
         
     }
     

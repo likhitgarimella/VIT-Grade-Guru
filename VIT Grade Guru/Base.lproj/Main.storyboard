@@ -634,10 +634,13 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="ilL-jX-pGf"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="18"/>
                                         <state key="normal" title="Reset">
                                             <color key="titleColor" red="0.35686274509803922" green="0.074509803921568626" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="resetButton:" destination="RAY-mN-huw" eventType="touchUpInside" id="CHf-MQ-3ld"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -855,14 +858,14 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VIa-JL-ssr">
                                                 <rect key="frame" x="67.333333333333329" y="56" width="51" height="31"/>
-                                                <color key="onTintColor" red="0.20784313725490194" green="0.63921568627450975" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="onTintColor" red="0.37254901960784315" green="0.19215686274509802" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="enableLab:" destination="afN-NI-Fxq" eventType="valueChanged" id="hVN-NZ-Jaa"/>
                                                 </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y4B-Kk-huu">
                                                 <rect key="frame" x="297.33333333333331" y="56" width="51" height="31"/>
-                                                <color key="onTintColor" red="0.20784313725490194" green="0.63921568627450975" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="onTintColor" red="0.37254901960784315" green="0.19215686274509802" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="enableProject:" destination="afN-NI-Fxq" eventType="valueChanged" id="dVo-2X-P7c"/>
                                                 </connections>
@@ -1786,19 +1789,19 @@
                                                 <rect key="frame" x="10" y="72" width="394" height="267.33333333333331"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzD-Ma-AUJ">
-                                                        <rect key="frame" x="118.00000000000001" y="12.000000000000002" width="39.666666666666671" height="25.666666666666671"/>
+                                                        <rect key="frame" x="124.00000000000001" y="12.000000000000002" width="39.666666666666671" height="25.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="22"/>
                                                         <color key="textColor" red="0.20195864611445435" green="0.19718734879450001" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q57-kt-f5O">
-                                                        <rect key="frame" x="163.66666666666666" y="12.000000000000002" width="64" height="25.666666666666671"/>
+                                                        <rect key="frame" x="169.66666666666666" y="12.000000000000002" width="64" height="25.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="22"/>
                                                         <color key="textColor" red="0.20195864611445435" green="0.19718734879450001" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ke6-gx-ASZ">
-                                                        <rect key="frame" x="233.66666666666663" y="12.000000000000002" width="48" height="25.666666666666671"/>
+                                                        <rect key="frame" x="239.66666666666663" y="12.000000000000002" width="48" height="25.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="22"/>
                                                         <color key="textColor" red="0.20195864611445435" green="0.19718734879450001" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1818,7 +1821,7 @@ With a user-friendly and refined UI/UX and customised motivating notes on grade 
                                                     <constraint firstItem="Ke6-gx-ASZ" firstAttribute="leading" secondItem="q57-kt-f5O" secondAttribute="trailing" constant="6" id="2iv-iX-8KH"/>
                                                     <constraint firstItem="RO2-T4-QVJ" firstAttribute="leading" secondItem="kgB-tp-iqO" secondAttribute="leading" constant="12" id="6u1-1P-exk"/>
                                                     <constraint firstItem="Ke6-gx-ASZ" firstAttribute="top" secondItem="kgB-tp-iqO" secondAttribute="top" constant="12" id="E5Y-Fh-E1X"/>
-                                                    <constraint firstItem="OzD-Ma-AUJ" firstAttribute="leading" secondItem="kgB-tp-iqO" secondAttribute="leading" constant="118" id="HeG-vo-2kw"/>
+                                                    <constraint firstItem="OzD-Ma-AUJ" firstAttribute="leading" secondItem="kgB-tp-iqO" secondAttribute="leading" constant="124" id="HeG-vo-2kw"/>
                                                     <constraint firstItem="q57-kt-f5O" firstAttribute="top" secondItem="kgB-tp-iqO" secondAttribute="top" constant="12" id="NUH-ms-vdc"/>
                                                     <constraint firstItem="q57-kt-f5O" firstAttribute="leading" secondItem="OzD-Ma-AUJ" secondAttribute="trailing" constant="6" id="ZGb-EL-Fzz"/>
                                                     <constraint firstItem="OzD-Ma-AUJ" firstAttribute="top" secondItem="kgB-tp-iqO" secondAttribute="top" constant="12" id="f8i-My-I8C"/>
@@ -1915,7 +1918,7 @@ With a user-friendly and refined UI/UX and customised motivating notes on grade 
         <image name="Group 10" width="316" height="157.33332824707031"/>
         <image name="Group 11" width="282" height="40"/>
         <image name="Group 9" width="316" height="157.33332824707031"/>
-        <image name="Icon" width="152" height="152"/>
+        <image name="Icon" width="112" height="112"/>
         <image name="Rectangle" width="44" height="44"/>
         <image name="cgpa" width="30" height="30"/>
         <image name="course" width="30" height="30"/>
