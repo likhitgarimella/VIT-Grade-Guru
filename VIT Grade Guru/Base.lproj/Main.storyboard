@@ -887,12 +887,14 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VIa-JL-ssr">
                                                 <rect key="frame" x="67.333333333333329" y="56" width="51" height="31"/>
+                                                <color key="onTintColor" red="0.20784313725490194" green="0.63921568627450975" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="enableLab:" destination="afN-NI-Fxq" eventType="valueChanged" id="hVN-NZ-Jaa"/>
                                                 </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y4B-Kk-huu">
                                                 <rect key="frame" x="297.33333333333331" y="56" width="51" height="31"/>
+                                                <color key="onTintColor" red="0.20784313725490194" green="0.63921568627450975" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="enableProject:" destination="afN-NI-Fxq" eventType="valueChanged" id="dVo-2X-P7c"/>
                                                 </connections>
