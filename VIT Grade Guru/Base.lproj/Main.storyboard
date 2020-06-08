@@ -109,27 +109,6 @@
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="1rM-eE-xWB" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="254" y="772" width="156" height="40"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <accessibility key="accessibilityConfiguration">
-                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="08b-6U-bGI"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="akS-nG-buS"/>
-                                                </constraints>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select grade" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="TQY-pv-HEK" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="254" y="702" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -349,27 +328,6 @@
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="jiE-5Z-TPu" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="4" y="772" width="156" height="40"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <accessibility key="accessibilityConfiguration">
-                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="M6b-4w-fcR"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="yqH-ID-hMK"/>
-                                                </constraints>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Sen-Regular" family="Sen" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select credits" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="wjW-Qh-sP0" customClass="DropDown" customModule="VIT_Grade_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="4" y="702" width="156" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -583,7 +541,6 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="1rM-eE-xWB" secondAttribute="trailing" constant="4" id="0r9-Kg-VMm"/>
                                             <constraint firstItem="8Bq-NS-hEk" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="60" id="1z0-WE-g17"/>
                                             <constraint firstItem="qje-hW-Ccc" firstAttribute="top" secondItem="jzh-4c-j3m" secondAttribute="bottom" constant="30" id="2LV-xT-8PR"/>
                                             <constraint firstItem="ahb-Le-US1" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="2ko-dM-Xgu"/>
@@ -598,9 +555,7 @@
                                             <constraint firstItem="jzh-4c-j3m" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="8jJ-LI-woT"/>
                                             <constraint firstAttribute="trailing" secondItem="79h-9v-7OH" secondAttribute="trailing" constant="4" id="9IE-CS-3yC"/>
                                             <constraint firstItem="QJk-LV-FSk" firstAttribute="top" secondItem="ywp-kB-8Ka" secondAttribute="bottom" constant="30" id="9uG-im-Tb7"/>
-                                            <constraint firstItem="1rM-eE-xWB" firstAttribute="leading" relation="lessThanOrEqual" secondItem="jiE-5Z-TPu" secondAttribute="trailing" constant="94" id="A3Z-RO-w6v"/>
                                             <constraint firstItem="7Wt-tV-ckp" firstAttribute="top" secondItem="Ezy-mR-7Pi" secondAttribute="bottom" constant="30" id="A8d-ba-Kcg"/>
-                                            <constraint firstItem="1rM-eE-xWB" firstAttribute="top" secondItem="TQY-pv-HEK" secondAttribute="bottom" constant="30" id="AmW-5i-xZQ"/>
                                             <constraint firstItem="79h-9v-7OH" firstAttribute="top" secondItem="QJk-LV-FSk" secondAttribute="bottom" constant="30" id="BDB-ng-2zG"/>
                                             <constraint firstItem="hRc-3n-ipB" firstAttribute="leading" relation="lessThanOrEqual" secondItem="nao-9w-c9H" secondAttribute="trailing" constant="94" id="BWn-Z9-md2"/>
                                             <constraint firstItem="vKA-YW-5gS" firstAttribute="top" secondItem="8Bq-NS-hEk" secondAttribute="bottom" constant="30" id="BcM-rb-mbP"/>
@@ -623,8 +578,10 @@
                                             <constraint firstAttribute="trailing" secondItem="CLi-FM-41i" secondAttribute="trailing" constant="4" id="Wip-2P-eE7"/>
                                             <constraint firstItem="Ezy-mR-7Pi" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="Y8H-P9-0YF"/>
                                             <constraint firstItem="jzh-4c-j3m" firstAttribute="top" secondItem="vKA-YW-5gS" secondAttribute="bottom" constant="30" id="Zuq-zu-gbo"/>
+                                            <constraint firstAttribute="bottom" secondItem="wjW-Qh-sP0" secondAttribute="bottom" constant="228" id="bHq-wP-khq"/>
                                             <constraint firstItem="wjW-Qh-sP0" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="bpw-q8-EUR"/>
                                             <constraint firstAttribute="trailing" secondItem="TQY-pv-HEK" secondAttribute="trailing" constant="4" id="caK-9E-7rA"/>
+                                            <constraint firstAttribute="bottom" secondItem="TQY-pv-HEK" secondAttribute="bottom" constant="228" id="dyr-K3-Baq"/>
                                             <constraint firstItem="TQY-pv-HEK" firstAttribute="top" secondItem="U4c-Le-YUB" secondAttribute="bottom" constant="30" id="fLY-uU-naM"/>
                                             <constraint firstItem="8VX-T1-y1T" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Os6-uc-O0r" secondAttribute="trailing" constant="94" id="g4J-bB-XyS"/>
                                             <constraint firstItem="CLi-FM-41i" firstAttribute="top" secondItem="OoY-XE-V9Z" secondAttribute="bottom" constant="30" id="gau-y1-OWa"/>
@@ -636,14 +593,10 @@
                                             <constraint firstItem="HhK-A8-5tD" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="nFX-vS-xp2"/>
                                             <constraint firstItem="hRc-3n-ipB" firstAttribute="top" secondItem="8VX-T1-y1T" secondAttribute="bottom" constant="30" id="nyk-Bz-ddG"/>
                                             <constraint firstItem="8VX-T1-y1T" firstAttribute="top" secondItem="79h-9v-7OH" secondAttribute="bottom" constant="30" id="oi9-7U-xIc"/>
-                                            <constraint firstAttribute="bottom" secondItem="jiE-5Z-TPu" secondAttribute="bottom" constant="158" id="pkY-uE-Mwa"/>
-                                            <constraint firstItem="jiE-5Z-TPu" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="qwn-CW-8IN"/>
                                             <constraint firstAttribute="trailing" secondItem="ywp-kB-8Ka" secondAttribute="trailing" constant="4" id="rFi-AQ-G3J"/>
                                             <constraint firstItem="8Bq-NS-hEk" firstAttribute="top" secondItem="Dft-N2-gFJ" secondAttribute="top" constant="18" id="skG-Gp-6eQ"/>
                                             <constraint firstItem="ZTb-9q-HT0" firstAttribute="leading" relation="lessThanOrEqual" secondItem="ahb-Le-US1" secondAttribute="trailing" constant="94" id="ttT-rG-Eam"/>
-                                            <constraint firstItem="jiE-5Z-TPu" firstAttribute="top" secondItem="wjW-Qh-sP0" secondAttribute="bottom" constant="30" id="ugh-vj-iWe"/>
                                             <constraint firstItem="ZTb-9q-HT0" firstAttribute="top" secondItem="hRc-3n-ipB" secondAttribute="bottom" constant="30" id="wmJ-Ab-O1A"/>
-                                            <constraint firstAttribute="bottom" secondItem="1rM-eE-xWB" secondAttribute="bottom" constant="158" id="zPT-QV-5IM"/>
                                             <constraint firstItem="vKA-YW-5gS" firstAttribute="leading" secondItem="Dft-N2-gFJ" secondAttribute="leading" constant="4" id="zYP-MW-nlV"/>
                                         </constraints>
                                     </view>
@@ -719,7 +672,6 @@
                         <outlet property="credits08" destination="ahb-Le-US1" id="ygy-3j-jvR"/>
                         <outlet property="credits09" destination="HhK-A8-5tD" id="YQ3-lB-ctm"/>
                         <outlet property="credits10" destination="wjW-Qh-sP0" id="9kF-Vf-0JB"/>
-                        <outlet property="credits11" destination="jiE-5Z-TPu" id="BuL-WG-cRi"/>
                         <outlet property="gpaButtonOutlet" destination="qf7-e8-Pyy" id="bOT-fB-129"/>
                         <outlet property="grade01" destination="OoY-XE-V9Z" id="qgD-eZ-wZc"/>
                         <outlet property="grade02" destination="CLi-FM-41i" id="IbI-zy-eF0"/>
@@ -731,7 +683,6 @@
                         <outlet property="grade08" destination="ZTb-9q-HT0" id="q1E-yh-ybH"/>
                         <outlet property="grade09" destination="U4c-Le-YUB" id="N7n-FV-pnE"/>
                         <outlet property="grade10" destination="TQY-pv-HEK" id="R9H-pT-DYl"/>
-                        <outlet property="grade11" destination="1rM-eE-xWB" id="P9U-UD-kYy"/>
                         <outlet property="imagePop" destination="kqG-WI-sPc" id="Psy-kr-w8O"/>
                         <outlet property="labelDescription" destination="wy3-gG-88j" id="i7S-z5-Hay"/>
                         <outlet property="okOutlet" destination="sYl-ny-kSH" id="N30-g8-EcJ"/>

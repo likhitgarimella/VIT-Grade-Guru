@@ -63,7 +63,7 @@ class CourseTotalViewController: UIViewController {
                 print("Empty Fields Last Two")
                 // If Lab and Project Fields are empty
             } else {
-            answer.text = String(format: "%.2f", (( ((3*(number1!+number2!))/10) + number3! + number4! + number5! + ((2*number6!)/5) )/2) + (number7!)/4 + (number8!)/4)
+            answer.text = String(format: "%.2f", (1*( ( ((3*(number1!+number2!))/10) + number3! + number4! + number5! ) + ((2*(((3*(number1!+number2!))/10) + number3! + number4! + number5!))/3) )/2) + (number7! + (2*(number7!)/3))/4 + (number8!)/4)
             }   // If Lab and Project Fields aren't empty
         }
         
@@ -92,6 +92,7 @@ class CourseTotalViewController: UIViewController {
             answer.text = String(format: "%.2f", ( ((3*(number1!+number2!))/10) + number3! + number4! + number5! ) + ((2*(((3*(number1!+number2!))/10) + number3! + number4! + number5!))/3) + number6!)
         }
     }           // Entire Calculations Function
+    
     
     /* //////////////////////////////////////////////////////////////////////////////// */
     
@@ -226,7 +227,9 @@ class CourseTotalViewController: UIViewController {
         }
     }
     
+    
     /* //////////////////////////////////////////////////////////////////////////////// */
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -523,4 +526,4 @@ class CourseTotalViewController: UIViewController {
         
     }
     
-}   // #522
+}   // #530

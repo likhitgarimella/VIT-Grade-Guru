@@ -26,7 +26,6 @@ class GPAViewController: UIViewController {
     @IBOutlet var credits08: DropDown!
     @IBOutlet var credits09: DropDown!
     @IBOutlet var credits10: DropDown!
-    @IBOutlet var credits11: DropDown!
     
     @IBOutlet var grade01: DropDown!
     @IBOutlet var grade02: DropDown!
@@ -38,8 +37,8 @@ class GPAViewController: UIViewController {
     @IBOutlet var grade08: DropDown!
     @IBOutlet var grade09: DropDown!
     @IBOutlet var grade10: DropDown!
-    @IBOutlet var grade11: DropDown!
     @IBOutlet var gpaButtonOutlet: UIButton!
+    
     
     // Function for calculations
     func Calculations() {
@@ -66,8 +65,6 @@ class GPAViewController: UIViewController {
         var number9 = Double(string9.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let string10 = credits10.text!
         var number10 = Double(string10.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
-        let string11 = credits11.text!
-        var number11 = Double(string11.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         
         let stringA = grade01.text!
         var numberA = Double(stringA.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
@@ -89,8 +86,6 @@ class GPAViewController: UIViewController {
         var numberI = Double(stringI.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         let stringJ = grade10.text!
         var numberJ = Double(stringJ.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
-        let stringK = grade11.text!
-        var numberK = Double(stringK.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
         
             // Credits Textfield Validation
             if (credits01.text!.isEmpty) {
@@ -122,9 +117,6 @@ class GPAViewController: UIViewController {
             }
             if (credits10.text!.isEmpty) {
                number10 = 0
-            }
-            if (credits11.text!.isEmpty) {
-               number11 = 0
             }
             
             // Grades Textfield Validation
@@ -158,19 +150,16 @@ class GPAViewController: UIViewController {
             if (grade10.text!.isEmpty) {
                numberJ = 0
             }
-            if (grade11.text!.isEmpty) {
-               numberK = 0
-            }
             
             // Denominator Validation
-            if (credits01.text!.isEmpty && credits02.text!.isEmpty && credits03.text!.isEmpty && credits04.text!.isEmpty && credits05.text!.isEmpty && credits06.text!.isEmpty && credits07.text!.isEmpty && credits08.text!.isEmpty && credits09.text!.isEmpty && credits10.text!.isEmpty && credits11.text!.isEmpty)
+            if (credits01.text!.isEmpty && credits02.text!.isEmpty && credits03.text!.isEmpty && credits04.text!.isEmpty && credits05.text!.isEmpty && credits06.text!.isEmpty && credits07.text!.isEmpty && credits08.text!.isEmpty && credits09.text!.isEmpty && credits10.text!.isEmpty)
             {
                 answer.text = "0.00" // when credits textfield input given, and leave grade textfield empty, calculations being done, and displayed double value 0.00
                 // hence even when credits textfield is left empty, display value "0.00"
             } else {
             
             // Actual Formula
-            answer.text = String(format: "%.2f", ((number1!*numberA!)+(number2!*numberB!)+(number3!*numberC!)+(number4!*numberD!)+(number5!*numberE!)+(number6!*numberF!)+(number7!*numberG!)+(number8!*numberH!)+(number9!*numberI!)+(number10!*numberJ!)+(number11!*numberK!))/(number1!+number2!+number3!+number4!+number5!+number6!+number7!+number8!+number9!+number10!+number11!))
+            answer.text = String(format: "%.2f", ((number1!*numberA!)+(number2!*numberB!)+(number3!*numberC!)+(number4!*numberD!)+(number5!*numberE!)+(number6!*numberF!)+(number7!*numberG!)+(number8!*numberH!)+(number9!*numberI!)+(number10!*numberJ!))/(number1!+number2!+number3!+number4!+number5!+number6!+number7!+number8!+number9!+number10!))
             }
             
         }       // Entire Calculations Function
@@ -230,7 +219,6 @@ class GPAViewController: UIViewController {
         credits08.setUnderLine()
         credits09.setUnderLine()
         credits10.setUnderLine()
-        credits11.setUnderLine()
         
         grade01.setUnderLine()
         grade02.setUnderLine()
@@ -242,7 +230,6 @@ class GPAViewController: UIViewController {
         grade08.setUnderLine()
         grade09.setUnderLine()
         grade10.setUnderLine()
-        grade11.setUnderLine()
         
     }
     
@@ -259,7 +246,6 @@ class GPAViewController: UIViewController {
         credits08.layer.cornerRadius = 10
         credits09.layer.cornerRadius = 10
         credits10.layer.cornerRadius = 10
-        credits11.layer.cornerRadius = 10
         
         // Grades Textfield Properties
         grade01.layer.cornerRadius = 10
@@ -272,7 +258,6 @@ class GPAViewController: UIViewController {
         grade08.layer.cornerRadius = 10
         grade09.layer.cornerRadius = 10
         grade10.layer.cornerRadius = 10
-        grade11.layer.cornerRadius = 10
         
     }
     
@@ -309,9 +294,6 @@ class GPAViewController: UIViewController {
         credits10.optionArray = ["1 credit", "2 credits", "3 credits", "4 credits", "5 credits", "6 credits", "7 credits", "8 credits", "9 credits", "10 credits"]
         credits10.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
-        credits11.optionArray = ["1 credit", "2 credits", "3 credits", "4 credits", "5 credits", "6 credits", "7 credits", "8 credits", "9 credits", "10 credits"]
-        credits11.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
-        
         
         // DropDown Options For Grades TextFields
         grade01.optionArray = ["S grade - 10", "A grade - 9", "B grade - 8", "C grade - 7", "D grade - 6", "E grade - 5", "F grade - 0"]
@@ -334,8 +316,6 @@ class GPAViewController: UIViewController {
         grade09.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         grade10.optionArray = ["S grade - 10", "A grade - 9", "B grade - 8", "C grade - 7", "D grade - 6", "E grade - 5", "F grade - 0"]
         grade10.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
-        grade11.optionArray = ["S grade - 10", "A grade - 9", "B grade - 8", "C grade - 7", "D grade - 6", "E grade - 5", "F grade - 0"]
-        grade11.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
 
     }
     
@@ -362,8 +342,6 @@ class GPAViewController: UIViewController {
         credits09.leftViewMode = .always
         credits10.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: credits10.frame.height))
         credits10.leftViewMode = .always
-        credits11.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: credits11.frame.height))
-        credits11.leftViewMode = .always
         
         // Create a padding view for Grades TextFields on LEFT
         grade01.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: grade01.frame.height))
@@ -386,8 +364,6 @@ class GPAViewController: UIViewController {
         grade09.leftViewMode = .always
         grade10.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: grade10.frame.height))
         grade10.leftViewMode = .always
-        grade11.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: grade11.frame.height))
-        grade11.leftViewMode = .always
         
     }
     
@@ -432,7 +408,6 @@ class GPAViewController: UIViewController {
         self.credits08.text = ""
         self.credits09.text = ""
         self.credits10.text = ""
-        self.credits11.text = ""
         
         self.grade01.text = ""
         self.grade02.text = ""
@@ -444,7 +419,6 @@ class GPAViewController: UIViewController {
         self.grade08.text = ""
         self.grade09.text = ""
         self.grade10.text = ""
-        self.grade11.text = ""
         
         //And to enable back for a new input in textfield
         self.credits01.isEnabled = true
@@ -457,7 +431,6 @@ class GPAViewController: UIViewController {
         self.credits08.isEnabled = true
         self.credits09.isEnabled = true
         self.credits10.isEnabled = true
-        self.credits11.isEnabled = true
         
         self.grade01.isEnabled = true
         self.grade02.isEnabled = true
@@ -469,7 +442,6 @@ class GPAViewController: UIViewController {
         self.grade08.isEnabled = true
         self.grade09.isEnabled = true
         self.grade10.isEnabled = true
-        self.grade11.isEnabled = true
         
     }
     
@@ -592,4 +564,4 @@ class GPAViewController: UIViewController {
         
     }
     
-}   // #596
+}   // #568
