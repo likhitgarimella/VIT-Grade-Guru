@@ -1162,6 +1162,7 @@
                         <outlet property="Grade" destination="XMh-q3-bL8" id="QUG-H7-MIo"/>
                         <outlet property="Guru" destination="Pyr-Ee-aRf" id="yD5-59-qIG"/>
                         <outlet property="VIT" destination="5IW-4S-53W" id="zvG-Vf-ZVZ"/>
+                        <outlet property="addlLearning" destination="DT8-GZ-6ha" id="Lai-9T-FQI"/>
                         <outlet property="answer" destination="Xgx-wg-359" id="rPj-Jg-cyW"/>
                         <outlet property="blurView" destination="amX-Dc-SSf" id="wUl-jg-nEi"/>
                         <outlet property="buttonOutlet" destination="tlJ-5I-chn" id="pc2-wJ-Gpy"/>
@@ -1170,7 +1171,6 @@
                         <outlet property="da1" destination="W1d-Od-GFG" id="5xz-Lc-YJp"/>
                         <outlet property="da2" destination="frs-tk-QeL" id="6rA-LZ-CYv"/>
                         <outlet property="da3" destination="aHL-gW-AAT" id="U2a-dl-Hiv"/>
-                        <outlet property="fat" destination="DT8-GZ-6ha" id="XsW-bx-k59"/>
                         <outlet property="imagePop" destination="c42-Nt-xLx" id="B7k-sn-iU6"/>
                         <outlet property="lab" destination="VEF-x2-ov0" id="6aw-KM-ogi"/>
                         <outlet property="labLabel" destination="vOF-w6-G4N" id="gXi-35-QEY"/>

@@ -23,7 +23,7 @@ class CourseTotalViewController: UIViewController {
     @IBOutlet var da1: UITextField!
     @IBOutlet var da2: UITextField!
     @IBOutlet var da3: UITextField!
-    @IBOutlet var fat: UITextField!
+    @IBOutlet var addlLearning: UITextField!
     @IBOutlet var lab: UITextField!
     @IBOutlet var labLabel: UILabel!
     @IBOutlet var project: UITextField!
@@ -44,7 +44,7 @@ class CourseTotalViewController: UIViewController {
         let number4 = Double(string4)
         let string5 = da3.text!
         let number5 = Double(string5)
-        let string6 = fat.text!
+        let string6 = addlLearning.text!
         let number6 = Double(string6)
         let string7 = lab.text!
         let number7 = Double(string7)
@@ -113,9 +113,9 @@ class CourseTotalViewController: UIViewController {
         da3.text = ""       // Initialise empty textfield
         da3.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
-        fat.keyboardType = .decimalPad
-        fat.text = ""       // Initialise empty textfield
-        fat.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
+        addlLearning.keyboardType = .decimalPad
+        addlLearning.text = ""       // Initialise empty textfield
+        addlLearning.addTarget(self, action: #selector(didChangeText), for: .allEditingEvents)
         
         lab.keyboardType = .decimalPad
         lab.text = ""       // Initialise empty textfield
@@ -168,11 +168,11 @@ class CourseTotalViewController: UIViewController {
             }
         }
     }
-    var fatnumber: Double = 0.0 {
+    var addlLearningnumber: Double = 0.0 {
         didSet {
-            if fatnumber > 100.0 {
-                fatnumber = 100.0
-                self.fat.text = "\(fatnumber)"
+            if addlLearningnumber > 10.0 {
+                addlLearningnumber = 10.0
+                self.addlLearning.text = "\(addlLearningnumber)"
             }
         }
     }
@@ -210,8 +210,8 @@ class CourseTotalViewController: UIViewController {
         if let num5 = Double(self.da3.text!) {
             self.da3number = Double(num5)
         }
-        if let num6 = Double(self.fat.text!) {
-            self.fatnumber = Double(num6)
+        if let num6 = Double(self.addlLearning.text!) {
+            self.addlLearningnumber = Double(num6)
         }
         if let num7 = Double(self.lab.text!) {
             self.labnumber = Double(num7)
@@ -267,7 +267,7 @@ class CourseTotalViewController: UIViewController {
         da1.layer.cornerRadius = 6
         da2.layer.cornerRadius = 6
         da3.layer.cornerRadius = 6
-        fat.layer.cornerRadius = 6
+        addlLearning.layer.cornerRadius = 6
         lab.layer.cornerRadius = 6
         project.layer.cornerRadius = 6
 
@@ -314,7 +314,7 @@ class CourseTotalViewController: UIViewController {
         
         // 1 // If both Lab and Project Switches are On
         if labSwitch.isOn==true && projectSwitch.isOn==true {
-        if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty || lab.text!.isEmpty || project.text!.isEmpty) {
+        if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || lab.text!.isEmpty || project.text!.isEmpty) {
             // Alert
             let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
@@ -326,7 +326,7 @@ class CourseTotalViewController: UIViewController {
         
         // 2 // If Lab Switch is On and Project Switche is Off
         if labSwitch.isOn==true && projectSwitch.isOn==false {
-        if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty || lab.text!.isEmpty) {
+        if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || lab.text!.isEmpty) {
             // Alert
             let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
@@ -338,7 +338,7 @@ class CourseTotalViewController: UIViewController {
         
         // 3 // If Lab Switch is Off and Project Switche is On
         if labSwitch.isOn==false && projectSwitch.isOn==true {
-        if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty || project.text!.isEmpty) {
+        if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || project.text!.isEmpty) {
             // Alert
             let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
@@ -350,7 +350,7 @@ class CourseTotalViewController: UIViewController {
         
         // 4 // If both Lab and Project Switches are Off
         if labSwitch.isOn==false && projectSwitch.isOn==false {
-        if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty || fat.text!.isEmpty) {
+        if (cat1.text!.isEmpty || cat2.text!.isEmpty || da1.text!.isEmpty || da2.text!.isEmpty || da3.text!.isEmpty) {
             // Alert
             let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
@@ -383,7 +383,7 @@ class CourseTotalViewController: UIViewController {
         self.da1.text = ""
         self.da2.text = ""
         self.da3.text = ""
-        self.fat.text = ""
+        self.addlLearning.text = ""
         self.lab.text = ""
         self.project.text = ""
         
@@ -393,7 +393,7 @@ class CourseTotalViewController: UIViewController {
         self.da1.isEnabled = true
         self.da2.isEnabled = true
         self.da3.isEnabled = true
-        self.fat.isEnabled = true
+        self.addlLearning.isEnabled = true
         self.lab.isEnabled = true
         self.project.isEnabled = true
         
