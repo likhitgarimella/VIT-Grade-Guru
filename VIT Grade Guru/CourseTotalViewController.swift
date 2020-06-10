@@ -63,7 +63,7 @@ class CourseTotalViewController: UIViewController {
                 print("Empty Fields Last Two")
                 // If Lab and Project Fields are empty
             } else {
-            answer.text = String(format: "%.2f", (1*( ( ((3*(number1!+number2!))/10) + number3! + number4! + number5! ) + ((2*(((3*(number1!+number2!))/10) + number3! + number4! + number5!))/3) )/2) + (number7! + (2*(number7!)/3))/4 + (number8!)/4)
+            answer.text = String(format: "%.2f", (1*( ( ((3*(number1!+number2!))/10) + number3! + number4! + number5! ) + ((2*(((3*(number1!+number2!))/10) + number3! + number4! + number5!))/3) + number6! )/2) + (number7! + (2*(number7!)/3))/4 + (number8!)/4)
             }   // If Lab and Project Fields aren't empty
         }
         
@@ -73,7 +73,7 @@ class CourseTotalViewController: UIViewController {
                 print("Empty Lab Field")
                 // If Lab Field is empty
             } else {
-                answer.text = String(format: "%.2f", (3*( ( ((3*(number1!+number2!))/10) + number3! + number4! + number5! ) + ((2*(((3*(number1!+number2!))/10) + number3! + number4! + number5!))/3) )/4) + (number7! + (2*(number7!)/3))/4)
+                answer.text = String(format: "%.2f", (3*( ( ((3*(number1!+number2!))/10) + number3! + number4! + number5! ) + ((2*(((3*(number1!+number2!))/10) + number3! + number4! + number5!))/3) + number6! )/4) + (number7! + (2*(number7!)/3))/4)
             }   // If Lab Field isn't empty
         }
         
